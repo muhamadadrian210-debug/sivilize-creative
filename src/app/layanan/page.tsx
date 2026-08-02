@@ -4,9 +4,30 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
+const KupangTag = () => (
+  <span style={{
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "4px",
+    background: "rgba(245, 158, 11, 0.12)",
+    border: "1px solid rgba(245, 158, 11, 0.4)",
+    color: "#f59e0b",
+    fontSize: "0.62rem",
+    fontWeight: 800,
+    padding: "2px 8px",
+    borderRadius: "6px",
+    letterSpacing: "0.4px",
+    fontFamily: "monospace",
+    whiteSpace: "nowrap",
+  }}>
+    📍 Kupang & Sekitarnya
+  </span>
+);
+
 const serviceCategories = [
   {
     category: "BUSINESS CONTENT",
+    onLocation: true,
     title: "Produksi Video Promosi & Komersial",
     desc: "Pembuatan konten video kreatif skala usaha untuk meningkatkan konversi penjualan dan reputasi brand.",
     items: [
@@ -22,6 +43,7 @@ const serviceCategories = [
   },
   {
     category: "EVENT DOCUMENTATION",
+    onLocation: true,
     title: "Dokumentasi Acara & Momen Kritis",
     desc: "Liputan foto dan video profesional untuk mengabadikan setiap momen penting secara estetis.",
     items: [
@@ -34,6 +56,7 @@ const serviceCategories = [
   },
   {
     category: "COMMERCIAL PHOTOGRAPHY",
+    onLocation: true,
     title: "Fotografi Studio & On-Location",
     desc: "Sesi pemotretan berkualitas tinggi dengan lighting studio profesional dan retouching mendalam.",
     items: [
@@ -87,9 +110,12 @@ export default function LayananPage() {
           <div className="space-y-16">
             {serviceCategories.map((cat, idx) => (
               <div key={idx} className="p-8 sm:p-10 rounded-2xl bg-slate-900 border border-slate-800">
-                <span className="text-amber-400 font-mono text-xs font-bold uppercase tracking-widest block mb-1">
-                  [{String(idx + 1).padStart(2, "0")}] {cat.category}
-                </span>
+                <div className="flex items-center gap-3 flex-wrap mb-1">
+                  <span className="text-amber-400 font-mono text-xs font-bold uppercase tracking-widest">
+                    [{String(idx + 1).padStart(2, "0")}] {cat.category}
+                  </span>
+                  {(cat as any).onLocation && <KupangTag />}
+                </div>
                 <h2 className="text-2xl font-bold text-white uppercase mb-2">{cat.title}</h2>
                 <p className="text-slate-400 text-xs sm:text-sm mb-8 leading-relaxed">{cat.desc}</p>
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   const footerWaMessage = encodeURIComponent(
-    "Halo Pak Briand Jivencha Therik (COO Sivilize Creative),\n\nSaya ingin mengajukan konsultasi / penawaran layanan produksi video & konten kreatif PT Sivilize Corp Indonesia.\n\nBoleh dibantu koordinasinya? Terima kasih."
+    "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya ingin mengajukan konsultasi / penawaran layanan produksi video & konten kreatif PT Sivilize Corp Indonesia.\n\nBoleh dibantu koordinasinya? Terima kasih."
   );
 
   return (
@@ -136,9 +136,9 @@ export function Footer() {
                 Divisi Creative Agency & Produksi Konten Visual Resmi di Bawah PT Sivilize Corp Indonesia.
               </p>
               <div style={{ fontSize: "0.75rem", color: "#94a3b8", borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "12px" }}>
-                <strong>Executive Operational Contact:</strong><br />
-                Briand Jivencha Therik — Chief Operating Officer (COO)<br />
-                💬 <a href={`https://wa.me/6285137743321?text=${footerWaMessage}`} target="_blank" rel="noopener noreferrer" style={{ color: "#f59e0b", fontWeight: 700 }}>+62 851-3774-3321</a>
+                <strong>Executive Marketing Contact:</strong><br />
+                Shatrya Dhimar — Chief Marketing Officer (CMO)<br />
+                💬 <a href={`https://wa.me/6282347058055?text=${footerWaMessage}`} target="_blank" rel="noopener noreferrer" style={{ color: "#f59e0b", fontWeight: 700 }}>+62 823-4705-8055</a>
               </div>
             </div>
             

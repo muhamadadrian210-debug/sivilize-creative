@@ -28,7 +28,7 @@ export function Navbar() {
   ];
 
   const emergencyWaMessage = encodeURIComponent(
-    "Halo Pak Briand Jivencha Therik (COO Sivilize Creative),\n\nSaya bermaksud berkonsultasi mengenai pengajuan Request Proposal (RFP) / Layanan Konten Visual & Video Promosi untuk perusahaan/instansi kami.\n\nBoleh dibantu koordinasi awal? Terima kasih."
+    "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud berkonsultasi mengenai pengajuan Request Proposal (RFP) / Layanan Konten Visual & Video Promosi untuk perusahaan/instansi kami.\n\nBoleh dibantu koordinasi awal? Terima kasih."
   );
 
   return (
@@ -203,12 +203,12 @@ export function Navbar() {
           </ul>
 
           <a 
-            href={`https://wa.me/6285137743321?text=${emergencyWaMessage}`} 
+            href={`https://wa.me/6282347058055?text=${emergencyWaMessage}`} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="nav-cta"
           >
-            📸 Konsultasi Creative (COO WA)
+            📸 Konsultasi Creative (CMO WA)
           </a>
 
           <button className="nav-burger" aria-label="Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -233,13 +233,13 @@ export function Navbar() {
             </Link>
           ))}
           <a
-            href={`https://wa.me/6285137743321?text=${emergencyWaMessage}`}
+            href={`https://wa.me/6282347058055?text=${emergencyWaMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
             style={{ background: "#f59e0b", color: "#ffffff", fontSize: "0.9rem", fontWeight: 800, padding: "14px", borderRadius: "12px", textDecoration: "none", textAlign: "center", marginTop: "10px" }}
           >
-            📸 Konsultasi Creative Direct COO (+62 851-3774-3321)
+            📸 Konsultasi Creative Direct CMO (+62 823-4705-8055)
           </a>
         </div>
       )}

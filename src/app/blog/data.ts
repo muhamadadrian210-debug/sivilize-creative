@@ -36,7 +36,7 @@ export const articles30: Article[] = [
     content: [
       "Dalam dunia bisnis B2B dan investasi, keputusan kemitraan sangat bergantung pada tingkat kepercayaan (trust). Video company profile berdurasi 3 hingga 5 menit merupakan alat komunikasi paling efektif untuk merangkum visi, fasilitas, dan keunggulan tim perusahaan.",
       "Video profil yang diproduksi secara sinematik dengan pengambilan gambar fasilitas 4K, b-roll dinamis, dan wawancara direksi akan memberikan impresi bahwa perusahaan Anda dikelola secara serius dan profesional.",
-      "Pastikan video profil perusahan Anda memiliki narasi cerita yang berpusat pada solusi bagi klien, bukan sekadar memamerkan angka atau penghargaan internal."
+      "Pastikan video profil perusahaan Anda memiliki narasi cerita yang berpusat pada solusi bagi klien, bukan sekadar memamerkan angka atau penghargaan internal."
     ]
   },
   {
@@ -46,11 +46,16 @@ export const articles30: Article[] = [
     desc: "Trik pencahayaan studio dan penataan sudut pengambilan foto kuliner untuk cafe dan restoran.",
     date: "25 Juli 2026",
     author: "Tim Photography Sivilize Creative",
-    readTime: "4 Menit",
+    readTime: "6 Menit",
     content: [
-      "Fotografi makanan (Food Photography) bukan hanya tentang mengambil gambar piring. Ini adalah seni membangkitkan rasa lapar audiens hanya melalui tampilan visual.",
-      "Gunakan pencahayaan samping (side lighting) atau pencahayaan belakang (backlighting) untuk memunculkan tekstur makanan, seperti uap panas, kilap saus, atau kerenyahan lapisan tepung.",
-      "Perhatikan sudut pengambilan (angle). Makanan berlayer seperti burger atau tumpukan pancakes paling bagus diambil dari sudut 0-45 derajat, sedangkan makanan dalam piring datar lebih baik diambil dari sudut top-down (90 derajat)."
+      "Fotografi makanan (Food Photography) bukan hanya tentang mengambil gambar piring. Ini adalah seni membangkitkan rasa lapar audiens hanya melalui tampilan visual. Berikut 7 tips utama dari tim videografer & fotografer Sivilize Creative:",
+      "1. Gunakan Pencahayaan Samping (Side Lighting) — Pencahayaan dari samping atau belakang (backlighting) memunculkan tekstur makanan, keusangan uap panas, serta kilaunya saus secara alami.",
+      "2. Tentukan Sudut Kamera Yang Tepat — Makanan berlayer seperti burger/pancakes diambil dari sudut 0-45 derajat. Makanan piring datar (nasi goreng/pizza) paling ideal dari sudut top-down (90 derajat).",
+      "3. Lakukan Food Styling Cepat Saat Makanan Masih Fresh — Sayuran hijau dan daging berkilau paling fotogenik dalam 5 menit pertama setelah disajikan.",
+      "4. Pakai Props & Properti Pendukung Yang Relevan — Gunakan serbet kain, bahan mentah (rempah/biji kopi), atau alat makan bertekstur mat untuk memperkuat tema kuliner.",
+      "5. Manfaatkan Papan Pemantul Cahaya (Reflector) — Gunakan papan reflector putih untuk menerangi area bayangan gelap tanpa merusak kelembutan cahaya alami.",
+      "6. Atur Kedalaman Bidang (Depth of Field / Bokeh) — Manfaatkan bukaan lensa lebar (f/2.8 - f/4.0) agar fokus utama tertuju pada menu makanan, sementara latar belakang tampil blur halus.",
+      "7. Retouching Warna Alami Tanpa Berlebihan — Saat editing warna (color grading), tingkatkan saturasi warna merah, kuning, dan hijau secara terukur tanpa membuat warna makanan terlihat palsu."
     ]
   },
   {
@@ -172,11 +177,14 @@ export const articles30: Article[] = [
     desc: "Psikologi tata letak menu makanan untuk menaikkan nilai transaksi rata-rata (average order value).",
     date: "10 Juni 2026",
     author: "Tim Desain Sivilize Creative",
-    readTime: "4 Menit",
+    readTime: "5 Menit",
     content: [
-      "Desain daftar menu bukan sekadar daftar harga makanan. Ini adalah alat penjualan paling ampuh di atas meja restoran Anda.",
-      "Tempatkan menu andalan bertengger di posisi mata kanan atas (golden triangle), gunakan foto berkualitas studio untuk 20% menu terlaris, dan kelompokkan kategori menu secara logis.",
-      "Hindari penggunaan tanda mata uang (Rp) secara mencolok agar konsumen lebih fokus pada selera makan ketimbang harga."
+      "Desain daftar menu bukan sekadar daftar harga makanan. Ini adalah alat penjualan paling ampuh di atas meja restoran Anda. Berikut 5 elemen wajibnya:",
+      "1. Posisi Emas (Golden Triangle Positioning) — Tempatkan menu terlaris bermargin tinggi di sudut kanan atas daftar menu, tempat mata pembeli pertama kali memandang.",
+      "2. Foto Studio Berkualitas Tinggi Untuk 20% Menu Terlaris — Cukup tampilkan foto studio profesional untuk menu flagship utama agar tidak membuat halaman menu terlihat berantakan.",
+      "3. Hirarki Tipografi Yang Jelas — Gunakan ukuran font yang tegas untuk membedakan nama menu, deskripsi bahan, dan harga makanan.",
+      "4. Pengelompokan Kategori Logis — Kelompokkan menu secara terstruktur (Appetizer, Main Course, Beverages, Dessert) agar pembeli tidak bingung.",
+      "5. Menghilangkan Simbol Mata Uang Terlalu Mencolok — Menyamarkan simbol mata uang (Rp) membuat konsumen lebih berfokus pada selera makan ketimbang menghitung nominal uang."
     ]
   },
   {
@@ -270,11 +278,19 @@ export const articles30: Article[] = [
     desc: "Menghindari durasi terlalu panjang, audio bising, dan pencahayaan redup yang merusak kualitas.",
     date: "05 Mei 2026",
     author: "Tim Production Sivilize Creative",
-    readTime: "4 Menit",
+    readTime: "7 Menit",
     content: [
-      "Kesalahan paling sering terjadi pada video promosi UMKM adalah kualitas audio yang buruk dan bising.",
-      "Penonton mau memaklumi kualitas gambar sederhana, tetapi mereka akan langsung menutup video jika suaranya kresek-kresek atau terlalu pelan. Selalu gunakan mikrofon klip (lavalier) berkualitas saat merekam wawancara.",
-      "Hindari pula durasi video yang terlampau panjang tanpa struktur pesan yang jelas."
+      "Video promosi UMKM sering kali gagal memberikan konversi penjualan akibat kesalahan teknis dan penyusunan konsep. Hindari 10 kesalahan berikut:",
+      "1. Kualitas Audio Bising & Tanpa Clip-On Eksternal — Suara yang samar atau kresek-kresek membuat penonton langsung menutup video.",
+      "2. Durasi Video Terlalu Panjang Tanpa Hook — Video di atas 2 menit tanpa cerita menarik akan menurunkan angka penyelesaian penonton (watch-through rate).",
+      "3. Pencahayaan Redup & Gambar Buram — Gambar tanpa lighting memadai terlihat tidak profesional dan mengurangi daya tarik produk.",
+      "4. Tidak Mencantumkan Call to Action (CTA) Jelas — Penonton bingung harus memesan ke mana setelah menonton video.",
+      "5. Terlalu Berfokus Pada Hard Selling — Konten jualan terus-menerus tanpa edukasi atau hiburan membuat pengikut merasa jenuh.",
+      "6. Mengabaikan Format Vertikal (9:16) — Mengunggah video horizontal di TikTok atau Reels menciptakan bilah hitam di atas dan bawah yang mengganggu layar HP.",
+      "7. Subtitle Teks Terlalu Kecil / Buram — Banyak pengguna menonton sosial media tanpa suara, sehingga subtitle jelas sangat krusial.",
+      "8. Penggunaan Musik Berhak Cipta Tanpa Lisensi — Video berisiko di-mute atau diturunkan oleh platform akibat pelanggaran lisensi audio.",
+      "9. Abaikan 3 Detik Pertama (Pentingnya Hook) — Tidak menghadirkan pernyataan menarik atau tampilan visual memikat di awal video.",
+      "10. Lupa Mencantumkan Logo / Identitas Brand — Video mudah dicuri atau diunggah ulang akun lain tanpa ada jejak nama bisnis Anda."
     ]
   },
   {

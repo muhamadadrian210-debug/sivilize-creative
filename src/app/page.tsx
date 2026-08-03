@@ -293,7 +293,7 @@ export default function Home() {
                     Pembuatan landing page, website profil UMKM, cafe, &amp; toko online terintegrasi WhatsApp.
                   </p>
                   <a
-                    href="https://github.com/muhamadadrian210-debug/portfolio-adrian"
+                    href="https://sivilizecorp.my.id"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-emerald-400 font-mono text-xs font-bold hover:underline"

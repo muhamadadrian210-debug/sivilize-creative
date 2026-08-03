@@ -170,9 +170,10 @@ export function Footer() {
             <div>
               <h4 className="footer-col-title">Ekosistem Sivilize</h4>
               <ul className="footer-links">
-                <li><a href="http://localhost:3000" target="_blank" rel="noopener noreferrer" className="footer-link-a">Sivilize Software (ERP/SIMRS)</a></li>
-                <li><a href="https://github.com/muhamadadrian210-debug/portfolio-adrian" target="_blank" rel="noopener noreferrer" className="footer-link-a">SiWeb Production (Web UMKM)</a></li>
-                <li><a href="http://localhost:3001" target="_blank" rel="noopener noreferrer" className="footer-link-a">Sivilize Aegis (Cybersecurity)</a></li>
+                <li><a href="https://sivilizecorp.com" target="_blank" rel="noopener noreferrer" className="footer-link-a">PT Sivilize Corp Indonesia (Induk)</a></li>
+                <li><a href="https://software.sivilizecorp.com" target="_blank" rel="noopener noreferrer" className="footer-link-a">Sivilize Software (ERP/SIMRS)</a></li>
+                <li><a href="https://sivilizecorp.my.id" target="_blank" rel="noopener noreferrer" className="footer-link-a">SiWeb Production (Web UMKM)</a></li>
+                <li><a href="https://aegis.sivilizecorp.com" target="_blank" rel="noopener noreferrer" className="footer-link-a">Sivilize Aegis (Cybersecurity)</a></li>
                 <li><Link href="/kepatuhan" className="footer-link-a">Legalitas PT Sivilize Corp</Link></li>
               </ul>
             </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://creative.sivilize.com"),
+  metadataBase: new URL("https://creative.sivilizecorp.com"),
   title: "Sivilize Creative — Creative Agency & Visual Branding Division",
   description: "Divisi Creative Agency Resmi PT Sivilize Corp Indonesia. Spesialis Video Promosi UMKM, Company Profile, Wedding Highlight, Foto Produk, & Brand Identity. Executive COO WA: +62 851-3774-3321.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sivilize Creative — Creative Agency & Visual Branding",
     description: "Kalau Sivilize Software Membangun Sistem, Maka Sivilize Creative Membangun Citra Bisnis. PT Sivilize Corp Indonesia (NIB 0207260103661).",
-    url: "https://creative.sivilize.com",
+    url: "https://creative.sivilizecorp.com",
     siteName: "Sivilize Creative",
     images: [
       {

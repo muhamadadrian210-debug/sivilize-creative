@@ -15,7 +15,7 @@ export default function HargaPage() {
   const bundlingPackages = [
     {
       name: "Bundling Dual Platform Single",
-      price: "Rp 300.000 / Konten",
+      price: "Rp 349.000 / Konten",
       badge: "BEST VALUE SINGLE",
       desc: "1 Ide Konten Video Vertikal langsung di-export dalam 2 Format HD Siap Upload (1 Format Instagram Reels + 1 Format TikTok HD lengkap Subtitle & Sound Tren).",
       features: [
@@ -25,12 +25,12 @@ export default function HargaPage() {
         "Color Correction Sinematik",
         "Free Re-format Ukuran Aspek Rasio (9:16)"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau pesan *Paket Bundling Dual Platform Single (Rp 300.000 / Konten - Reels & TikTok)*.\n\nBoleh dibantu koordinasi brief & jadwal videonya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau pesan *Paket Bundling Dual Platform Single (Rp 349.000 / Konten - Reels & TikTok)*.\n\nBoleh dibantu koordinasi brief & jadwal videonya? Terima kasih."
     },
     {
       name: "Bundling Hemat 5 Konten",
-      price: "Rp 1.350.000 (Hemat Rp 150rb)",
-      badge: "HEMAT 10% PROMO",
+      price: "Rp 1.499.000 (Total 10 Postings)",
+      badge: "PAKET POPULER",
       desc: "5 Konsep Konten Kreatif dengan Ekspor Multi-Platform. Total Anda mendapatkan 10 Postings Siap Pakai (5 Reels + 5 TikTok) untuk konsistensi feeds 1 bulan.",
       features: [
         "5 Ide Konsep Video Kreatif",
@@ -39,11 +39,11 @@ export default function HargaPage() {
         "Subtitle & Transisi Tren",
         "Jadwal Penyiapan Konten 1 Bulan"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order *Paket Bundling Hemat 5 Konten (Rp 1.350.000 - Total 10 Post Reels & TikTok)*.\n\nBoleh dibantu koordinasi ide & penentuan jadwal videonya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order *Paket Bundling Hemat 5 Konten (Rp 1.499.000 - Total 10 Post Reels & TikTok)*.\n\nBoleh dibantu koordinasi ide & penentuan jadwal videonya? Terima kasih."
     },
     {
       name: "Bundling Multi-Format (Video + Foto)",
-      price: "Rp 1.850.000 / Proyek",
+      price: "Rp 1.999.000 / Proyek",
       badge: "ALL-IN-ONE PROMO",
       desc: "Solusi lengkap bagi produk baru: 3 Video Promosi Vertikal (Reels/TikTok) + 10 Foto Produk Studio HD + Custom Cover Thumbnail Keren.",
       features: [
@@ -51,37 +51,37 @@ export default function HargaPage() {
         "10 Foto Produk Studio Hi-Res Retouched",
         "Shooting Studio / On-Location",
         "Custom Cover Thumbnail Design",
-        "Master File File High-Quality"
+        "Master File High-Quality"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud memesan *Paket Bundling Multi-Format Video + Foto (Rp 1.850.000 / Proyek)*.\n\nBoleh dibantu pengiriman sampel produk & jadwal shootingnya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud memesan *Paket Bundling Multi-Format Video + Foto (Rp 1.999.000 / Proyek)*.\n\nBoleh dibantu pengiriman sampel produk & jadwal shootingnya? Terima kasih."
     }
   ];
 
   const videoProductionItems = [
-    { name: "Wedding Documentation", price: "Mulai Rp 3.500.000", desc: "Highlight sinematik & liputan penuh momen pernikahan sakral." },
-    { name: "Engagement Event", price: "Mulai Rp 2.500.000", desc: "Dokumentasi momen lamaran & pertunangan sinematik." },
-    { name: "Prewedding Film", price: "Mulai Rp 2.500.000", desc: "Konsep cerita pasangan dalam bentuk film pendek & teaser." },
-    { name: "Company Profile Video", price: "Mulai Rp 3.000.000", desc: "Profil naratif perusahaan berdurasi 3-5 menit untuk investor & website." },
-    { name: "Corporate & Special Event", price: "Mulai Rp 2.000.000", desc: "Liputan acara perusahaan, gala dinner, & gathering." },
-    { name: "Seminar & Workshop", price: "Mulai Rp 2.000.000", desc: "Liputan konferensi, edukasi, & sesi pembicara profesional." },
-    { name: "Grand Opening Store", price: "Mulai Rp 2.000.000", desc: "Video peluncuran outlet, restoran, atau kantor baru." },
-    { name: "Commercial Product Video", price: "Mulai Rp 1.500.000", desc: "Video iklan produk dengan pencahayaan studio komersial." },
-    { name: "Drone Aerial Footage (Add-On)", price: "Mulai Rp 750.000", desc: "Pengambilan gambar udara 4K untuk perspektif arsitektur & lokasi." },
+    { name: "Wedding Documentation", price: "Mulai Rp 3.899.000", desc: "Highlight sinematik & liputan penuh momen pernikahan sakral." },
+    { name: "Engagement Event", price: "Mulai Rp 2.799.000", desc: "Dokumentasi momen lamaran & pertunangan sinematik." },
+    { name: "Prewedding Film", price: "Mulai Rp 2.799.000", desc: "Konsep cerita pasangan dalam bentuk film pendek & teaser." },
+    { name: "Company Profile Video", price: "Mulai Rp 3.499.000", desc: "Profil naratif perusahaan berdurasi 3-5 menit untuk investor & website." },
+    { name: "Corporate & Special Event", price: "Mulai Rp 2.299.000", desc: "Liputan acara perusahaan, gala dinner, & gathering." },
+    { name: "Seminar & Workshop", price: "Mulai Rp 2.299.000", desc: "Liputan konferensi, edukasi, & sesi pembicara profesional." },
+    { name: "Grand Opening Store", price: "Mulai Rp 2.299.000", desc: "Video peluncuran outlet, restoran, atau kantor baru." },
+    { name: "Commercial Product Video", price: "Mulai Rp 1.699.000", desc: "Video iklan produk dengan pencahayaan studio komersial." },
+    { name: "Drone Aerial Footage (Add-On)", price: "Mulai Rp 899.000", desc: "Pengambilan gambar udara 4K untuk perspektif arsitektur & lokasi." },
   ];
 
   const photoItems = [
-    { name: "Foto Produk Studio", price: "Mulai Rp 750.000", desc: "Sesi foto katalog produk studio dengan penataan lighting pro." },
-    { name: "Foto Event & Gathering", price: "Mulai Rp 1.500.000", desc: "Dokumentasi foto momen acara penting & ekspresi tamu." },
-    { name: "Foto Wedding Documentation", price: "Mulai Rp 2.500.000", desc: "Album foto fisik & digital momen pernikahan utuh." },
-    { name: "Foto Corporate & Direksi", price: "Mulai Rp 2.000.000", desc: "Potret eksekutif, profil jajaran manajemen, & fasilitas kantor." },
+    { name: "Foto Produk Studio", price: "Mulai Rp 899.000", desc: "Sesi foto katalog produk studio dengan penataan lighting pro." },
+    { name: "Foto Event & Gathering", price: "Mulai Rp 1.699.000", desc: "Dokumentasi foto momen acara penting & ekspresi tamu." },
+    { name: "Foto Wedding Documentation", price: "Mulai Rp 2.799.000", desc: "Album foto fisik & digital momen pernikahan utuh." },
+    { name: "Foto Corporate & Direksi", price: "Mulai Rp 2.299.000", desc: "Potret eksekutif, profil jajaran manajemen, & fasilitas kantor." },
   ];
 
   const designItems = [
-    { name: "Desain Logo Vektor", price: "Mulai Rp 500.000", desc: "3 Opsi konsep logo orisinal master file AI, EPS, PNG beresolusi tinggi." },
-    { name: "Desain Poster & Flyer", price: "Mulai Rp 150.000", desc: "Materi iklan promo cetak & digital berestetika tinggi." },
-    { name: "Desain Feed Instagram", price: "Mulai Rp 150.000", desc: "Desain mikro-konten feeds Instagram yang menarik perhatian." },
-    { name: "Desain Banner & Baliho", price: "Mulai Rp 200.000", desc: "Tata letak materi cetak baliho/banner ukuran besar." },
-    { name: "Brand Identity Guidelines", price: "Mulai Rp 2.000.000", desc: "Buku panduan visual identitas brand (Logo, Palette, Tipografi)." },
+    { name: "Desain Logo Vektor", price: "Mulai Rp 599.000", desc: "3 Opsi konsep logo orisinal master file AI, EPS, PNG beresolusi tinggi." },
+    { name: "Desain Poster & Flyer", price: "Mulai Rp 179.000", desc: "Materi iklan promo cetak & digital berestetika tinggi." },
+    { name: "Desain Feed Instagram", price: "Mulai Rp 179.000", desc: "Desain mikro-konten feeds Instagram yang menarik perhatian." },
+    { name: "Desain Banner & Baliho", price: "Mulai Rp 249.000", desc: "Tata letak materi cetak baliho/banner ukuran besar." },
+    { name: "Brand Identity Guidelines", price: "Mulai Rp 2.299.000", desc: "Buku panduan visual identitas brand (Logo, Palette, Tipografi)." },
   ];
 
   const valuePoints = [
@@ -134,7 +134,7 @@ export default function HargaPage() {
                 <div className="bg-[#070b12] p-6 rounded-2xl border border-slate-800 text-center md:text-right min-w-[240px]">
                   <span className="text-slate-500 text-xs uppercase tracking-wider block font-mono">Mulai Dari</span>
                   <div className="text-2xl sm:text-3xl font-black text-amber-400 font-mono my-1">
-                    Rp 300.000
+                    Rp 349.000
                   </div>
                   <span className="text-slate-400 text-xs font-mono block">/ Konten Video</span>
                 </div>
@@ -172,7 +172,7 @@ export default function HargaPage() {
                   </p>
                   
                   <a
-                    href={getWaLink("Produksi Konten Satuan", "Rp 300.000 / Konten")}
+                    href={getWaLink("Produksi Konten Satuan", "Rp 349.000 / Konten")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xs uppercase tracking-wider transition-all text-center shadow-lg shadow-amber-500/20"
@@ -271,7 +271,7 @@ export default function HargaPage() {
                   </p>
                   
                   <div className="p-4 rounded-2xl bg-[#070b12] border border-slate-800 mb-8">
-                    <span className="text-3xl font-black text-white font-mono block">Rp 2.000.000</span>
+                    <span className="text-3xl font-black text-white font-mono block">Rp 2.199.000</span>
                     <span className="text-slate-500 text-xs font-mono">/ Bulan</span>
                   </div>
 
@@ -295,7 +295,7 @@ export default function HargaPage() {
                 </div>
 
                 <a
-                  href={getWaLink("Paket Bulanan Basic", "Rp 2.000.000 / Bulan")}
+                  href={getWaLink("Paket Bulanan Basic", "Rp 2.199.000 / Bulan")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider transition-all border border-slate-700"
@@ -320,7 +320,7 @@ export default function HargaPage() {
                   </p>
                   
                   <div className="p-4 rounded-2xl bg-[#070b12] border border-amber-500/30 mb-8">
-                    <span className="text-3xl font-black text-amber-400 font-mono block">Rp 3.500.000</span>
+                    <span className="text-3xl font-black text-amber-400 font-mono block">Rp 3.899.000</span>
                     <span className="text-slate-500 text-xs font-mono">/ Bulan</span>
                   </div>
 
@@ -345,7 +345,7 @@ export default function HargaPage() {
                 </div>
 
                 <a
-                  href={getWaLink("Paket Bulanan Growth", "Rp 3.500.000 / Bulan")}
+                  href={getWaLink("Paket Bulanan Growth", "Rp 3.899.000 / Bulan")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/20"
@@ -366,7 +366,7 @@ export default function HargaPage() {
                   </p>
                   
                   <div className="p-4 rounded-2xl bg-[#070b12] border border-slate-800 mb-8">
-                    <span className="text-3xl font-black text-white font-mono block">Rp 5.500.000</span>
+                    <span className="text-3xl font-black text-white font-mono block">Rp 5.999.000</span>
                     <span className="text-slate-500 text-xs font-mono">/ Bulan</span>
                   </div>
 
@@ -391,7 +391,7 @@ export default function HargaPage() {
                 </div>
 
                 <a
-                  href={getWaLink("Paket Bulanan Business", "Rp 5.500.000 / Bulan")}
+                  href={getWaLink("Paket Bulanan Business", "Rp 5.999.000 / Bulan")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider transition-all border border-slate-700"

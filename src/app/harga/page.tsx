@@ -27,6 +27,28 @@ const KupangTag = () => (
   </span>
 );
 
+// Tag Bundling Multi-Platform
+const BundleTag = () => (
+  <span style={{
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "4px",
+    background: "linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%)",
+    border: "1px solid rgba(236, 72, 153, 0.5)",
+    color: "#f472b6",
+    fontSize: "0.62rem",
+    fontWeight: 800,
+    padding: "2px 7px",
+    borderRadius: "6px",
+    letterSpacing: "0.4px",
+    fontFamily: "monospace",
+    whiteSpace: "nowrap",
+    marginBottom: "8px"
+  }}>
+    ✨ BUNDLE MULTI-PLATFORM (Reels + TikTok)
+  </span>
+);
+
 export default function HargaPage() {
   const [activeCategory, setActiveCategory] = useState<"video" | "event" | "photo" | "branding">("video");
 
@@ -34,118 +56,141 @@ export default function HargaPage() {
 
   const videoPackages = [
     {
-      name: "Video Promosi UMKM",
+      name: "Short Video Single (Reels + TikTok)",
+      price: "Rp 300.000 / konten",
+      desc: "Paket 1 Ide Konten Video Vertikal Tren. Otomatis mendapatkan 2 format siap post: 1 Format Instagram Reels HD + 1 Format TikTok HD lengkap subtitle & musik tren.",
+      onLocation: true,
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik mengambil paket *Short Video Single (Rp 300.000/konten - Bundling Reels & TikTok)*.\n\nBoleh dibantu alur konsep & pengerjaannya? Terima kasih."
+    },
+    {
+      name: "Bundling Hemat 5 Short Video",
+      price: "Rp 1.350.000 (Hemat Rp 150rb)",
+      desc: "Paket 5 Ide Konten Kreatif dengan Bundling Multi-Platform. Total Anda mendapatkan 10 postingan siap pakai (5 Reels + 5 TikTok) untuk konsistensi feeds 1 bulan.",
+      onLocation: true,
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order paket *Bundling Hemat 5 Short Video (Rp 1.350.000 - Total 10 Posting Reels & TikTok)*.\n\nBoleh dibantu koordinasi jadwal shooting & ide videonya? Terima kasih."
+    },
+    {
+      name: "Bundling Bulanan (12 Video Multi-Platform)",
+      price: "Rp 2.900.000 / bulan",
+      desc: "Paket Konten Rutin Bulanan (3 Konten/minggu). 12 Konsep Video Kreatif di-bundle untuk Instagram Reels + TikTok (Total 24 postingan), gratis Scriptwriting, Voiceover, & Hashtag Research.",
+      onLocation: true,
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik mengambil paket *Bundling Bulanan 12 Video (Rp 2.900.000/bulan - 24 Post Reels & TikTok)*.\n\nBoleh dibantu jadwal meeting brief-nya? Terima kasih."
+    },
+    {
+      name: "Video Promosi UMKM Bundling",
       price: "Mulai Rp 500.000",
-      desc: "Video singkat kreatif berdurasi 30-60 detik untuk mempromosikan produk/jasa UMKM di Instagram & TikTok.",
+      desc: "Video promosi produk 30-60 detik High-Quality. Dilengkapi Bundling 3 Platform sekaligus (Instagram Reels, TikTok, & YouTube Shorts) untuk jangkauan maksimal.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik untuk berkonsultasi mengenai paket *Video Promosi UMKM (Mulai Rp 500.000)*.\n\nBoleh dibantu koordinasi jadwal shooting & konsep awalnya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik berkonsultasi paket *Video Promosi UMKM Bundling (Mulai Rp 500.000)*.\n\nBoleh dibantu konsep videonya? Terima kasih."
     },
     {
-      name: "Video Company Profile",
+      name: "Video Company Profile + Teaser Bundle",
       price: "Mulai Rp 1.500.000",
-      desc: "Video profil perusahaan berdurasi 3-5 menit lengkap dengan konsep, wawancara, b-roll, & narasi suara.",
+      desc: "Video profil perusahaan 3-5 menit (4K) + Bundling Bonus 3 Cut Teaser Vertikal (Format Reels & TikTok) untuk promosi cepat di media sosial.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud berkonsultasi mengenai pembuatan *Video Company Profile (Mulai Rp 1.500.000)* untuk perusahaan/instansi kami.\n\nBoleh dibantu jadwal rapat brief & penawarannya? Terima kasih."
-    },
-    {
-      name: "Short Video (Reels / TikTok)",
-      price: "Mulai Rp 300.000 / video",
-      desc: "Produksi video vertikal tren terkini yang ramah algoritma untuk konten harian/mingguan.",
-      onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik mengambil paket *Short Video Reels / TikTok (Mulai Rp 300.000/video)* untuk media sosial bisnis saya.\n\nBoleh dibantu informasi alur pengerjaannya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud berkonsultasi mengenai *Video Company Profile + Bonus Teaser Bundle (Mulai Rp 1.500.000)* untuk perusahaan/instansi kami.\n\nBoleh dibantu penawarannya? Terima kasih."
     },
     {
       name: "Drone Aerial Footage",
       price: "Mulai Rp 500.000",
-      desc: "Pengambilan gambar udara berkualitas 4K untuk lokasi perumahan, hotel, cafe, & acara outdoor.",
+      desc: "Pengambilan gambar udara 4K untuk lokasi perumahan, hotel, cafe, & acara outdoor. Termasuk potongan video vertikal Reels/TikTok.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya membutuhkan layanan *Drone Aerial Footage (Mulai Rp 500.000)* untuk pengambilan gambar udara di lokasi kami.\n\nBoleh dibantu ketersediaan tim videografernya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya membutuhkan *Drone Aerial Footage (Mulai Rp 500.000)*.\n\nBoleh dibantu ketersediaan tim videografernya? Terima kasih."
     }
   ];
 
   const eventPackages = [
     {
-      name: "Wedding Highlight",
+      name: "Wedding Highlight + Teaser Bundle",
       price: "Mulai Rp 2.500.000",
-      desc: "Video teaser & highlight pernikahan sinematik berdurasi 3-5 menit dengan color grading romantis.",
+      desc: "Video highlight pernikahan sinematik 3-5 menit (Horizontal 4K) + Bundling 2 Video Teaser Vertikal siap upload ke Instagram Reels & TikTok.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik berkonsultasi untuk paket *Wedding Highlight Video (Mulai Rp 2.500.000)*.\n\nBoleh dibantu cek ketersediaan tanggal acara kami? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik berkonsultasi untuk paket *Wedding Highlight + Teaser Bundle (Mulai Rp 2.500.000)*.\n\nBoleh dibantu cek ketersediaan tanggal acara kami? Terima kasih."
     },
     {
-      name: "Wedding Full Day",
+      name: "Wedding Full Day All-In-One",
       price: "Mulai Rp 5.000.000",
-      desc: "Dokumentasi penuh akad & resepsi seharian, video highlight, serta album foto fisik eksklusif.",
+      desc: "Dokumentasi penuh akad & resepsi seharian, album foto fisik eksklusif, plus Bundling Paket Teaser Sinematik Reels & TikTok.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud mengambil paket *Wedding Full Day Documentation (Mulai Rp 5.000.000)*.\n\nBoleh dibantu koordinasi tim dokumentasi & jadwal pertemuannya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud mengambil paket *Wedding Full Day All-In-One (Mulai Rp 5.000.000)*.\n\nBoleh dibantu koordinasi tim dokumentasi? Terima kasih."
     },
     {
-      name: "Dokumentasi Seminar & Event",
+      name: "Seminar & Corporate Event Bundle",
       price: "Mulai Rp 1.500.000",
-      desc: "Liputan foto & video acara seminar, workshop, launching produk, atau konferensi bisnis.",
+      desc: "Liputan foto & video acara seminar/launching produk + Bundling 3 Video Highlight Vertikal (Reels/TikTok/Shorts) untuk recap instan.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya butuh layanan *Dokumentasi Seminar & Corporate Event (Mulai Rp 1.500.000)* untuk acara instansi kami.\n\nBoleh dibantu pengiriman draf penawarannya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya butuh layanan *Dokumentasi Event Corporate Bundle (Mulai Rp 1.500.000)*.\n\nBoleh dibantu pengiriman draf penawarannya? Terima kasih."
     },
     {
-      name: "Dokumentasi Wisuda",
+      name: "Dokumentasi Wisuda & Reunion",
       price: "Mulai Rp 1.000.000",
-      desc: "Sesi foto personal, kelompok, & video kenangan momen kelulusan di kampus/sekolah.",
+      desc: "Sesi foto personal/kelompok + Bundling Video Kenangan Sinematik durasi 1 menit untuk Reels & TikTok.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik mengambil paket *Dokumentasi Wisuda (Mulai Rp 1.000.000)*.\n\nBoleh dibantu koordinasi jadwal foto kelulusan kami? Terima kasih."
-    },
-    {
-      name: "Birthday & Party",
-      price: "Mulai Rp 800.000",
-      desc: "Dokumentasi foto & video acara ulang tahun, gathering keluarga, atau anniversary.",
-      onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau tanya paket *Dokumentasi Birthday & Gathering (Mulai Rp 800.000)*.\n\nBoleh dibantu detail liputannya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik mengambil paket *Dokumentasi Wisuda & Reunion (Mulai Rp 1.000.000)*.\n\nBoleh dibantu jadwal kelulusan kami? Terima kasih."
     }
   ];
 
   const photoPackages = [
     {
-      name: "Foto Produk Studio",
+      name: "Foto Produk Studio + Video Reels Showcase",
       price: "Mulai Rp 150.000 / produk",
-      desc: "Pemotretan produk berlatar studio bersih (white/black/custom background) untuk e-commerce.",
+      desc: "Pemotretan produk studio berlatar bersih (white/black/custom) + Bundling 1 Video Showcase 360° Produk untuk Reels & TikTok.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya ingin memesan sesi *Foto Produk Studio (Mulai Rp 150.000/produk)* untuk katalog toko online saya.\n\nBoleh dibantu koordinasi pengiriman produknya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya ingin memesan sesi *Foto Produk Studio + Video Reels Showcase (Mulai Rp 150.000/produk)*.\n\nBoleh dibantu koordinasi pengiriman produknya? Terima kasih."
     },
     {
-      name: "Foto Menu Makanan",
+      name: "Foto Menu Kuliner + Reel Foodie Bundle",
       price: "Mulai Rp 250.000 / sesi",
-      desc: "Food photography profesional dengan aksesoris pendukung untuk menu restoran & GoFood/GrabFood.",
+      desc: "Food photography profesional untuk resto/cafe + Bundling 1 Video Teaser Makanan menggugah selera untuk Reels & TikTok.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya butuh sesi pemotretan *Foto Menu Makanan Restoran/Cafe (Mulai Rp 250.000/sesi)*.\n\nBoleh dibantu jadwal tim fotografer datang ke tempat kami? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya membutuhkan sesi *Foto Menu Kuliner + Reel Foodie Bundle (Mulai Rp 250.000/sesi)*.\n\nBoleh dibantu jadwal tim fotografernya? Terima kasih."
     },
     {
-      name: "Foto Company & Direksi",
+      name: "Foto Company & Direksi Bundle",
       price: "Mulai Rp 500.000 / sesi",
-      desc: "Sesi foto profil direksi & fasilitas kantor untuk kebutuhan website & annual report.",
+      desc: "Sesi foto profil direksi & fasilitas kantor + Bundling Video Short Intro Direksi untuk kebutuhan website & medsos.",
       onLocation: true,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud mengajukan sesi pemotretan *Foto Company Profile & Direksi (Mulai Rp 500.000/sesi)*.\n\nBoleh dibantu jadwal & persiapan sesi perusahaannya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud mengajukan *Foto Company & Direksi Bundle (Mulai Rp 500.000/sesi)*.\n\nBoleh dibantu persiapan sesinya? Terima kasih."
     }
   ];
 
   const brandingPackages = [
     {
-      name: "Desain Logo Vektor",
+      name: "Desain Logo Vektor + Social Media Kit",
       price: "Mulai Rp 350.000",
-      desc: "Perancangan logo profesional 3 opsi konsep lengkap dengan master file vektor (AI, EPS, PNG).",
+      desc: "Desain logo profesional 3 opsi konsep + master file (AI, EPS, PNG) + Bundling Template Profile Picture & Reels Cover Kit.",
       onLocation: false,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik membuat *Desain Logo Vektor Profesional (Mulai Rp 350.000)* untuk brand baru saya.\n\nBoleh dibantu form brief konsep logonya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya tertarik membuat *Desain Logo Vektor + Social Media Kit (Mulai Rp 350.000)*.\n\nBoleh dibantu form brief konsep logonya? Terima kasih."
     },
     {
-      name: "Brand Identity Guidelines",
+      name: "Brand Identity Guidelines Full Package",
       price: "Mulai Rp 1.000.000",
-      desc: "Buku panduan identitas brand meliputi logo, palette warna, tipografi, & aturan penggunaan.",
+      desc: "Buku panduan identitas brand komprehensif (Logo, Color Palette, Typography) + Bundling 5 Template Feeds, Reels, & TikTok Cover.",
       onLocation: false,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud membuat *Brand Identity Guidelines (Mulai Rp 1.000.000)* untuk merapikan visual bisnis kami.\n\nBoleh dibantu alur konsultasinya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud membuat *Brand Identity Guidelines Full Package (Mulai Rp 1.000.000)*.\n\nBoleh dibantu alur konsultasinya? Terima kasih."
     },
     {
-      name: "Desain Poster & Banner",
+      name: "Desain Poster, Banner & Feed Bundle",
       price: "Mulai Rp 100.000 / desain",
-      desc: "Desain materi promosi cetak/digital untuk kebutuhan pameran, event, & iklan.",
+      desc: "Desain materi promosi cetak/digital + Bundling format cerita Story / Reels Cover siap pakai.",
       onLocation: false,
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya ingin memesan *Desain Poster / Banner Promosi (Mulai Rp 100.000/desain)*.\n\nBoleh dibantu pengerjaannya? Terima kasih."
+      bundle: true,
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya ingin memesan *Desain Poster, Banner & Feed Bundle (Mulai Rp 100.000/desain)*.\n\nBoleh dibantu pengerjaannya? Terima kasih."
     }
   ];
 
@@ -165,16 +210,23 @@ export default function HargaPage() {
       <main className="flex-1 pt-28 pb-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// TRANSPARENT_PRICING</span>
-            <h1 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">Paket &amp; Estimasi Biaya</h1>
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// MULTI_PLATFORM_BUNDLING_PRICING</span>
+            <h1 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">Paket &amp; Estimasi Biaya (Multi-Platform Bundling)</h1>
             <p className="text-slate-400 text-xs mt-2">
-              Setiap paket dilengkapi pesan otomatis langsung ke CMO Shatrya Dhimar (+62 823-4705-8055).
+              Setiap paket video otomatis menyertakan **Bundling Multi-Platform (Instagram Reels + TikTok)** — 1 Harga untuk 2 Platform sekaligus!
             </p>
+            
+            {/* Highlights Bundling Promo Banner */}
+            <div className="mt-4 p-4 rounded-2xl bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-amber-500/10 border border-pink-500/30 text-pink-300 text-xs font-mono flex flex-col sm:flex-row items-center justify-center gap-3">
+              <span className="text-base">🎬✨</span>
+              <span><strong>PROMO BUNDLING MULTI-PLATFORM:</strong> Dapatkan format Reels + TikTok sekaligus dengan harga terjangkau mulai Rp 300.000 / konten!</span>
+            </div>
+
             {/* Keterangan tag area */}
             <div className="mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-mono">
               <span>📍</span>
-              <span>Layanan bertanda <strong>Kupang &amp; Sekitarnya</strong> membutuhkan kehadiran tim di lokasi Anda.</span>
+              <span>Layanan bertanda <strong>Kupang &amp; Sekitarnya</strong> membutuhkan kehadiran tim videografer di lokasi Anda.</span>
             </div>
           </div>
 
@@ -185,43 +237,47 @@ export default function HargaPage() {
                 onClick={() => setActiveCategory("video")}
                 className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "video" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
-                🎬 Business Video
+                🎬 Business Video (Reels &amp; TikTok)
               </button>
               <button
                 onClick={() => setActiveCategory("event")}
                 className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "event" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
-                🎉 Event Docs
+                🎉 Event Docs Bundle
               </button>
               <button
                 onClick={() => setActiveCategory("photo")}
                 className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "photo" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
-                📷 Photography
+                📷 Photography Bundle
               </button>
               <button
                 onClick={() => setActiveCategory("branding")}
                 className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "branding" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
-                🎨 Branding & Logo
+                🎨 Branding &amp; Logo Kit
               </button>
             </div>
           </div>
 
           {/* PACKAGES GRID */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {getCurrentPackages().map((pkg, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all flex flex-col justify-between relative group">
                 <div>
                   <div className="flex items-start justify-between mb-2 gap-2 flex-wrap">
                     <span className="text-amber-400 font-mono text-[9px] font-bold">[ PAKET {idx + 1} ]</span>
-                    {pkg.onLocation && <KupangTag />}
+                    <div className="flex flex-wrap gap-1">
+                      {pkg.bundle && <BundleTag />}
+                      {pkg.onLocation && <KupangTag />}
+                    </div>
                   </div>
-                  <h3 className="text-sm font-bold text-white uppercase mb-2">{pkg.name}</h3>
+                  <h3 className="text-base font-extrabold text-white uppercase mb-2 group-hover:text-amber-400 transition-colors">{pkg.name}</h3>
                   <p className="text-slate-400 text-xs leading-relaxed mb-4">{pkg.desc}</p>
                   
-                  <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800 mb-4 font-mono">
-                    <strong className="text-amber-400 text-xs block">{pkg.price}</strong>
+                  <div className="p-3.5 rounded-xl bg-[#070b12] border border-amber-500/20 mb-4 font-mono">
+                    <span className="text-slate-500 text-[9px] uppercase tracking-wider block mb-0.5">Biaya Paket Bundling</span>
+                    <strong className="text-amber-400 text-sm block font-extrabold">{pkg.price}</strong>
                   </div>
                 </div>
 
@@ -229,9 +285,9 @@ export default function HargaPage() {
                   href={`https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(pkg.waMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-bold text-xs transition-all shadow-md shadow-amber-500/20"
+                  className="block text-center py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-extrabold text-xs transition-all shadow-md shadow-amber-500/20"
                 >
-                  💬 Order Paket Ini (CMO WA) &rarr;
+                  💬 Order Paket Bundling (CMO WA) &rarr;
                 </a>
               </div>
             ))}
@@ -239,8 +295,8 @@ export default function HargaPage() {
 
           {/* Disclaimer area layanan */}
           <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-            <p className="text-slate-500 text-[10px] leading-relaxed font-mono">
-              <span className="text-amber-400 font-bold">📍 Catatan:</span> Layanan produksi video, fotografi, dan dokumentasi event hanya tersedia di wilayah <strong className="text-slate-300">Kota Kupang &amp; sekitarnya</strong>. Untuk desain grafis &amp; branding, kami melayani seluruh Indonesia secara remote.
+            <p className="text-slate-400 text-[11px] leading-relaxed font-mono">
+              <span className="text-amber-400 font-bold">📍 Catatan Bundling:</span> Setiap paket video otomatis mendapatkan <strong className="text-pink-400">2 Format Video Siap Upload (Instagram Reels + TikTok)</strong>. Pengambilan gambar shooting bertanda Kupang &amp; Sekitarnya dilakukan langsung di lokasi mitra.
             </p>
           </div>
 

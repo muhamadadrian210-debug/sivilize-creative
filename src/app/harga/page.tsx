@@ -12,6 +12,51 @@ export default function HargaPage() {
     return `https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(text)}`;
   };
 
+  const bundlingPackages = [
+    {
+      name: "Bundling Dual Platform Single",
+      price: "Rp 300.000 / Konten",
+      badge: "BEST VALUE SINGLE",
+      desc: "1 Ide Konten Video Vertikal langsung di-export dalam 2 Format HD Siap Upload (1 Format Instagram Reels + 1 Format TikTok HD lengkap Subtitle & Sound Tren).",
+      features: [
+        "1 Konsep Video Kreatif 30-60 Detik",
+        "2 Format Export Siap Post (Reels + TikTok)",
+        "Subtitle Dinamis & Captions",
+        "Color Correction Sinematik",
+        "Free Re-format Ukuran Aspek Rasio (9:16)"
+      ],
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau pesan *Paket Bundling Dual Platform Single (Rp 300.000 / Konten - Reels & TikTok)*.\n\nBoleh dibantu koordinasi brief & jadwal videonya? Terima kasih."
+    },
+    {
+      name: "Bundling Hemat 5 Konten",
+      price: "Rp 1.350.000 (Hemat Rp 150rb)",
+      badge: "HEMAT 10% PROMO",
+      desc: "5 Konsep Konten Kreatif dengan Ekspor Multi-Platform. Total Anda mendapatkan 10 Postings Siap Pakai (5 Reels + 5 TikTok) untuk konsistensi feeds 1 bulan.",
+      features: [
+        "5 Ide Konsep Video Kreatif",
+        "Total 10 Video Export (5 Reels + 5 TikTok)",
+        "Copywriting Caption Persuasif",
+        "Subtitle & Transisi Tren",
+        "Jadwal Penyiapan Konten 1 Bulan"
+      ],
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order *Paket Bundling Hemat 5 Konten (Rp 1.350.000 - Total 10 Post Reels & TikTok)*.\n\nBoleh dibantu koordinasi ide & penentuan jadwal videonya? Terima kasih."
+    },
+    {
+      name: "Bundling Multi-Format (Video + Foto)",
+      price: "Rp 1.850.000 / Proyek",
+      badge: "ALL-IN-ONE PROMO",
+      desc: "Solusi lengkap bagi produk baru: 3 Video Promosi Vertikal (Reels/TikTok) + 10 Foto Produk Studio HD + Custom Cover Thumbnail Keren.",
+      features: [
+        "3 Video Promosi Vertikal (Reels + TikTok)",
+        "10 Foto Produk Studio Hi-Res Retouched",
+        "Shooting Studio / On-Location",
+        "Custom Cover Thumbnail Design",
+        "Master File File High-Quality"
+      ],
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud memesan *Paket Bundling Multi-Format Video + Foto (Rp 1.850.000 / Proyek)*.\n\nBoleh dibantu pengiriman sampel produk & jadwal shootingnya? Terima kasih."
+    }
+  ];
+
   const videoProductionItems = [
     { name: "Wedding Documentation", price: "Mulai Rp 3.500.000", desc: "Highlight sinematik & liputan penuh momen pernikahan sakral." },
     { name: "Engagement Event", price: "Mulai Rp 2.500.000", desc: "Dokumentasi momen lamaran & pertunangan sinematik." },
@@ -136,6 +181,65 @@ export default function HargaPage() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* SECTION BUNDLING: PAKET BUNDLING KONTEN (MULTI-PLATFORM BUNDLE CARDS) */}
+          <div className="mb-24">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-2">
+                // SPECIAL_MULTI_PLATFORM_BUNDLES
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">
+                Paket Bundling Spesial (Reels + TikTok)
+              </h2>
+              <p className="text-slate-400 text-xs sm:text-sm mt-2">
+                Setiap opsi bundling di bawah memiliki <strong className="text-amber-400">pesan WhatsApp otomatis khusus</strong> yang memuat judul paket dan nominal hematnya secara presisi.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {bundlingPackages.map((pkg, idx) => (
+                <div key={idx} className="bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border border-amber-500/40 rounded-3xl p-8 flex flex-col justify-between hover:border-amber-400 transition-all shadow-xl relative">
+                  <div className="absolute -top-3.5 right-6 px-3 py-1 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg">
+                    {pkg.badge}
+                  </div>
+
+                  <div>
+                    <span className="text-slate-400 font-mono text-xs uppercase tracking-wider block mb-2">
+                      BUNDLING {idx + 1}
+                    </span>
+                    <h3 className="text-xl font-extrabold text-white uppercase mb-2">{pkg.name}</h3>
+                    <p className="text-slate-400 text-xs leading-relaxed mb-6">{pkg.desc}</p>
+                    
+                    <div className="p-4 rounded-2xl bg-[#070b12] border border-amber-500/20 mb-8">
+                      <span className="text-2xl sm:text-3xl font-black text-amber-400 font-mono block">{pkg.price}</span>
+                      <span className="text-slate-500 text-[10px] font-mono uppercase tracking-wider">Multi-Platform Ready</span>
+                    </div>
+
+                    <div className="space-y-3 mb-8">
+                      <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block font-bold">
+                        Fitur Bundling:
+                      </span>
+                      {pkg.features.map((feat, fIdx) => (
+                        <div key={fIdx} className="flex items-center gap-3 text-xs text-slate-300">
+                          <span className="text-amber-400 font-bold">✓</span>
+                          <span>{feat}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <a
+                    href={`https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(pkg.waMessage)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/20"
+                  >
+                    💬 Order {pkg.name} &rarr;
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
 

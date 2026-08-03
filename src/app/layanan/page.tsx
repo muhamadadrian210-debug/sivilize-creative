@@ -20,9 +20,16 @@ const KupangTag = () => (
     fontFamily: "monospace",
     whiteSpace: "nowrap",
   }}>
-    📍 Kupang & Sekitarnya
+    📍 Kupang &amp; Sekitarnya
   </span>
 );
+
+const cmoWaNumber = "6282347058055";
+
+const getServiceWaLink = (serviceName: string, categoryName: string) => {
+  const text = `Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud mengajukan konsultasi & penawaran khusus untuk layanan *${serviceName}* (Kategori: ${categoryName}).\n\nBoleh dibantu alur brief, estimasi biaya, dan jadwal pengerjaannya? Terima kasih.`;
+  return `https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(text)}`;
+};
 
 const serviceCategories = [
   {
@@ -103,7 +110,7 @@ export default function LayananPage() {
             <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// CREATIVE_SERVICES</span>
             <h1 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">Katalog Layanan Kreatif</h1>
             <p className="text-slate-400 text-xs mt-2">
-              Video komersial, dokumentasi acara, fotografi studio, branding, dan manajemen media sosial.
+              Setiap tombol konsultasi terhubung langsung ke WhatsApp CMO Shatrya Dhimar (+62 823-4705-8055) dengan pesan otomatis yang disesuaikan secara spesifik.
             </p>
           </div>
 
@@ -114,12 +121,12 @@ export default function LayananPage() {
                   <span className="text-amber-400 font-mono text-[10px] font-bold uppercase tracking-widest">
                     [{String(idx + 1).padStart(2, "0")}] {cat.category}
                   </span>
-                  {(cat as any).onLocation && <KupangTag />}
+                  {cat.onLocation && <KupangTag />}
                 </div>
                 <h2 className="text-base sm:text-xl font-bold text-white uppercase mb-2">{cat.title}</h2>
                 <p className="text-slate-400 text-xs mb-6 leading-relaxed">{cat.desc}</p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {cat.items.map((item, i) => (
                     <div key={i} className="p-4 rounded-xl bg-[#070b12] border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                       <div>
@@ -127,12 +134,12 @@ export default function LayananPage() {
                         <p className="text-slate-400 text-xs leading-relaxed mb-4">{item.detail}</p>
                       </div>
                       <a
-                        href={`https://wa.me/6285137743321?text=${encodeURIComponent(`Halo Pak Briand (COO Sivilize Creative),\nSaya bermaksud konsultasi mengenai layanan *${item.name}*.`)}`}
+                        href={getServiceWaLink(item.name, cat.category)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-amber-400 font-mono text-xs font-bold hover:underline"
+                        className="inline-block text-center py-2 px-3 rounded-lg bg-amber-500/10 hover:bg-amber-500 border border-amber-500/30 text-amber-400 hover:text-white font-mono text-xs font-bold transition-all"
                       >
-                        Konsultasi Scope Ini &rarr;
+                        Konsultasi {item.name} &rarr;
                       </a>
                     </div>
                   ))}

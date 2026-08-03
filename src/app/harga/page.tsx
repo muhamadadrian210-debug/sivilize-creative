@@ -162,46 +162,46 @@ export default function HargaPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-36 pb-20">
+      <main className="flex-1 pt-28 pb-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-2">// TRANSPARENT_PRICING</span>
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight uppercase">Paket & Estimasi Biaya</h1>
-            <p className="text-slate-400 text-sm mt-3">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// TRANSPARENT_PRICING</span>
+            <h1 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">Paket &amp; Estimasi Biaya</h1>
+            <p className="text-slate-400 text-xs mt-2">
               Setiap paket dilengkapi pesan otomatis langsung ke CMO Shatrya Dhimar (+62 823-4705-8055).
             </p>
             {/* Keterangan tag area */}
-            <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono">
+            <div className="mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-mono">
               <span>📍</span>
-              <span>Layanan bertanda <strong>Kupang & Sekitarnya</strong> membutuhkan kehadiran tim secara langsung di lokasi Anda.</span>
+              <span>Layanan bertanda <strong>Kupang &amp; Sekitarnya</strong> membutuhkan kehadiran tim di lokasi Anda.</span>
             </div>
           </div>
 
           {/* CATEGORY TABS */}
-          <div className="flex justify-center mb-16">
-            <div className="p-1.5 rounded-2xl bg-slate-900 border border-slate-800 flex flex-wrap gap-2 justify-center">
+          <div className="flex justify-center mb-10">
+            <div className="p-1 rounded-2xl bg-slate-900 border border-slate-800 flex flex-wrap gap-1.5 justify-center">
               <button
                 onClick={() => setActiveCategory("video")}
-                className={`px-5 py-2.5 rounded-xl font-mono text-xs font-bold transition-all ${activeCategory === "video" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
+                className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "video" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
                 🎬 Business Video
               </button>
               <button
                 onClick={() => setActiveCategory("event")}
-                className={`px-5 py-2.5 rounded-xl font-mono text-xs font-bold transition-all ${activeCategory === "event" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
+                className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "event" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
                 🎉 Event Docs
               </button>
               <button
                 onClick={() => setActiveCategory("photo")}
-                className={`px-5 py-2.5 rounded-xl font-mono text-xs font-bold transition-all ${activeCategory === "photo" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
+                className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "photo" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
                 📷 Photography
               </button>
               <button
                 onClick={() => setActiveCategory("branding")}
-                className={`px-5 py-2.5 rounded-xl font-mono text-xs font-bold transition-all ${activeCategory === "branding" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
+                className={`px-4 py-2 rounded-xl font-mono text-[10px] font-bold transition-all ${activeCategory === "branding" ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30" : "text-slate-400 hover:text-white"}`}
               >
                 🎨 Branding & Logo
               </button>
@@ -209,19 +209,19 @@ export default function HargaPage() {
           </div>
 
           {/* PACKAGES GRID */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {getCurrentPackages().map((pkg, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                 <div>
                   <div className="flex items-start justify-between mb-2 gap-2 flex-wrap">
-                    <span className="text-amber-400 font-mono text-xs font-bold">[ PAKET {idx + 1} ]</span>
+                    <span className="text-amber-400 font-mono text-[9px] font-bold">[ PAKET {idx + 1} ]</span>
                     {pkg.onLocation && <KupangTag />}
                   </div>
-                  <h3 className="text-lg font-bold text-white uppercase mb-2">{pkg.name}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-6">{pkg.desc}</p>
+                  <h3 className="text-sm font-bold text-white uppercase mb-2">{pkg.name}</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-4">{pkg.desc}</p>
                   
-                  <div className="p-4 rounded-xl bg-[#070b12] border border-slate-800 mb-6 font-mono">
-                    <strong className="text-amber-400 text-sm sm:text-base block">{pkg.price}</strong>
+                  <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800 mb-4 font-mono">
+                    <strong className="text-amber-400 text-xs block">{pkg.price}</strong>
                   </div>
                 </div>
 
@@ -229,7 +229,7 @@ export default function HargaPage() {
                   href={`https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(pkg.waMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xs transition-all shadow-md shadow-amber-500/20"
+                  className="block text-center py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-bold text-xs transition-all shadow-md shadow-amber-500/20"
                 >
                   💬 Order Paket Ini (CMO WA) &rarr;
                 </a>
@@ -238,9 +238,9 @@ export default function HargaPage() {
           </div>
 
           {/* Disclaimer area layanan */}
-          <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-            <p className="text-slate-500 text-xs leading-relaxed font-mono">
-              <span className="text-amber-400 font-bold">📍 Catatan Area Layanan:</span> Untuk saat ini seluruh layanan produksi video, fotografi, dan dokumentasi event hanya tersedia untuk wilayah <strong className="text-slate-300">Kota Kupang & sekitarnya</strong>. Untuk layanan desain grafis dan branding, kami melayani seluruh Indonesia secara remote.
+          <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+            <p className="text-slate-500 text-[10px] leading-relaxed font-mono">
+              <span className="text-amber-400 font-bold">📍 Catatan:</span> Layanan produksi video, fotografi, dan dokumentasi event hanya tersedia di wilayah <strong className="text-slate-300">Kota Kupang &amp; sekitarnya</strong>. Untuk desain grafis &amp; branding, kami melayani seluruh Indonesia secara remote.
             </p>
           </div>
 

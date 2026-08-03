@@ -99,27 +99,27 @@ export default function LayananPage() {
       <main className="flex-1 pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-2">// CREATIVE_SERVICES</span>
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight uppercase">Katalog Layanan Kreatif</h1>
-            <p className="text-slate-400 text-sm mt-4">
-              Cakupan lengkap produksi video komersial, dokumentasi acara, fotografi studio, branding, dan manajemen media sosial.
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// CREATIVE_SERVICES</span>
+            <h1 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">Katalog Layanan Kreatif</h1>
+            <p className="text-slate-400 text-xs mt-2">
+              Video komersial, dokumentasi acara, fotografi studio, branding, dan manajemen media sosial.
             </p>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-10">
             {serviceCategories.map((cat, idx) => (
-              <div key={idx} className="p-8 sm:p-10 rounded-2xl bg-slate-900 border border-slate-800">
+              <div key={idx} className="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800">
                 <div className="flex items-center gap-3 flex-wrap mb-1">
-                  <span className="text-amber-400 font-mono text-xs font-bold uppercase tracking-widest">
+                  <span className="text-amber-400 font-mono text-[10px] font-bold uppercase tracking-widest">
                     [{String(idx + 1).padStart(2, "0")}] {cat.category}
                   </span>
                   {(cat as any).onLocation && <KupangTag />}
                 </div>
-                <h2 className="text-2xl font-bold text-white uppercase mb-2">{cat.title}</h2>
-                <p className="text-slate-400 text-xs sm:text-sm mb-8 leading-relaxed">{cat.desc}</p>
+                <h2 className="text-base sm:text-xl font-bold text-white uppercase mb-2">{cat.title}</h2>
+                <p className="text-slate-400 text-xs mb-6 leading-relaxed">{cat.desc}</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   {cat.items.map((item, i) => (
                     <div key={i} className="p-4 rounded-xl bg-[#070b12] border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                       <div>

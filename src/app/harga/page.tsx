@@ -8,7 +8,7 @@ export default function HargaPage() {
   const cmoWaNumber = "6282347058055";
 
   const getWaLink = (packageName: string, price: string) => {
-    const text = `Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau diskusi & order mengenai *${packageName} (${price})*.\n\nBoleh dibantu jadwal brief & alur kerjanya? Terima kasih.`;
+    const text = `Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau diskusi & order mengenai ${packageName} (${price}).\n\nBoleh dibantu jadwal brief & alur kerjanya? Terima kasih.`;
     return `https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(text)}`;
   };
 
@@ -64,7 +64,7 @@ export default function HargaPage() {
               Paket &amp; Investasi Konten
             </h1>
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-              Kami tidak sekadar menjual durasi video atau platform. Kami menghadirkan **produksi konten bernilai tinggi**—satu karya video berkualitas dapat Anda publikasikan secara bebas di Instagram Reels, TikTok, Facebook Video, hingga YouTube Shorts.
+              Kami tidak sekadar menjual durasi video atau platform. Kami menghadirkan <strong className="text-white font-bold">produksi konten bernilai tinggi</strong>—satu karya video berkualitas dapat Anda publikasikan secara bebas di Instagram Reels, TikTok, Facebook Video, hingga YouTube Shorts.
             </p>
           </div>
 
@@ -123,7 +123,7 @@ export default function HargaPage() {
 
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-800/80">
                   <p className="text-slate-500 text-xs font-mono italic">
-                    * Harga dapat berubah sesuai tingkat kesulitan dan kebutuhan produksi.
+                    Catatan: Harga dapat berubah sesuai tingkat kesulitan dan kebutuhan produksi.
                   </p>
                   
                   <a
@@ -339,7 +339,7 @@ export default function HargaPage() {
             </div>
 
             <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-400 text-xs font-mono text-center">
-              * Note: Harga dapat berubah sesuai lokasi, durasi shooting, jumlah kru, serta kebutuhan alat produksi khusus.
+              Catatan: Harga dapat berubah sesuai lokasi, durasi shooting, jumlah kru, serta kebutuhan alat produksi khusus.
             </div>
           </div>
 
@@ -428,7 +428,7 @@ export default function HargaPage() {
                 Kenapa Investasi Konten Kami Seperti Ini?
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
-                Di Sivilize Creative, Anda tidak hanya membayar proses teknis mengedit video. Anda berinvestasi pada **proses kreatif profesional berstandar korporat** yang menjamin reputasi brand Anda terlihat kredibel.
+                Di Sivilize Creative, Anda tidak hanya membayar proses teknis mengedit video. Anda berinvestasi pada <strong className="text-white font-bold">proses kreatif profesional berstandar korporat</strong> yang menjamin reputasi brand Anda terlihat kredibel.
               </p>
             </div>
 

@@ -21,7 +21,7 @@ export function Navbar() {
     { label: "Layanan", href: "/layanan" },
     { label: "Paket & Harga", href: "/harga" },
     { label: "Portofolio", href: "/portofolio" },
-    { label: "Software & E-Commerce", href: "https://software.sivilizecorp.com", isExternal: true },
+    { label: "Software ↗", href: "https://software.sivilizecorp.com", isExternal: true },
     { label: "Kepatuhan", href: "/kepatuhan" },
     { label: "FAQ", href: "/faq" },
     { label: "Blog", href: "/blog" },
@@ -41,42 +41,42 @@ export function Navbar() {
           left: 0;
           right: 0;
           z-index: 1000;
-          padding: 16px 24px;
+          padding: 14px 16px;
           display: flex;
           justify-content: center;
           transition: all 0.3s ease;
         }
         .creative-nav {
           width: 100%;
-          max-width: 1280px;
-          height: 60px;
-          background: rgba(19, 27, 46, 0.88);
+          max-width: 1360px;
+          height: 58px;
+          background: rgba(19, 27, 46, 0.92);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 9999px;
-          padding: 0 20px;
+          padding: 0 16px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
           transition: all 0.3s ease;
         }
         .creative-nav--scrolled .creative-nav {
-          background: rgba(11, 15, 23, 0.95);
-          border-color: rgba(245, 158, 11, 0.3);
+          background: rgba(11, 15, 23, 0.96);
+          border-color: rgba(245, 158, 11, 0.35);
           box-shadow: 0 20px 45px -10px rgba(245, 158, 11, 0.25);
         }
         .brand-logo {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 8px;
           text-decoration: none;
           flex-shrink: 0;
         }
         .camera-emblem {
-          width: 32px;
-          height: 32px;
+          width: 30px;
+          height: 30px;
           border-radius: 8px;
           background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
           border: 1px solid rgba(245, 158, 11, 0.4);
@@ -87,9 +87,9 @@ export function Navbar() {
           transition: all 0.3s ease;
         }
         .brand-logo-text {
-          font-size: 1.05rem;
+          font-size: 0.95rem;
           font-weight: 900;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.3px;
           color: #ffffff;
           text-transform: uppercase;
         }
@@ -97,9 +97,9 @@ export function Navbar() {
           background: rgba(245, 158, 11, 0.15);
           color: #f59e0b;
           border: 1px solid rgba(245, 158, 11, 0.3);
-          font-size: 0.6rem;
+          font-size: 0.55rem;
           font-weight: 800;
-          padding: 2px 7px;
+          padding: 2px 6px;
           border-radius: 4px;
           letter-spacing: 0.5px;
           white-space: nowrap;
@@ -107,7 +107,7 @@ export function Navbar() {
         .nav-links {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 12px;
           list-style: none;
           margin: 0;
           padding: 0;
@@ -115,7 +115,7 @@ export function Navbar() {
         .nav-link-a {
           color: #94a3b8;
           text-decoration: none;
-          font-size: 0.82rem;
+          font-size: 0.78rem;
           font-weight: 600;
           transition: all 0.2s;
           white-space: nowrap;
@@ -126,9 +126,9 @@ export function Navbar() {
         .nav-cta {
           background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
           color: #ffffff;
-          font-size: 0.78rem;
+          font-size: 0.74rem;
           font-weight: 800;
-          padding: 9px 18px;
+          padding: 8px 14px;
           border-radius: 9999px;
           text-decoration: none;
           transition: all 0.2s;
@@ -157,28 +157,28 @@ export function Navbar() {
           border-radius: 2px;
           transition: all 0.2s;
         }
-        @media (max-width: 1100px) {
-          .nav-links, .nav-cta {
+        @media (max-width: 1200px) {
+          .nav-links {
             display: none;
           }
           .nav-burger {
             display: flex;
           }
         }
-        @media (max-width: 640px) {
-          .creative-nav-container {
-            padding: 10px 12px;
-          }
-          .creative-nav {
-            height: 52px;
-            padding: 0 14px;
-          }
-          .brand-badge {
-            display: none;
-          }
-          .brand-logo-text {
-            font-size: 0.88rem;
-          }
+        .mobile-drawer {
+          position: fixed;
+          top: 80px;
+          left: 16px;
+          right: 16px;
+          background: rgba(11, 15, 23, 0.98);
+          border: 1px solid rgba(245, 158, 11, 0.3);
+          border-radius: 20px;
+          padding: 24px;
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
         }
       `}</style>
 
@@ -202,7 +202,7 @@ export function Navbar() {
             </div>
             
             <span className="brand-logo-text">Sivilize<span style={{ color: "#f59e0b" }}>Creative</span></span>
-            <span className="brand-badge">CREATIVE AGENCY</span>
+            <span className="brand-badge">AGENCY</span>
           </Link>
           
           <ul className="nav-links">
@@ -213,9 +213,9 @@ export function Navbar() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="nav-link-a text-purple-400 font-bold"
+                    className="nav-link-a text-purple-400 font-bold hover:text-purple-300"
                   >
-                    {item.label} &nearr;
+                    {item.label}
                   </a>
                 ) : (
                   <Link 
@@ -235,38 +235,54 @@ export function Navbar() {
             rel="noopener noreferrer" 
             className="nav-cta"
           >
-            📸 Konsultasi Creative (CMO WA)
+            📸 Konsultasi CMO WA
           </a>
 
-          <button className="nav-burger" aria-label="Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            <span style={{ transform: mobileMenuOpen ? "translateY(7px) rotate(45deg)" : "none" }} />
-            <span style={{ opacity: mobileMenuOpen ? 0 : 1 }} />
-            <span style={{ transform: mobileMenuOpen ? "translateY(-7px) rotate(-45deg)" : "none" }} />
+          <button 
+            className="nav-burger"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+          >
+            <span />
+            <span />
+            <span />
           </button>
         </nav>
       </div>
 
-      {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div style={{ position: "fixed", inset: "0", zIndex: "999", background: "#0b0f17", paddingTop: "100px", paddingLeft: "30px", paddingRight: "30px", display: "flex", flexDirection: "column", gap: "16px", overflowY: "auto" }}>
+        <div className="mobile-drawer">
           {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              style={{ color: pathname === item.href ? "#f59e0b" : "#fff", fontSize: "0.95rem", textDecoration: "none", fontWeight: 700, borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "8px" }}
-            >
-              {item.label}
-            </Link>
+            item.isExternal ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-purple-400 font-bold text-sm"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`text-slate-300 font-semibold text-sm ${pathname === item.href ? "text-amber-400 font-extrabold" : ""}`}
+              >
+                {item.label}
+              </Link>
+            )
           ))}
           <a
             href={`https://wa.me/6282347058055?text=${emergencyWaMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
-            style={{ background: "#f59e0b", color: "#ffffff", fontSize: "0.9rem", fontWeight: 800, padding: "14px", borderRadius: "12px", textDecoration: "none", textAlign: "center", marginTop: "10px" }}
+            className="w-full text-center py-3 rounded-xl bg-amber-500 text-white font-extrabold text-xs uppercase tracking-wider mt-2 shadow-lg"
           >
-            📸 Konsultasi Creative Direct CMO (+62 823-4705-8055)
+            📸 Konsultasi CMO WA
           </a>
         </div>
       )}

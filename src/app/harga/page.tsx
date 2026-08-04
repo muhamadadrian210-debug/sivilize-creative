@@ -14,19 +14,19 @@ export default function HargaPage() {
 
   const bundlingPackages = [
     {
-      name: "Bundling Fast-Cash Web Kilat + Video Promosi",
-      price: "Rp 1.699.000 (DP 50% Rp 849.000)",
-      badge: "HERO PROMO FAST-CASH",
-      desc: "Solusi kilat akselerasi digital: Website Perusahaan / Toko Online 3 Hari Rilis dari SiWeb Production + GRATIS 1 Video Promosi Sinematik 4K dari Sivilize Creative (Nilai Rp 349.000).",
+      name: "Bundling Web + Video + Flyer Promo",
+      price: "Rp 1.199.000 (DP 50% Rp 599.000)",
+      badge: "HOT ALL-IN-ONE PROMO",
+      desc: "Solusi terlengkap & paling terjangkau: Website Landing Page / Profil Perusahaan 3 Hari Rilis + 1 Video Promosi Sinematik 4K + 1 Desain Flyer & Pamflet Promo HD.",
       features: [
-        "Website Kilat 3 Hari Rilis (SiWeb Production)",
-        "Domain .com / .co.id + Hosting Super Cepat",
-        "GRATIS 1 Video Promosi Sinematik (Sivilize Creative)",
-        "2 Format Export Video (Instagram Reels + TikTok)",
+        "1 Website Landing Page / Profil Perusahaan (SiWeb Production)",
+        "Domain .com / .co.id + Hosting Super Cepat (3 Hari Rilis)",
+        "1 Video Promosi Sinematik 4K (Reels + TikTok HD)",
+        "1 Desain Flyer & Pamflet Promo (Format Print + Sosmed HD)",
         "Scriptwriting Naskah & Subtitle Dinamis",
-        "DP 50% Rp 849.000 (Langsung Ditransfer di Awal)"
+        "Syarat DP 50% Rp 599.000 (Langsung Ditransfer di Awal)"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Fast-Cash Web Kilat 3 Hari SiWeb (Rp 1.699.000 / DP Rp 849.000) + Gratis 1 Video Promosi Sivilize Creative*.\n\nBoleh dibantu koordinasi brief & penyerahan bahan videonya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + Video + Flyer Promo (Rp 1.199.000 / DP Rp 599.000)* yang berisi Website Landing Page 3 Hari + 1 Video Sinematik + 1 Desain Flyer/Pamflet Promo.\n\nBoleh dibantu koordinasi brief & penyerahan bahan materinya? Terima kasih."
     },
     {
       name: "Bundling Dual Platform Single",
@@ -44,7 +44,7 @@ export default function HargaPage() {
     },
     {
       name: "Bundling Hemat 5 Konten",
-      price: "Rp 1.499.000 (Total 10 Postings)",
+      price: "Rp 1.199.000 (Total 10 Postings)",
       badge: "PAKET POPULER",
       desc: "5 Konsep Konten Kreatif dengan Ekspor Multi-Platform. Total Anda mendapatkan 10 Postings Siap Pakai (5 Reels + 5 TikTok) untuk konsistensi feeds 1 bulan.",
       features: [
@@ -54,11 +54,11 @@ export default function HargaPage() {
         "Subtitle & Transisi Tren",
         "Jadwal Penyiapan Konten 1 Bulan"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order *Paket Bundling Hemat 5 Konten (Rp 1.499.000 - Total 10 Post Reels & TikTok)*.\n\nBoleh dibantu koordinasi ide & penentuan jadwal videonya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order *Paket Bundling Hemat 5 Konten (Rp 1.199.000 - Total 10 Post Reels & TikTok)*.\n\nBoleh dibantu koordinasi ide & penentuan jadwal videonya? Terima kasih."
     },
     {
       name: "Bundling Multi-Format (Video + Foto)",
-      price: "Rp 1.999.000 / Proyek",
+      price: "Rp 1.699.000 / Proyek",
       badge: "ALL-IN-ONE PROMO",
       desc: "Solusi lengkap bagi produk baru: 3 Video Promosi Vertikal (Reels/TikTok) + 10 Foto Produk Studio HD + Custom Cover Thumbnail Keren.",
       features: [
@@ -68,35 +68,35 @@ export default function HargaPage() {
         "Custom Cover Thumbnail Design",
         "Master File High-Quality"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud memesan *Paket Bundling Multi-Format Video + Foto (Rp 1.999.000 / Proyek)*.\n\nBoleh dibantu pengiriman sampel produk & jadwal shootingnya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud memesan *Paket Bundling Multi-Format Video + Foto (Rp 1.699.000 / Proyek)*.\n\nBoleh dibantu pengiriman sampel produk & jadwal shootingnya? Terima kasih."
     }
   ];
 
   const videoProductionItems = [
-    { name: "Wedding Documentation", price: "Mulai Rp 3.899.000", desc: "Highlight sinematik & liputan penuh momen pernikahan sakral." },
-    { name: "Engagement Event", price: "Mulai Rp 2.799.000", desc: "Dokumentasi momen lamaran & pertunangan sinematik." },
-    { name: "Prewedding Film", price: "Mulai Rp 2.799.000", desc: "Konsep cerita pasangan dalam bentuk film pendek & teaser." },
-    { name: "Company Profile Video", price: "Mulai Rp 3.499.000", desc: "Profil naratif perusahaan berdurasi 3-5 menit untuk investor & website." },
-    { name: "Corporate & Special Event", price: "Mulai Rp 2.299.000", desc: "Liputan acara perusahaan, gala dinner, & gathering." },
-    { name: "Seminar & Workshop", price: "Mulai Rp 2.299.000", desc: "Liputan konferensi, edukasi, & sesi pembicara profesional." },
-    { name: "Grand Opening Store", price: "Mulai Rp 2.299.000", desc: "Video peluncuran outlet, restoran, atau kantor baru." },
-    { name: "Commercial Product Video", price: "Mulai Rp 1.699.000", desc: "Video iklan produk dengan pencahayaan studio komersial." },
-    { name: "Drone Aerial Footage (Add-On)", price: "Mulai Rp 899.000", desc: "Pengambilan gambar udara 4K untuk perspektif arsitektur & lokasi." },
+    { name: "Wedding Documentation", price: "Mulai Rp 2.799.000", desc: "Highlight sinematik & liputan penuh momen pernikahan sakral." },
+    { name: "Engagement Event", price: "Mulai Rp 1.999.000", desc: "Dokumentasi momen lamaran & pertunangan sinematik." },
+    { name: "Prewedding Film", price: "Mulai Rp 1.999.000", desc: "Konsep cerita pasangan dalam bentuk film pendek & teaser." },
+    { name: "Company Profile Video", price: "Mulai Rp 2.499.000", desc: "Profil naratif perusahaan berdurasi 3-5 menit untuk investor & website." },
+    { name: "Corporate & Special Event", price: "Mulai Rp 1.699.000", desc: "Liputan acara perusahaan, gala dinner, & gathering." },
+    { name: "Seminar & Workshop", price: "Mulai Rp 1.699.000", desc: "Liputan konferensi, edukasi, & sesi pembicara profesional." },
+    { name: "Grand Opening Store", price: "Mulai Rp 1.699.000", desc: "Video peluncuran outlet, restoran, atau kantor baru." },
+    { name: "Commercial Product Video", price: "Mulai Rp 1.199.000", desc: "Video iklan produk dengan pencahayaan studio komersial." },
+    { name: "Drone Aerial Footage (Add-On)", price: "Mulai Rp 699.000", desc: "Pengambilan gambar udara 4K untuk perspektif arsitektur & lokasi." },
   ];
 
   const photoItems = [
-    { name: "Foto Produk Studio", price: "Mulai Rp 899.000", desc: "Sesi foto katalog produk studio dengan penataan lighting pro." },
-    { name: "Foto Event & Gathering", price: "Mulai Rp 1.699.000", desc: "Dokumentasi foto momen acara penting & ekspresi tamu." },
-    { name: "Foto Wedding Documentation", price: "Mulai Rp 2.799.000", desc: "Album foto fisik & digital momen pernikahan utuh." },
-    { name: "Foto Corporate & Direksi", price: "Mulai Rp 2.299.000", desc: "Potret eksekutif, profil jajaran manajemen, & fasilitas kantor." },
+    { name: "Foto Produk Studio", price: "Mulai Rp 599.000", desc: "Sesi foto katalog produk studio dengan penataan lighting pro." },
+    { name: "Foto Event & Gathering", price: "Mulai Rp 1.199.000", desc: "Dokumentasi foto momen acara penting & ekspresi tamu." },
+    { name: "Foto Wedding Documentation", price: "Mulai Rp 1.999.000", desc: "Album foto fisik & digital momen pernikahan utuh." },
+    { name: "Foto Corporate & Direksi", price: "Mulai Rp 1.699.000", desc: "Potret eksekutif, profil jajaran manajemen, & fasilitas kantor." },
   ];
 
   const designItems = [
-    { name: "Desain Logo Vektor", price: "Mulai Rp 599.000", desc: "3 Opsi konsep logo orisinal master file AI, EPS, PNG beresolusi tinggi." },
-    { name: "Desain Poster & Flyer", price: "Mulai Rp 179.000", desc: "Materi iklan promo cetak & digital berestetika tinggi." },
-    { name: "Desain Feed Instagram", price: "Mulai Rp 179.000", desc: "Desain mikro-konten feeds Instagram yang menarik perhatian." },
-    { name: "Desain Banner & Baliho", price: "Mulai Rp 249.000", desc: "Tata letak materi cetak baliho/banner ukuran besar." },
-    { name: "Brand Identity Guidelines", price: "Mulai Rp 2.299.000", desc: "Buku panduan visual identitas brand (Logo, Palette, Tipografi)." },
+    { name: "Desain Logo Vektor", price: "Mulai Rp 399.000", desc: "3 Opsi konsep logo orisinal master file AI, EPS, PNG beresolusi tinggi." },
+    { name: "Desain Poster & Flyer / Pamflet", price: "Mulai Rp 149.000", desc: "Materi iklan promo cetak & digital berestetika tinggi (Flyer / Pamflet)." },
+    { name: "Desain Feed Instagram", price: "Mulai Rp 149.000", desc: "Desain mikro-konten feeds Instagram yang menarik perhatian." },
+    { name: "Desain Banner & Baliho", price: "Mulai Rp 199.000", desc: "Tata letak materi cetak baliho/banner ukuran besar." },
+    { name: "Brand Identity Guidelines", price: "Mulai Rp 1.499.000", desc: "Buku panduan visual identitas brand (Logo, Palette, Tipografi)." },
   ];
 
   const valuePoints = [
@@ -128,51 +128,51 @@ export default function HargaPage() {
             </p>
           </div>
 
-          {/* SECTION 1: CONTENT CREATION (CARD SINGLE CONTENT) */}
+          {/* HERO SPECIAL BUNDLE: LANDING PAGE + 1 VIDEO + 1 FLYER/PAMFLET */}
           <div className="mb-20">
-            <div className="max-w-4xl mx-auto bg-gradient-to-b from-slate-900 to-[#0f172a] border border-amber-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="max-w-5xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border-2 border-amber-500/70 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
               
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-slate-800">
                 <div>
-                  <span className="inline-block px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded-lg mb-3">
-                    ENTRY LEVEL CONTENT CREATION
+                  <span className="inline-block px-3.5 py-1 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-xs font-black uppercase rounded-lg mb-3">
+                    🔥 BEST SELLER: ALL-IN-ONE DIGITAL LAUNCH BUNDLE
                   </span>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white uppercase">
-                    Produksi Konten Satuan
+                  <h2 className="text-2xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">
+                    Website + 1 Video Promosi + 1 Desain Flyer/Pamflet
                   </h2>
-                  <p className="text-slate-400 text-xs sm:text-sm mt-1">
-                    Solusi fleksibel untuk kebutuhan konten promosi produk atau pengujian respon pasar.
+                  <p className="text-slate-300 text-xs sm:text-sm mt-2">
+                    Solusi terlengkap &amp; paling terjangkau bagi usaha yang ingin langsung tayang resmi &amp; punya materi promosi berkelas!
                   </p>
                 </div>
                 
-                <div className="bg-[#070b12] p-6 rounded-2xl border border-slate-800 text-center md:text-right min-w-[240px]">
-                  <span className="text-slate-500 text-xs uppercase tracking-wider block font-mono">Mulai Dari</span>
-                  <div className="text-2xl sm:text-3xl font-black text-amber-400 font-mono my-1">
-                    Rp 349.000
+                <div className="bg-[#070b12] p-6 rounded-2xl border border-amber-500/40 text-center md:text-right min-w-[260px]">
+                  <span className="text-slate-400 text-xs uppercase tracking-wider block font-mono">Harga Promo Terjangkau</span>
+                  <div className="text-3xl font-black text-amber-400 font-mono my-1">
+                    Rp 1.199.000
                   </div>
-                  <span className="text-slate-400 text-xs font-mono block">/ Konten Video</span>
+                  <span className="text-emerald-400 text-xs font-mono font-bold block">Syarat DP 50% = Rp 599.000</span>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-6">
-                  Fitur &amp; Output Yang Anda Dapatkan:
+                <h3 className="text-xs font-mono uppercase tracking-wider text-amber-400 mb-6 font-bold">
+                  Apa Saja Yang Langsung Anda Dapatkan:
                 </h3>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                   {[
-                    "Ide Konten Orisinal",
-                    "Briefing & Alur Eksekusi",
-                    "Copywriting Naskah / Caption",
-                    "Shooting Produk (Jika Termasuk)",
-                    "Editing Video Profesional",
-                    "Subtitle Dinamis & Captions",
-                    "Color Correction Sinematik",
-                    "Export Kualitas Tinggi 4K/HD",
-                    "Siap Upload (Instagram, TikTok, FB & Shorts)"
+                    "1 Website Landing Page / Profil Perusahaan (SiWeb)",
+                    "Domain .com / .co.id + Hosting Super Cepat (3 Hari Rilis)",
+                    "1 Video Promosi Sinematik 4K (Reels & TikTok HD)",
+                    "1 Desain Flyer & Pamflet Promo (Format Print + Sosmed HD)",
+                    "Scriptwriting Naskah & Subtitle Dinamis",
+                    "Tombol Integrasi Chat WhatsApp Direct",
+                    "Syarat DP 50% Rp 599.000 (Langsung Ditransfer di Awal)",
+                    "Revisi 2x Gratis & Bantuan Rilis",
+                    "Master File HD Dikirim via Google Drive"
                   ].map((feature, i) => (
-                    <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800">
+                    <div key={i} className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
                       <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 text-xs flex items-center justify-center font-bold">
                         ✓
                       </span>
@@ -181,18 +181,20 @@ export default function HargaPage() {
                   ))}
                 </div>
 
-                <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-800/80">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-800">
                   <p className="text-slate-500 text-xs font-mono italic">
-                    Catatan: Harga dapat berubah sesuai tingkat kesulitan dan kebutuhan produksi.
+                    💡 Hemat Rp 1.000.000 dibanding membeli paket terpisah! Rilis cepat dalam 3 hari kerja.
                   </p>
                   
                   <a
-                    href={getWaLink("Produksi Konten Satuan", "Rp 349.000 / Konten")}
+                    href={`https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(
+                      "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + 1 Video Promosi + 1 Desain Flyer/Pamflet (Rp 1.199.000 / DP Rp 599.000)*.\n\nBoleh dibantu koordinasi brief & penyerahan materi promosinya? Terima kasih."
+                    )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xs uppercase tracking-wider transition-all text-center shadow-lg shadow-amber-500/20"
+                    className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider transition-all text-center shadow-xl shadow-amber-500/20"
                   >
-                    Pesan Konten Satuan &rarr;
+                    💬 Order Paket All-In-One (DP Rp 599rb) &rarr;
                   </a>
                 </div>
               </div>
@@ -293,7 +295,7 @@ export default function HargaPage() {
                     Sivilize Software
                   </div>
                   <a
-                    href="https://software.sivilizecorp.com"
+                    href="https://software.sivilizecorp.com/ecommerce"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full text-center px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-xl shadow-purple-500/30 flex items-center justify-center gap-2"
@@ -306,7 +308,7 @@ export default function HargaPage() {
             </div>
           </div>
 
-          {/* SECTION 2: PAKET BULANAN (3 CARDS) */}
+          {/* SECTION 2: PAKET BULANAN (3 CARDS DENGAN HARGA LEBIH TERJANGKAU UMKM) */}
           <div className="mb-24">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-2">
@@ -330,11 +332,11 @@ export default function HargaPage() {
                   </span>
                   <h3 className="text-2xl font-black text-white uppercase mb-2">Basic</h3>
                   <p className="text-slate-400 text-xs leading-relaxed mb-6">
-                    Cocok untuk UMKM yang ingin menjaga keberadaan akun media sosial tetap aktif.
+                    Cocok untuk UMKM yang ingin menjaga keberadaan akun media sosial tetap aktif &amp; konsisten.
                   </p>
                   
                   <div className="p-4 rounded-2xl bg-[#070b12] border border-slate-800 mb-8">
-                    <span className="text-3xl font-black text-white font-mono block">Rp 2.199.000</span>
+                    <span className="text-3xl font-black text-amber-400 font-mono block">Rp 1.199.000</span>
                     <span className="text-slate-500 text-xs font-mono">/ Bulan</span>
                   </div>
 
@@ -343,11 +345,11 @@ export default function HargaPage() {
                       Benefit Paket:
                     </span>
                     {[
-                      "8 Konten Video Siap Upload",
+                      "6 Konten Video Siap Upload (Reels + TikTok)",
                       "Kalender Konten Sederhana",
-                      "Editing Video Profesional",
-                      "Subtitle & Captions Dinamis",
-                      "Export File Kualitas HD"
+                      "Editing Video & Subtitle Dinamis",
+                      "Copywriting Caption Ringkas",
+                      "Export File Kualitas HD 1080p"
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3 text-xs text-slate-300">
                         <span className="text-amber-400 font-bold">•</span>
@@ -358,12 +360,12 @@ export default function HargaPage() {
                 </div>
 
                 <a
-                  href={getWaLink("Paket Bulanan Basic", "Rp 2.199.000 / Bulan")}
+                  href={getWaLink("Paket Bulanan Basic", "Rp 1.199.000 / Bulan")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider transition-all border border-slate-700"
                 >
-                  Pilih Paket Basic
+                  Pilih Paket Basic &rarr;
                 </a>
               </div>
 
@@ -379,11 +381,11 @@ export default function HargaPage() {
                   </span>
                   <h3 className="text-2xl font-black text-white uppercase mb-2">Growth</h3>
                   <p className="text-slate-400 text-xs leading-relaxed mb-6">
-                    Untuk bisnis yang ingin aktif membangun reputasi &amp; jangkauan penjualan.
+                    Untuk bisnis yang ingin aktif membangun reputasi &amp; jangkauan penjualan sosial media.
                   </p>
                   
                   <div className="p-4 rounded-2xl bg-[#070b12] border border-amber-500/30 mb-8">
-                    <span className="text-3xl font-black text-amber-400 font-mono block">Rp 3.899.000</span>
+                    <span className="text-3xl font-black text-amber-400 font-mono block">Rp 2.199.000</span>
                     <span className="text-slate-500 text-xs font-mono">/ Bulan</span>
                   </div>
 
@@ -392,12 +394,12 @@ export default function HargaPage() {
                       Benefit Paket:
                     </span>
                     {[
-                      "15 Konten Video Siap Upload",
+                      "12 Konten Video Siap Upload (Reels + TikTok)",
                       "Content Planning & Strategi",
                       "Copywriting Naskah Persuasif",
                       "Editing Premium & Sound FX",
                       "Subtitle Dinamis & Grafis",
-                      "Custom Thumbnail Keren"
+                      "Custom Cover Thumbnail Keren"
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3 text-xs text-slate-200 font-medium">
                         <span className="text-amber-400 font-bold">•</span>
@@ -408,7 +410,7 @@ export default function HargaPage() {
                 </div>
 
                 <a
-                  href={getWaLink("Paket Bulanan Growth", "Rp 3.899.000 / Bulan")}
+                  href={getWaLink("Paket Bulanan Growth", "Rp 2.199.000 / Bulan")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/20"
@@ -425,11 +427,11 @@ export default function HargaPage() {
                   </span>
                   <h3 className="text-2xl font-black text-white uppercase mb-2">Business</h3>
                   <p className="text-slate-400 text-xs leading-relaxed mb-6">
-                    Untuk perusahaan skala menengah-besar yang membutuhkan dominasi konten digital.
+                    Untuk perusahaan yang membutuhkan dominasi konten digital dengan hasil sinematik.
                   </p>
                   
                   <div className="p-4 rounded-2xl bg-[#070b12] border border-slate-800 mb-8">
-                    <span className="text-3xl font-black text-white font-mono block">Rp 5.999.000</span>
+                    <span className="text-3xl font-black text-white font-mono block">Rp 3.899.000</span>
                     <span className="text-slate-500 text-xs font-mono">/ Bulan</span>
                   </div>
 
@@ -438,7 +440,7 @@ export default function HargaPage() {
                       Benefit Paket:
                     </span>
                     {[
-                      "25 Konten Video Siap Upload",
+                      "20 Konten Video Siap Upload (Reels + TikTok)",
                       "Comprehensive Content Planning",
                       "Branding Consultation",
                       "Professional Copywriting",
@@ -454,12 +456,12 @@ export default function HargaPage() {
                 </div>
 
                 <a
-                  href={getWaLink("Paket Bulanan Business", "Rp 5.999.000 / Bulan")}
+                  href={getWaLink("Paket Bulanan Business", "Rp 3.899.000 / Bulan")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider transition-all border border-slate-700"
                 >
-                  Pilih Paket Business
+                  Pilih Paket Business &rarr;
                 </a>
               </div>
 

@@ -15,18 +15,18 @@ export default function HargaPage() {
   const bundlingPackages = [
     {
       name: "Bundling Web + Video + Flyer Promo",
-      price: "Rp 1.199.000 (DP 50% Rp 599.000)",
+      price: "Rp 1.499.000 (DP 50% Rp 749.000)",
       badge: "HOT ALL-IN-ONE PROMO",
-      desc: "Solusi terlengkap & paling terjangkau: Website Landing Page / Profil Perusahaan 3 Hari Rilis + 1 Video Promosi Sinematik 4K + 1 Desain Flyer & Pamflet Promo HD.",
+      desc: "Solusi terlengkap & paling diminati: Website Landing Page / Profil Perusahaan 3 Hari Rilis dari SiWeb Production + 1 Video Promosi Sinematik 4K + 1 Desain Flyer & Pamflet Promo HD dari Sivilize Creative.",
       features: [
         "1 Website Landing Page / Profil Perusahaan (SiWeb Production)",
         "Domain .com / .co.id + Hosting Super Cepat (3 Hari Rilis)",
         "1 Video Promosi Sinematik 4K (Reels + TikTok HD)",
         "1 Desain Flyer & Pamflet Promo (Format Print + Sosmed HD)",
         "Scriptwriting Naskah & Subtitle Dinamis",
-        "Syarat DP 50% Rp 599.000 (Langsung Ditransfer di Awal)"
+        "Syarat DP 50% Rp 749.000 (Langsung Ditransfer di Awal)"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + Video + Flyer Promo (Rp 1.199.000 / DP Rp 599.000)* yang berisi Website Landing Page 3 Hari + 1 Video Sinematik + 1 Desain Flyer/Pamflet Promo.\n\nBoleh dibantu koordinasi brief & penyerahan bahan materinya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + 1 Video Sinematik + 1 Desain Flyer/Pamflet (Rp 1.499.000 / DP Rp 749.000)*.\n\nBoleh dibantu koordinasi brief & penyerahan bahan materinya? Terima kasih."
     },
     {
       name: "Bundling Dual Platform Single",
@@ -149,9 +149,9 @@ export default function HargaPage() {
                 <div className="bg-[#070b12] p-6 rounded-2xl border border-amber-500/40 text-center md:text-right min-w-[260px]">
                   <span className="text-slate-400 text-xs uppercase tracking-wider block font-mono">Harga Promo Terjangkau</span>
                   <div className="text-3xl font-black text-amber-400 font-mono my-1">
-                    Rp 1.199.000
+                    Rp 1.499.000
                   </div>
-                  <span className="text-emerald-400 text-xs font-mono font-bold block">Syarat DP 50% = Rp 599.000</span>
+                  <span className="text-emerald-400 text-xs font-mono font-bold block">Syarat DP 50% = Rp 749.000</span>
                 </div>
               </div>
 
@@ -168,7 +168,7 @@ export default function HargaPage() {
                     "1 Desain Flyer & Pamflet Promo (Format Print + Sosmed HD)",
                     "Scriptwriting Naskah & Subtitle Dinamis",
                     "Tombol Integrasi Chat WhatsApp Direct",
-                    "Syarat DP 50% Rp 599.000 (Langsung Ditransfer di Awal)",
+                    "Syarat DP 50% Rp 749.000 (Langsung Ditransfer di Awal)",
                     "Revisi 2x Gratis & Bantuan Rilis",
                     "Master File HD Dikirim via Google Drive"
                   ].map((feature, i) => (
@@ -188,13 +188,13 @@ export default function HargaPage() {
                   
                   <a
                     href={`https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(
-                      "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + 1 Video Promosi + 1 Desain Flyer/Pamflet (Rp 1.199.000 / DP Rp 599.000)*.\n\nBoleh dibantu koordinasi brief & penyerahan materi promosinya? Terima kasih."
+                      "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + 1 Video Promosi + 1 Desain Flyer/Pamflet (Rp 1.499.000 / DP Rp 749.000)*.\n\nBoleh dibantu koordinasi brief & penyerahan materi promosinya? Terima kasih."
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider transition-all text-center shadow-xl shadow-amber-500/20"
                   >
-                    💬 Order Paket All-In-One (DP Rp 599rb) &rarr;
+                    💬 Order Paket All-In-One (DP Rp 749rb) &rarr;
                   </a>
                 </div>
               </div>

@@ -8,11 +8,26 @@ export default function HargaPage() {
   const cmoWaNumber = "6282347058055";
 
   const getWaLink = (packageName: string, price: string) => {
-    const text = `Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau diskusi & order mengenai ${packageName} (${price}).\n\nBoleh dibantu jadwal brief & alur kerjanya? Terima kasih.`;
+    const text = `Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau diskusi & order mengenai ${packageName} (${price}).\n\nBoleh dibantu jadwal brief & alur kerjanya? Terima kasih.`;
     return `https://wa.me/${cmoWaNumber}?text=${encodeURIComponent(text)}`;
   };
 
   const bundlingPackages = [
+    {
+      name: "Bundling Fast-Cash Web Kilat + Video Promosi",
+      price: "Rp 1.699.000 (DP 50% Rp 849.000)",
+      badge: "HERO PROMO FAST-CASH",
+      desc: "Solusi kilat akselerasi digital: Website Perusahaan / Toko Online 3 Hari Rilis dari SiWeb Production + GRATIS 1 Video Promosi Sinematik 4K dari Sivilize Creative (Nilai Rp 349.000).",
+      features: [
+        "Website Kilat 3 Hari Rilis (SiWeb Production)",
+        "Domain .com / .co.id + Hosting Super Cepat",
+        "GRATIS 1 Video Promosi Sinematik (Sivilize Creative)",
+        "2 Format Export Video (Instagram Reels + TikTok)",
+        "Scriptwriting Naskah & Subtitle Dinamis",
+        "DP 50% Rp 849.000 (Langsung Ditransfer di Awal)"
+      ],
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Fast-Cash Web Kilat 3 Hari SiWeb (Rp 1.699.000 / DP Rp 849.000) + Gratis 1 Video Promosi Sivilize Creative*.\n\nBoleh dibantu koordinasi brief & penyerahan bahan videonya? Terima kasih."
+    },
     {
       name: "Bundling Dual Platform Single",
       price: "Rp 349.000 / Konten",
@@ -198,10 +213,10 @@ export default function HargaPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {bundlingPackages.map((pkg, idx) => (
-                <div key={idx} className="bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border border-amber-500/40 rounded-3xl p-8 flex flex-col justify-between hover:border-amber-400 transition-all shadow-xl relative">
-                  <div className="absolute -top-3.5 right-6 px-3 py-1 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg">
+                <div key={idx} className="bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border border-amber-500/40 rounded-3xl p-6 flex flex-col justify-between hover:border-amber-400 transition-all shadow-xl relative">
+                  <div className="absolute -top-3.5 right-4 px-3 py-1 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg">
                     {pkg.badge}
                   </div>
 
@@ -209,20 +224,20 @@ export default function HargaPage() {
                     <span className="text-slate-400 font-mono text-xs uppercase tracking-wider block mb-2">
                       BUNDLING {idx + 1}
                     </span>
-                    <h3 className="text-xl font-extrabold text-white uppercase mb-2">{pkg.name}</h3>
+                    <h3 className="text-lg font-extrabold text-white uppercase mb-2 leading-snug">{pkg.name}</h3>
                     <p className="text-slate-400 text-xs leading-relaxed mb-6">{pkg.desc}</p>
                     
-                    <div className="p-4 rounded-2xl bg-[#070b12] border border-amber-500/20 mb-8">
-                      <span className="text-2xl sm:text-3xl font-black text-amber-400 font-mono block">{pkg.price}</span>
+                    <div className="p-4 rounded-2xl bg-[#070b12] border border-amber-500/20 mb-6">
+                      <span className="text-xl sm:text-2xl font-black text-amber-400 font-mono block">{pkg.price}</span>
                       <span className="text-slate-500 text-[10px] font-mono uppercase tracking-wider">Multi-Platform Ready</span>
                     </div>
 
-                    <div className="space-y-3 mb-8">
+                    <div className="space-y-3 mb-6">
                       <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block font-bold">
                         Fitur Bundling:
                       </span>
                       {pkg.features.map((feat, fIdx) => (
-                        <div key={fIdx} className="flex items-center gap-3 text-xs text-slate-300">
+                        <div key={fIdx} className="flex items-center gap-2.5 text-xs text-slate-300">
                           <span className="text-amber-400 font-bold">✓</span>
                           <span>{feat}</span>
                         </div>
@@ -236,7 +251,7 @@ export default function HargaPage() {
                     rel="noopener noreferrer"
                     className="block text-center py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/20"
                   >
-                    💬 Order {pkg.name} &rarr;
+                    💬 Order {pkg.name.split(" ")[0]} &rarr;
                   </a>
                 </div>
               ))}

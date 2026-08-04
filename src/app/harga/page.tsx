@@ -256,6 +256,54 @@ export default function HargaPage() {
                 </div>
               ))}
             </div>
+
+            {/* JENJANG TINGKAT 2: E-COMMERCE & SOFTWARE CUSTOM REDIRECTION TO SIVILIZE SOFTWARE */}
+            <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-purple-950/80 via-indigo-950/80 to-slate-900 border-2 border-purple-500/50 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <div className="max-w-2xl">
+                  <span className="inline-block px-3.5 py-1 bg-purple-500/20 border border-purple-500/40 text-purple-300 font-mono text-xs font-bold rounded-full mb-3">
+                    ENTERPRISE TIER: E-COMMERCE &amp; CUSTOM SOFTWARE
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">
+                    Butuh Toko Online E-Commerce &amp; Sistem Custom + Video Iklan?
+                  </h3>
+                  <p className="text-slate-300 text-xs sm:text-sm mt-3 leading-relaxed">
+                    Untuk kebutuhan pengembangan <strong className="text-purple-300 font-bold">Platform E-Commerce Kustom, ERP Multi-Cabang, SIMRS Kesehatan, &amp; Aplikasi Mobile</strong> yang dilengkapi Video Iklan Komersial Sinematik, pengerjaan sistem software sepenuhnya ditangani oleh divisi <strong className="text-white font-bold">Sivilize Software</strong>.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6 text-xs font-mono text-slate-300">
+                    <div className="flex items-center gap-2">
+                      <span className="text-purple-400 font-bold">✓</span> E-Commerce Custom &amp; Payment Gateway
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-purple-400 font-bold">✓</span> Sistem ERP &amp; Database Multi-Branch
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-purple-400 font-bold">✓</span> SIMRS BPJS &amp; SATUSEHAT Ready
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-purple-400 font-bold">✓</span> Video Commercial Ad dari Sivilize Creative
+                    </div>
+                  </div>
+                </div>
+
+                <div className="w-full lg:w-auto flex flex-col items-center lg:items-end gap-4 bg-[#070b14]/80 p-6 rounded-2xl border border-purple-500/30">
+                  <span className="text-slate-400 text-xs font-mono uppercase tracking-wider">Divisi Enterprise Software</span>
+                  <div className="text-xl font-extrabold text-purple-300 font-mono text-center lg:text-right">
+                    Sivilize Software
+                  </div>
+                  <a
+                    href="https://software.sivilizecorp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full text-center px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-xl shadow-purple-500/30 flex items-center justify-center gap-2"
+                  >
+                    <span>Kunjungi Sivilize Software</span>
+                    <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* SECTION 2: PAKET BULANAN (3 CARDS) */}

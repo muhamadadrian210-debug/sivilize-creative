@@ -21,6 +21,7 @@ export function Navbar() {
     { label: "Layanan", href: "/layanan" },
     { label: "Paket & Harga", href: "/harga" },
     { label: "Portofolio", href: "/portofolio" },
+    { label: "Software & E-Commerce", href: "https://software.sivilizecorp.com", isExternal: true },
     { label: "Kepatuhan", href: "/kepatuhan" },
     { label: "FAQ", href: "/faq" },
     { label: "Blog", href: "/blog" },
@@ -207,12 +208,23 @@ export function Navbar() {
           <ul className="nav-links">
             {navItems.map((item) => (
               <li key={item.href}>
-                <Link 
-                  href={item.href} 
-                  className={`nav-link-a ${pathname === item.href ? "active" : ""}`}
-                >
-                  {item.label}
-                </Link>
+                {item.isExternal ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav-link-a text-purple-400 font-bold"
+                  >
+                    {item.label} &nearr;
+                  </a>
+                ) : (
+                  <Link 
+                    href={item.href} 
+                    className={`nav-link-a ${pathname === item.href ? "active" : ""}`}
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

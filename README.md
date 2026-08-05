@@ -107,34 +107,7 @@ Setiap transaksi dan pembuatan karya media di Sivilize Creative tunduk pada atur
 
 ---
 
-## 🛠️ 8. TEKNOLOGI WEBSITE & PENGEMBANGAN (`sivilize-creative`)
-
-Website resmi Sivilize Creative dibangun menggunakan arsitektur web modern kelas enterprise:
-
-* **Framework:** [Next.js 15](https://nextjs.org/) (App Router Architecture)
-* **Library UI:** React 19, Lucide React Icons
-* **Styling Engine:** Vanilla CSS + Tailwind CSS v4
-* **Language:** TypeScript
-* **Deployment & CI/CD:** Vercel (Auto-deploy dari branch `master` GitHub)
-
-### 💻 Command Pengembang:
-```bash
-# Clone Repository
-git clone https://github.com/muhamadadrian210-debug/sivilize-creative.git
-
-# Install Dependencies
-npm install
-
-# Run Local Development Server
-npm run dev
-
-# Production Build Test
-npm run build
-```
-
----
-
-## 📞 9. INFORMASI KONTAK & LEGALITAS PERUSAHAAN
+## 📞 8. INFORMASI KONTAK & LEGALITAS PERUSAHAAN
 
 **PT SIVILIZE CORP INDONESIA**  
 *Solusi Digital, Hasil Maksimal*  

@@ -73,14 +73,15 @@ export default function HargaPage() {
   ];
 
   const videoProductionItems = [
+    { name: "Single Video Promosi (Reels / TikTok)", price: "Rp 150.000 / Video", desc: "1 Video promosi sinematik 4K include scriptwriting naskah & subtitle dinamis (Maksimal 2x revisi)." },
+    { name: "Commercial Product Video", price: "Mulai Rp 1.199.000", desc: "Video iklan produk dengan pencahayaan studio komersial." },
+    { name: "Company Profile Video", price: "Mulai Rp 2.499.000", desc: "Profil naratif perusahaan berdurasi 3-5 menit untuk investor & website." },
     { name: "Wedding Documentation", price: "Mulai Rp 2.799.000", desc: "Highlight sinematik & liputan penuh momen pernikahan sakral." },
     { name: "Engagement Event", price: "Mulai Rp 1.999.000", desc: "Dokumentasi momen lamaran & pertunangan sinematik." },
     { name: "Prewedding Film", price: "Mulai Rp 1.999.000", desc: "Konsep cerita pasangan dalam bentuk film pendek & teaser." },
-    { name: "Company Profile Video", price: "Mulai Rp 2.499.000", desc: "Profil naratif perusahaan berdurasi 3-5 menit untuk investor & website." },
     { name: "Corporate & Special Event", price: "Mulai Rp 1.699.000", desc: "Liputan acara perusahaan, gala dinner, & gathering." },
     { name: "Seminar & Workshop", price: "Mulai Rp 1.699.000", desc: "Liputan konferensi, edukasi, & sesi pembicara profesional." },
     { name: "Grand Opening Store", price: "Mulai Rp 1.699.000", desc: "Video peluncuran outlet, restoran, atau kantor baru." },
-    { name: "Commercial Product Video", price: "Mulai Rp 1.199.000", desc: "Video iklan produk dengan pencahayaan studio komersial." },
     { name: "Drone Aerial Footage (Add-On)", price: "Mulai Rp 699.000", desc: "Pengambilan gambar udara 4K untuk perspektif arsitektur & lokasi." },
   ];
 
@@ -507,8 +508,10 @@ export default function HargaPage() {
               ))}
             </div>
 
-            <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-400 text-xs font-mono text-center">
-              Catatan: Harga dapat berubah sesuai lokasi, durasi shooting, jumlah kru, serta kebutuhan alat produksi khusus.
+            <div className="p-5 rounded-2xl bg-[#070b12] border border-amber-500/30 text-slate-300 text-xs font-mono space-y-2">
+              <p>📌 <strong className="text-amber-400">Shooting On-Location (Kota Kupang &amp; Sekitarnya):</strong> Minimum order wajib Paket Bundling (3-5 Video / Rp 1.000.000) untuk efisiensi batch shooting &amp; operasional sewa alat.</p>
+              <p>📌 <strong className="text-white">File Mentahan (Raw Footage):</strong> Diberikan secara GRATIS via Google Drive hanya setelah pembayaran LUNAS 100% (Clear 100%).</p>
+              <p>📌 <strong className="text-amber-400">Ketentuan DP &amp; Pembatalan:</strong> Wajib DP 50% (H-3 sebelum shooting) + SPK. Jika dibatalkan sepihak oleh klien dalam kurun H-3 setelah DP, maka DP 50% HANGUS 100%.</p>
             </div>
           </div>
 

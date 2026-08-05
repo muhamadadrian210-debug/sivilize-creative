@@ -29,18 +29,18 @@ export default function HargaPage() {
       waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau order *Paket Bundling Web + 1 Video Sinematik + 1 Desain Flyer/Pamflet (Rp 1.499.000 / DP Rp 749.000)*.\n\nBoleh dibantu koordinasi brief & penyerahan bahan materinya? Terima kasih."
     },
     {
-      name: "Bundling Dual Platform Single",
-      price: "Rp 349.000 / Konten",
-      badge: "BEST VALUE SINGLE",
-      desc: "1 Ide Konten Video Vertikal langsung di-export dalam 2 Format HD Siap Upload (1 Format Instagram Reels + 1 Format TikTok HD lengkap Subtitle & Sound Tren).",
+      name: "Single Video Promosi Sinematik",
+      price: "Rp 150.000 / Video",
+      badge: "SINGLE PROMO",
+      desc: "1 Video Promosi Sinematik 4K include scriptwriting naskah & subtitle dinamis dengan pembatasan maksimal 2 kali revisi saja.",
       features: [
-        "1 Konsep Video Kreatif 30-60 Detik",
-        "2 Format Export Siap Post (Reels + TikTok)",
-        "Subtitle Dinamis & Captions",
-        "Color Correction Sinematik",
-        "Free Re-format Ukuran Aspek Rasio (9:16)"
+        "1 Video Promosi Sinematik 4K (Reels / TikTok HD)",
+        "Scriptwriting Naskah & Ide Konsep Orisinal",
+        "Subtitle Dinamis & Color Correction Sinematik",
+        "Pembatasan Maksimal 2x Revisi Saja",
+        "Master File HD via GDrive (Setelah Lunas 100%)"
       ],
-      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau pesan *Paket Bundling Dual Platform Single (Rp 349.000 / Konten - Reels & TikTok)*.\n\nBoleh dibantu koordinasi brief & jadwal videonya? Terima kasih."
+      waMessage: "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau order *Single Video Promosi Sinematik (Rp 150.000 / Video - Max 2x Revisi)*.\n\nBoleh dibantu koordinasi brief & jadwal videonya? Terima kasih."
     },
     {
       name: "Bundling Hemat 5 Konten",

@@ -161,8 +161,17 @@ export function Navbar() {
           .nav-links {
             display: none;
           }
+          .nav-cta {
+            display: none;
+          }
           .nav-burger {
             display: flex;
+            padding: 8px;
+            z-index: 1001;
+          }
+          .nav-burger span {
+            width: 24px;
+            height: 2.5px;
           }
         }
         .mobile-drawer {
@@ -174,7 +183,7 @@ export function Navbar() {
           border: 1px solid rgba(245, 158, 11, 0.3);
           border-radius: 20px;
           padding: 24px;
-          z-index: 999;
+          z-index: 1001;
           display: flex;
           flex-direction: column;
           gap: 16px;

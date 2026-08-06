@@ -123,6 +123,85 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 1.5. ABOUT SIVILIZE CREATIVE SECTION (PROFIL, LATAR BELAKANG, VISI MISI & DIVISI RESMI) */}
+        <section className="py-20 border-b border-slate-800/80 bg-[#0b0f17] relative">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header Badge */}
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <span className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs tracking-widest uppercase inline-block mb-3">
+                DIVISI MEDIA & PRODUCTION HOUSE RESMI PT SIVILIZE CORP
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+                Mengenal <span className="text-amber-400">Sivilize Creative</span>
+              </h2>
+              <p className="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
+                Unit bisnis strategis di bidang produksi audio-visual, branding sinematik 4K, & dokumentasi komersial yang bernaung penuh di bawah entitas hukum <strong className="text-slate-200">PT SIVILIZE CORP INDONESIA</strong>.
+              </p>
+            </div>
+
+            {/* Grid 2 Columns: Latar Belakang & Visi Misi */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+              {/* Left Column: Latar Belakang */}
+              <div className="lg:col-span-6 p-8 rounded-3xl bg-[#111622] border border-slate-800/90 hover:border-amber-500/30 transition-all flex flex-col justify-between shadow-xl">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">Latar Belakang Divisi</h3>
+                  <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                    Sivilize Creative lahir dari kebutuhan mendesak bagi pelaku usaha (UMKM hingga Korporasi Enterprise) dan Instansi Pemerintah di Kupang, NTT, serta secara Nasional untuk memiliki kehadiran visual yang berdampak tinggi.
+                  </p>
+                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                    Banyak bisnis memiliki produk unggulan, namun gagal menyampaikan nilai terbaiknya karena kualitas media promosi yang standar. Sivilize Creative hadir menjembatani kesenjangan tersebut melalui standar produksi sinematik 4K, penggunaan drone kelas industri, serta legalitas SPK resmi PT Sivilize Corp.
+                  </p>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-slate-800 flex items-center gap-3">
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-xs font-semibold text-slate-300">Resmi Di bawah Naungan Legalitas PT SIVILIZE CORP</span>
+                </div>
+              </div>
+
+              {/* Right Column: Visi & Misi */}
+              <div className="lg:col-span-6 p-8 rounded-3xl bg-[#111622] border border-slate-800/90 hover:border-amber-500/30 transition-all flex flex-col justify-between shadow-xl">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+                    <Star className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">Visi & Misi Sivilize Creative</h3>
+                  
+                  {/* Visi */}
+                  <div className="mb-6 p-4 rounded-xl bg-[#07090e] border border-slate-800">
+                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">VISI KAMI</span>
+                    <p className="text-slate-200 text-xs sm:text-sm font-medium leading-relaxed">
+                      "Menjadi rujukan Production House & Media Agency sinematik 4K terdepan di Indonesia yang mengawinkan keindahan estetika visual dengan efektivitas pertumbuhan bisnis klien."
+                    </p>
+                  </div>
+
+                  {/* Misi List */}
+                  <div>
+                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-2">MISI UTAMA KAMI</span>
+                    <ul className="space-y-2.5">
+                      <li className="text-xs text-slate-300 flex items-start gap-2.5">
+                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                        <span><strong>Resolusi Tanpa Kompromi:</strong> Menghasilkan karya 4K Ultra HD & audio jernih kelas broadcast.</span>
+                      </li>
+                      <li className="text-xs text-slate-300 flex items-start gap-2.5">
+                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                        <span><strong>Perlindungan Hukum & SPK:</strong> Memberikan kenyamanan transaksi bisnis melalui Perjanjian Kerja Sama (SPK) resmi PT Sivilize Corp.</span>
+                      </li>
+                      <li className="text-xs text-slate-300 flex items-start gap-2.5">
+                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                        <span><strong>Sinergi Ekosistem:</strong> Mengintegrasikan produksi media visual dengan platform teknologi software Sivilize Corp.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 2. SERVICES SECTION */}
         <section className="py-20 border-b border-slate-800/80 bg-[#07090e]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

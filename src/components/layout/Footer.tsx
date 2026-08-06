@@ -11,15 +11,15 @@ export function Footer() {
         .creative-footer {
           border-top: 1px solid rgba(255, 255, 255, 0.08);
           background: #0b0f17;
-          padding: 80px 24px 40px;
+          padding: 48px 24px 32px;
           position: relative;
           z-index: 10;
         }
         .footer-grid {
           display: grid;
           grid-template-columns: 1.5fr repeat(4, 1fr);
-          gap: 40px;
-          margin-bottom: 60px;
+          gap: 28px;
+          margin-bottom: 36px;
         }
         .footer-brand {
           display: flex;

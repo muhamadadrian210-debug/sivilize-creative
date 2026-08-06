@@ -124,46 +124,46 @@ export default function HargaPage() {
     <div className="min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-32 pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* HEADER SECTION */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-3">
+          <div className="text-center max-w-xl mx-auto mb-8">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">
               // TRANSPARENT_VALUE_PRICING
             </span>
-            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">
+            <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight uppercase mb-2">
               Paket &amp; Investasi Konten
             </h1>
-            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-400 text-xs sm:text-xs leading-relaxed max-w-md mx-auto">
               Kami tidak sekadar menjual durasi video atau platform. Kami menghadirkan <strong className="text-white font-bold">produksi konten bernilai tinggi</strong>—satu karya video berkualitas dapat Anda publikasikan secara bebas di Instagram Reels, TikTok, Facebook Video, hingga YouTube Shorts.
             </p>
           </div>
 
           {/* HERO SPECIAL BUNDLE: LANDING PAGE + 1 VIDEO + 1 FLYER/PAMFLET */}
-          <div className="mb-20">
-            <div className="max-w-5xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border-2 border-amber-500/70 rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="mb-12">
+            <div className="max-w-4xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border border-amber-500/50 rounded-xl p-4.5 sm:p-6 shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
               
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-slate-800">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-slate-800">
                 <div>
-                  <span className="inline-block px-3.5 py-1 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-xs font-black uppercase rounded-lg mb-3">
+                  <span className="inline-block px-3 py-0.5 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-[10px] font-bold uppercase rounded-md mb-2">
                     🔥 BEST SELLER: ALL-IN-ONE DIGITAL LAUNCH BUNDLE
                   </span>
-                  <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white uppercase tracking-tight">
+                  <h2 className="text-base sm:text-lg lg:text-lg font-bold text-white uppercase tracking-tight">
                     Website + 1 Video Promosi + 1 Desain Flyer/Pamflet
                   </h2>
-                  <p className="text-slate-300 text-xs sm:text-sm mt-2">
+                  <p className="text-slate-300 text-[11px] sm:text-xs mt-1">
                     Solusi terlengkap &amp; paling terjangkau bagi usaha yang ingin langsung tayang resmi &amp; punya materi promosi berkelas!
                   </p>
                 </div>
                 
-                <div className="bg-[#070b12] p-5 sm:p-6 rounded-2xl border border-amber-500/40 text-center md:text-right w-full md:w-auto min-w-0 sm:min-w-[240px] shrink-0">
-                  <span className="text-slate-400 text-xs uppercase tracking-wider block font-mono">Harga Promo Terjangkau</span>
-                  <div className="text-2xl sm:text-3xl font-black text-amber-400 font-mono my-1">
+                <div className="bg-[#070b12] p-4 rounded-xl border border-amber-500/40 text-center md:text-right w-full md:w-auto min-w-0 sm:min-w-[200px] shrink-0">
+                  <span className="text-slate-400 text-[10px] uppercase tracking-wider block font-mono">Harga Promo Terjangkau</span>
+                  <div className="text-lg sm:text-xl font-bold text-amber-400 font-mono my-0.5">
                     Rp 1.499.000
                   </div>
-                  <span className="text-emerald-400 text-xs font-mono font-bold block">Syarat DP 50% = Rp 749.000</span>
+                  <span className="text-emerald-400 text-[10px] font-mono font-bold block">Syarat DP 50% = Rp 749.000</span>
                 </div>
               </div>
 

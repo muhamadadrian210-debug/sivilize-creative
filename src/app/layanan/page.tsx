@@ -103,41 +103,41 @@ export default function LayananPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-36 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// CREATIVE_SERVICES</span>
-            <h1 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">Katalog Layanan Kreatif</h1>
-            <p className="text-slate-400 text-xs mt-2">
+          <div className="text-center max-w-xl mx-auto mb-8">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-1.5">// CREATIVE_SERVICES</span>
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight uppercase">Katalog Layanan Kreatif</h1>
+            <p className="text-slate-400 text-[11px] sm:text-xs mt-1.5 max-w-md mx-auto">
               Setiap tombol konsultasi terhubung langsung ke WhatsApp CMO Shatrya Dhimar (+62 823-4705-8055) dengan pesan otomatis yang disesuaikan secara spesifik.
             </p>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-6">
             {serviceCategories.map((cat, idx) => (
-              <div key={idx} className="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800">
-                <div className="flex items-center gap-3 flex-wrap mb-1">
+              <div key={idx} className="p-4 sm:p-5 rounded-xl bg-slate-900 border border-slate-800">
+                <div className="flex items-center gap-2 flex-wrap mb-1">
                   <span className="text-amber-400 font-mono text-[10px] font-bold uppercase tracking-widest">
                     [{String(idx + 1).padStart(2, "0")}] {cat.category}
                   </span>
                   {cat.onLocation && <KupangTag />}
                 </div>
-                <h2 className="text-base sm:text-xl font-bold text-white uppercase mb-2">{cat.title}</h2>
-                <p className="text-slate-400 text-xs mb-6 leading-relaxed">{cat.desc}</p>
+                <h2 className="text-sm sm:text-base lg:text-base font-bold text-white uppercase mb-1.5">{cat.title}</h2>
+                <p className="text-slate-400 text-[11px] sm:text-xs mb-4 leading-relaxed">{cat.desc}</p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   {cat.items.map((item, i) => (
-                    <div key={i} className="p-4 rounded-xl bg-[#070b12] border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+                    <div key={i} className="p-3 sm:p-3.5 rounded-lg bg-[#070b12] border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                       <div>
-                        <strong className="text-white font-bold text-sm block mb-1 font-sans">{item.name}</strong>
-                        <p className="text-slate-400 text-xs leading-relaxed mb-4">{item.detail}</p>
+                        <strong className="text-white font-bold text-xs block mb-1 font-sans">{item.name}</strong>
+                        <p className="text-slate-400 text-[11px] leading-relaxed mb-3">{item.detail}</p>
                       </div>
                       <a
                         href={getServiceWaLink(item.name, cat.category)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-center py-2 px-3 rounded-lg bg-amber-500/10 hover:bg-amber-500 border border-amber-500/30 text-amber-400 hover:text-white font-mono text-xs font-bold transition-all truncate w-full"
+                        className="inline-block text-center py-1.5 px-2.5 rounded-md bg-amber-500/10 hover:bg-amber-500 border border-amber-500/30 text-amber-400 hover:text-white font-mono text-[11px] font-bold transition-all truncate w-full"
                       >
                         Konsultasi WA &rarr;
                       </a>

@@ -18,33 +18,33 @@ export default function PortofolioPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-36 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-2">// CREATIVE_SHOWCASE</span>
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight uppercase">Showcase Portofolio Karya</h1>
-            <p className="text-slate-400 text-sm mt-4">
+          <div className="text-center max-w-xl mx-auto mb-8">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-1.5">// CREATIVE_SHOWCASE</span>
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight uppercase">Showcase Portofolio Karya</h1>
+            <p className="text-slate-400 text-[11px] sm:text-xs mt-1.5">
               Bukti komitmen kualitas karya visual, video sinematik, fotografi studio, dan desain branding Sivilize Creative.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {showcaseItems.map((item, idx) => (
-              <div key={idx} className="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div key={idx} className="p-4.5 sm:p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-mono text-amber-400">[{item.category}]</span>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-mono text-amber-400">[{item.category}]</span>
                     <span className="text-[10px] font-mono text-slate-500">{item.client}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-3 uppercase leading-snug">{item.title}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-6">{item.desc}</p>
+                  <h3 className="text-sm font-bold text-white mb-2 uppercase leading-snug">{item.title}</h3>
+                  <p className="text-slate-400 text-[11px] leading-relaxed mb-4">{item.desc}</p>
                 </div>
                 <a
                   href={`https://wa.me/6285137743321?text=${encodeURIComponent(`Halo Pak Briand (COO Sivilize Creative),\nSaya ingin melihat sampel portofolio *${item.title}*.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-amber-400 font-mono text-xs font-bold hover:underline"
+                  className="text-amber-400 font-mono text-[11px] font-bold hover:underline"
                 >
                   Minta Sampel Portofolio WA &rarr;
                 </a>

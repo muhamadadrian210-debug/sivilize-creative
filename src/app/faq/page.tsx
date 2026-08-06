@@ -34,29 +34,29 @@ export default function FaqPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-36 pb-20">
+      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center mb-16">
-            <span className="text-amber-400 text-xs font-mono tracking-widest uppercase block mb-2">// KNOWLEDGE_BASE_FAQ</span>
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight uppercase">20+ Pertanyaan Sering Diajukan</h1>
-            <p className="text-slate-400 text-sm mt-4">
+          <div className="text-center max-w-xl mx-auto mb-8">
+            <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-1.5">// KNOWLEDGE_BASE_FAQ</span>
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight uppercase">20+ Pertanyaan Sering Diajukan</h1>
+            <p className="text-slate-400 text-[11px] sm:text-xs mt-1.5">
               Jawaban resmi mengenai layanan, alur pengerjaan, lisensi karya, dan legalitas Sivilize Creative.
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {faq20.map((item, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <div key={idx} className="p-3.5 sm:p-4 rounded-xl bg-slate-900 border border-slate-800">
                 <button
                   onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-                  className="w-full text-left font-bold text-white text-sm sm:text-base uppercase flex justify-between items-center gap-4 focus:outline-none"
+                  className="w-full text-left font-bold text-white text-xs sm:text-sm uppercase flex justify-between items-center gap-3 focus:outline-none"
                 >
                   <span>[{String(idx + 1).padStart(2, "0")}] {item.q}</span>
-                  <span className="text-amber-400 font-mono text-lg">{openIdx === idx ? "−" : "+"}</span>
+                  <span className="text-amber-400 font-mono text-base">{openIdx === idx ? "−" : "+"}</span>
                 </button>
                 {openIdx === idx && (
-                  <div className="mt-4 pt-4 border-t border-slate-800/80 text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
+                  <div className="mt-3 pt-3 border-t border-slate-800/80 text-[11px] sm:text-xs text-slate-300 leading-relaxed font-sans">
                     {item.a}
                   </div>
                 )}

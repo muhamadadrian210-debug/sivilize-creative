@@ -77,24 +77,24 @@ export default function Home() {
             </div>
 
             {/* Dynamic Hero Headings */}
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] mb-6 max-w-4xl mx-auto">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-white tracking-tight leading-[1.2] mb-5 max-w-3xl mx-auto">
               {hero.headingMain}{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 block mt-2">
                 {hero.headingHighlight}
               </span>
             </h1>
 
-            <p className="text-slate-400 text-sm sm:text-base font-normal max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-slate-400 text-xs sm:text-sm font-normal max-w-2xl mx-auto leading-relaxed mb-7">
               {hero.subtitle}
             </p>
 
             {/* Action CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-md mx-auto">
               <a
                 href={`https://wa.me/${waCleanPhone}?text=${cmoWaMsg}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm shadow-xl shadow-amber-500/25 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5 group"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs sm:text-sm shadow-xl shadow-amber-500/25 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5 group"
               >
                 <MessageCircle className="w-4 h-4 fill-slate-950" />
                 <span>Konsultasi WA CMO ({cmoName})</span>
@@ -103,7 +103,7 @@ export default function Home() {
 
               <Link
                 href="/tentang"
-                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-[#111622] hover:bg-[#182030] text-slate-200 font-bold text-sm border border-slate-700/80 transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#111622] hover:bg-[#182030] text-slate-200 font-bold text-xs sm:text-sm border border-slate-700/80 transition-all flex items-center justify-center gap-2"
               >
                 <Building2 className="w-4 h-4 text-amber-400" />
                 <span>Profil & Legalitas Perusahaan</span>
@@ -111,16 +111,16 @@ export default function Home() {
             </div>
 
             {/* Dynamic Stats Grid */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3.5 max-w-4xl mx-auto">
               {hero.stats.map((stat: any, idx: number) => (
                 <div
                   key={idx}
-                  className="p-4 sm:p-5 rounded-2xl bg-[#111622]/80 border border-slate-800/80 backdrop-blur-xl hover:border-amber-500/40 transition-colors group text-center"
+                  className="p-3.5 sm:p-4 rounded-xl bg-[#111622]/80 border border-slate-800/80 backdrop-blur-xl hover:border-amber-500/40 transition-colors group text-center"
                 >
-                  <div className="text-xl sm:text-2xl font-black text-amber-400 tracking-tight group-hover:scale-105 transition-transform">
+                  <div className="text-lg sm:text-xl font-bold text-amber-400 tracking-tight group-hover:scale-105 transition-transform">
                     {stat.value}
                   </div>
-                  <div className="text-xs font-semibold text-slate-400 mt-1">{stat.label}</div>
+                  <div className="text-[11px] sm:text-xs font-medium text-slate-400 mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -128,23 +128,23 @@ export default function Home() {
         </section>
 
         {/* 2. PENJELASAN PERUSAHAAN & DIVISI */}
-        <section className="py-20 border-b border-slate-800/80 bg-[#07090e] relative">
+        <section className="py-16 border-b border-slate-800/80 bg-[#07090e] relative">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-amber-400 font-extrabold text-xs tracking-widest uppercase block mb-2">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <span className="text-amber-400 font-extrabold text-[11px] tracking-widest uppercase block mb-2">
                 PROFIL PERUSAHAAN & DIVISI
               </span>
-              <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+              <h2 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
                 Mengenal PT Sivilize Corp Indonesia & Sivilize Creative
               </h2>
-              <p className="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
+              <p className="text-slate-400 text-xs sm:text-sm mt-2.5 leading-relaxed">
                 Platform ekosistem teknologi, media digital sinematik, dan penyedia solusi bisnis terintegrasi yang berbasis di Kota Kupang, Nusa Tenggara Timur.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {/* Card 1: PT Sivilize Corp Indonesia */}
-              <div className="p-8 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
                     <Building2 className="w-6 h-6" />

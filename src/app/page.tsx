@@ -16,9 +16,15 @@ import {
   MessageCircle,
   Calculator,
   ShieldCheck,
-  Star,
+  Building2,
+  Briefcase,
+  Users,
+  Award,
   ExternalLink,
-  ChevronRight
+  ChevronRight,
+  FileText,
+  FolderKanban,
+  HelpCircle
 } from "lucide-react";
 
 export default function Home() {
@@ -43,8 +49,6 @@ export default function Home() {
     ]
   };
 
-  const portfolios = siteData?.portfolios?.filter((p: any) => p.featured) || [];
-  const services = siteData?.services || [];
   const cmoPhone = siteData?.admin?.cmoPhone || "+6281246821279";
   const cmoName = siteData?.admin?.cmoName || "Shatrya Dhimar";
   const waCleanPhone = cmoPhone.replace(/[^0-9]/g, "");
@@ -69,7 +73,7 @@ export default function Home() {
             {/* Top Pill Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#111622] border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide mb-6 shadow-xl backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
-              <span>SIVILIZE CREATIVE — PRODUCTION HOUSE PT SIVILIZE CORP</span>
+              <span>SIVILIZE CREATIVE — PRODUCTION HOUSE PT SIVILIZE CORP INDONESIA</span>
             </div>
 
             {/* Dynamic Hero Headings */}
@@ -98,11 +102,11 @@ export default function Home() {
               </a>
 
               <Link
-                href="/harga"
+                href="/tentang"
                 className="w-full sm:w-auto px-7 py-4 rounded-xl bg-[#111622] hover:bg-[#182030] text-slate-200 font-bold text-sm border border-slate-700/80 transition-all flex items-center justify-center gap-2"
               >
-                <Calculator className="w-4 h-4 text-amber-400" />
-                <span>Paket & Kalkulator Biaya</span>
+                <Building2 className="w-4 h-4 text-amber-400" />
+                <span>Profil & Legalitas Perusahaan</span>
               </Link>
             </div>
 
@@ -123,176 +127,274 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 1.5. ABOUT SIVILIZE CREATIVE SECTION (PROFIL, LATAR BELAKANG, VISI MISI & DIVISI RESMI) */}
-        <section className="py-20 border-b border-slate-800/80 bg-[#0b0f17] relative">
+        {/* 2. PENJELASAN PERUSAHAAN & DIVISI */}
+        <section className="py-20 border-b border-slate-800/80 bg-[#07090e] relative">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Header Badge */}
-            <div className="text-center max-w-3xl mx-auto mb-14">
-              <span className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs tracking-widest uppercase inline-block mb-3">
-                DIVISI MEDIA & PRODUCTION HOUSE RESMI PT SIVILIZE CORP
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-amber-400 font-extrabold text-xs tracking-widest uppercase block mb-2">
+                PROFIL PERUSAHAAN & DIVISI
               </span>
               <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
-                Mengenal <span className="text-amber-400">Sivilize Creative</span>
+                Mengenal PT Sivilize Corp Indonesia & Sivilize Creative
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
-                Unit bisnis strategis di bidang produksi audio-visual, branding sinematik 4K, & dokumentasi komersial yang bernaung penuh di bawah entitas hukum <strong className="text-slate-200">PT SIVILIZE CORP INDONESIA</strong>.
+                Platform ekosistem teknologi, media digital sinematik, dan penyedia solusi bisnis terintegrasi yang berbasis di Kota Kupang, Nusa Tenggara Timur.
               </p>
             </div>
 
-            {/* Grid 2 Columns: Latar Belakang & Visi Misi */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-              {/* Left Column: Latar Belakang */}
-              <div className="lg:col-span-6 p-8 rounded-3xl bg-[#111622] border border-slate-800/90 hover:border-amber-500/30 transition-all flex flex-col justify-between shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Card 1: PT Sivilize Corp Indonesia */}
+              <div className="p-8 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-                    <ShieldCheck className="w-6 h-6" />
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+                    <Building2 className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">Latar Belakang Divisi</h3>
-                  <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-                    Sivilize Creative lahir dari kebutuhan mendesak bagi pelaku usaha (UMKM hingga Korporasi Enterprise) dan Instansi Pemerintah di Kupang, NTT, serta secara Nasional untuk memiliki kehadiran visual yang berdampak tinggi.
+                  <h3 className="text-lg font-bold text-white mb-3">PT SIVILIZE CORP INDONESIA</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
+                    Perusahaan induk (holding) legal resmi berbadan hukum PT yang menaungi pengembangan software enterprise, platform SaaS, serta agensi media kreatif sinematik.
                   </p>
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                    Banyak bisnis memiliki produk unggulan, namun gagal menyampaikan nilai terbaiknya karena kualitas media promosi yang standar. Sivilize Creative hadir menjembatani kesenjangan tersebut melalui standar produksi sinematik 4K, penggunaan drone kelas industri, serta legalitas SPK resmi PT Sivilize Corp.
-                  </p>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-slate-800 flex items-center gap-3">
-                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-xs font-semibold text-slate-300">Resmi Di bawah Naungan Legalitas PT SIVILIZE CORP</span>
+                  <div className="space-y-2 text-[11px] font-mono text-slate-400 pt-3 border-t border-slate-800">
+                    <div>📌 NIB: 0207260103661</div>
+                    <div>🏢 NPWP: 1000 0000 1032 4212</div>
+                    <div>📍 Kota Kupang, NTT</div>
+                  </div>
                 </div>
               </div>
 
-              {/* Right Column: Visi & Misi */}
-              <div className="lg:col-span-6 p-8 rounded-3xl bg-[#111622] border border-slate-800/90 hover:border-amber-500/30 transition-all flex flex-col justify-between shadow-xl">
+              {/* Card 2: Sivilize Creative Division */}
+              <div className="p-8 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
-                    <Star className="w-6 h-6" />
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+                    <Film className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">Visi & Misi Sivilize Creative</h3>
-                  
-                  {/* Visi */}
-                  <div className="mb-6 p-4 rounded-xl bg-[#07090e] border border-slate-800">
-                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">VISI KAMI</span>
-                    <p className="text-slate-200 text-xs sm:text-sm font-medium leading-relaxed">
-                      "Menjadi rujukan Production House & Media Agency sinematik 4K terdepan di Indonesia yang mengawinkan keindahan estetika visual dengan efektivitas pertumbuhan bisnis klien."
-                    </p>
+                  <h3 className="text-lg font-bold text-white mb-3">Divisi Sivilize Creative</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
+                    Production house & media agency profesional spesialis video sinematik 4K, drone aerial footage, komersial produk, dan branding visual untuk UMKM hingga instansi pemerintah.
+                  </p>
+                  <div className="space-y-2 text-[11px] text-slate-400 pt-3 border-t border-slate-800">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>Kamera & Lighting Studio 4K Pro</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>Pilot Drone Certified & Experienced</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>Color Grading & Scriptwriting Sales</span>
+                    </div>
                   </div>
+                </div>
+              </div>
 
-                  {/* Misi List */}
-                  <div>
-                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-2">MISI UTAMA KAMI</span>
-                    <ul className="space-y-2.5">
-                      <li className="text-xs text-slate-300 flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                        <span><strong>Resolusi Tanpa Kompromi:</strong> Menghasilkan karya 4K Ultra HD & audio jernih kelas broadcast.</span>
-                      </li>
-                      <li className="text-xs text-slate-300 flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                        <span><strong>Perlindungan Hukum & SPK:</strong> Memberikan kenyamanan transaksi bisnis melalui Perjanjian Kerja Sama (SPK) resmi PT Sivilize Corp.</span>
-                      </li>
-                      <li className="text-xs text-slate-300 flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                        <span><strong>Sinergi Ekosistem:</strong> Mengintegrasikan produksi media visual dengan platform teknologi software Sivilize Corp.</span>
-                      </li>
-                    </ul>
+              {/* Card 3: Legalitas & SPK Proteksi */}
+              <div className="p-8 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+                    <ShieldCheck className="w-6 h-6" />
                   </div>
+                  <h3 className="text-lg font-bold text-white mb-3">Jaminan Legalitas & SPK</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
+                    Setiap pengerjaan project dilindungi Surat Perjanjian Kerja (SPK) bernomor resmi perseroan, faktur pajak/invoice lengkap, serta jaminan kerahasiaan materi (NDA).
+                  </p>
+                  <div className="space-y-2 text-[11px] text-slate-400 pt-3 border-t border-slate-800">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>SPK Kontrak Hukum Resmi PT</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>Invoice & Rekening Bank Perseroan</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>Bisa Pengadaan Instansi / Dinas</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Jajaran Manajemen Eksekutif */}
+            <div className="p-8 rounded-3xl bg-[#0b0f17] border border-slate-800/80">
+              <div className="text-center max-w-xl mx-auto mb-8">
+                <span className="text-amber-400 font-extrabold text-[10px] tracking-widest uppercase block mb-1">
+                  EXECUTIVE LEADERSHIP
+                </span>
+                <h3 className="text-xl font-bold text-white">Jajaran Manajemen PT Sivilize Corp Indonesia</h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-5 rounded-xl bg-[#111622] border border-slate-800 text-center">
+                  <strong className="text-white font-bold text-sm block">Muhamad Adrian</strong>
+                  <span className="text-amber-400 text-xs font-semibold block mt-0.5">Founder & Chief Executive Officer (CEO)</span>
+                  <p className="text-slate-400 text-[11px] mt-2">Direktur Utama PT Sivilize Corp Indonesia, memimpin visi strategi teknologi & ekspansi perusahaan.</p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-[#111622] border border-slate-800 text-center">
+                  <strong className="text-white font-bold text-sm block">Briand Jivencha Therik</strong>
+                  <span className="text-amber-400 text-xs font-semibold block mt-0.5">Chief Operating Officer (COO)</span>
+                  <p className="text-slate-400 text-[11px] mt-2">Direktur Operasional PT Sivilize Corp Indonesia, mengawasi kepatuhan hukum, SPK, & manajemen proyek.</p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-[#111622] border border-slate-800 text-center border-amber-500/30">
+                  <strong className="text-white font-bold text-sm block">Shatrya Dhimar</strong>
+                  <span className="text-amber-400 text-xs font-semibold block mt-0.5">Chief Marketing Officer (CMO)</span>
+                  <p className="text-slate-400 text-[11px] mt-2">Penanggung jawab eksekutif Divisi Sivilize Creative, memimpin produksi sinematik & komunikasi klien.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 2. SERVICES SECTION */}
-        <section className="py-20 border-b border-slate-800/80 bg-[#07090e]">
+        {/* 3. PORTAL NAVIGASI HALAMAN RESMI */}
+        <section className="py-20 border-b border-slate-800/80 bg-[#0b0f17]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="text-amber-400 font-extrabold text-xs tracking-widest uppercase block mb-2">
-                LAYANAN UNGGULAN CREATIVE
+                PORTAL NAVIGASI RESMI
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                Solusi Visual Sinematik Terpadu
+                Jelajahi Informasi Lengkap Sivilize Creative
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm mt-2">
-                Diproduksi langsung oleh tim videografer, pilot drone, & fotografer profesional bersertifikat.
+                Pilih halaman di bawah ini untuk melihat detail katalog layanan, daftar harga transparan, portofolio karya, serta dokumen legalitas.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((svc: any) => (
-                <div
-                  key={svc.id}
-                  className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all group flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
-                      <Film className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-base font-bold text-white mb-2">{svc.title}</h3>
-                    <p className="text-slate-400 text-xs leading-relaxed mb-4">{svc.description}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Portal Card 1: Layanan */}
+              <Link
+                href="/layanan"
+                className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/50 transition-all group flex flex-col justify-between hover:-translate-y-1"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                    <Film className="w-6 h-6" />
                   </div>
-
-                  <ul className="space-y-2 pt-4 border-t border-slate-800/80">
-                    {svc.bulletPoints?.map((bp: string, i: number) => (
-                      <li key={i} className="text-[11px] text-slate-300 flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                        <span>{bp}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    Katalog Layanan Kreatif
+                  </h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    Lihat 20+ kategori layanan produksi video promosi 4K, tur drone aerial, foto komersial produk, & perancangan identitas brand.
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
+                <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold font-mono group-hover:translate-x-1 transition-transform">
+                  <span>Buka Katalog Layanan</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
 
-        {/* 3. FEATURED PORTFOLIO SECTION */}
-        <section className="py-20 border-b border-slate-800/80 bg-[#0b0f17]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
-              <div>
-                <span className="text-amber-400 font-extrabold text-xs tracking-widest uppercase block mb-2">
-                  PORTOFOLIO TERBANYAK
-                </span>
-                <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                  Karya Sinematik Klien Kami
-                </h2>
-              </div>
+              {/* Portal Card 2: Paket & Harga */}
+              <Link
+                href="/harga"
+                className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/50 transition-all group flex flex-col justify-between hover:-translate-y-1"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                    <Calculator className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    Paket & Kalkulator Harga
+                  </h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    Estimasi biaya transparan paket UMKM Starter (1.5jt), Commercial Pro (3.5jt), Enterprise (6.5jt), & kalkulator kustomisasi.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold font-mono group-hover:translate-x-1 transition-transform">
+                  <span>Lihat Paket & Biaya</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
+
+              {/* Portal Card 3: Portofolio */}
               <Link
                 href="/portofolio"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-amber-300 transition"
+                className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/50 transition-all group flex flex-col justify-between hover:-translate-y-1"
               >
-                <span>Lihat Semua Portofolio</span>
-                <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {portfolios.map((item: any) => (
-                <div
-                  key={item.id}
-                  className="rounded-2xl bg-[#111622] border border-slate-800/80 overflow-hidden hover:border-amber-500/40 transition-all group"
-                >
-                  <div className="relative h-48 w-full overflow-hidden bg-slate-900">
-                    <img
-                      src={item.thumbnail}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-80" />
-                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-amber-500/30 text-amber-400 text-[10px] font-extrabold uppercase">
-                      {item.category}
-                    </span>
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                    <FolderKanban className="w-6 h-6" />
                   </div>
-
-                  <div className="p-5">
-                    <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1">
-                      Klien: {item.client}
-                    </div>
-                    <h3 className="text-base font-bold text-white mb-2 line-clamp-1">{item.title}</h3>
-                    <p className="text-slate-400 text-xs leading-relaxed line-clamp-2">{item.description}</p>
-                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    Showcase Portofolio
+                  </h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    Koleksi sampel karya sinematik untuk klien perumahan komersial, cafe, restoran, pernikahan, hingga instansi BUMN.
+                  </p>
                 </div>
-              ))}
+                <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold font-mono group-hover:translate-x-1 transition-transform">
+                  <span>Lihat Karya Klien</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
+
+              {/* Portal Card 4: Tentang Kami */}
+              <Link
+                href="/tentang"
+                className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/50 transition-all group flex flex-col justify-between hover:-translate-y-1"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                    <Building2 className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    Tentang Kami & Legalitas
+                  </h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    Informasi latar belakang divisi, filosofi kerja, tim manajemen, serta akta pendirian PT Sivilize Corp Indonesia.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold font-mono group-hover:translate-x-1 transition-transform">
+                  <span>Buka Profil Perusahaan</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
+
+              {/* Portal Card 5: Kepatuhan */}
+              <Link
+                href="/kepatuhan"
+                className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/50 transition-all group flex flex-col justify-between hover:-translate-y-1"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    Kepatuhan & SPK Protect
+                  </h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    Standar kepatuhan hukum, contoh Surat Perjanjian Kerja (SPK), jaminan NDA kerahasiaan, & alur klaim garansi revisi.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold font-mono group-hover:translate-x-1 transition-transform">
+                  <span>Lihat Ketentuan Hukum</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
+
+              {/* Portal Card 6: FAQ & Kontak */}
+              <Link
+                href="/faq"
+                className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/50 transition-all group flex flex-col justify-between hover:-translate-y-1"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                    <HelpCircle className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    FAQ & Pusat Bantuan
+                  </h3>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    Jawaban pertanyaan umum seputar durasi pengerjaan, format penyerahan file 4K, pengadaan dinas, & pembayaran.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold font-mono group-hover:translate-x-1 transition-transform">
+                  <span>Pertanyaan Sering Diajukan</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -326,10 +428,10 @@ export default function Home() {
                   </a>
 
                   <Link
-                    href="/harga#all_in_one"
+                    href="/harga"
                     className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs border border-slate-700/80 transition"
                   >
-                    Paket Bundling All-in-One (Rp 1.499.000)
+                    Lihat Bundling All-in-One
                   </Link>
                 </div>
               </div>

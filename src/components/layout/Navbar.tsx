@@ -36,6 +36,7 @@ export function Navbar() {
     { label: "Layanan", href: "/layanan" },
     { label: "Paket & Harga", href: "/harga" },
     { label: "Portofolio", href: "/portofolio" },
+    { label: "Tentang", href: "/tentang" },
     { label: "Software ↗", href: "https://software.sivilizecorp.com", isExternal: true },
     { label: "Kepatuhan", href: "/kepatuhan" },
     { label: "FAQ", href: "/faq" },

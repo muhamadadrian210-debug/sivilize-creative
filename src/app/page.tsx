@@ -76,14 +76,14 @@ export default function Home() {
             </div>
 
             {/* Dynamic Hero Headings */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-white tracking-tight leading-[1.2] mb-5 max-w-3xl mx-auto">
+            <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-extrabold text-white tracking-tight leading-snug mb-4 max-w-2xl mx-auto">
               {hero.headingMain}{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 block mt-2">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 block mt-1.5">
                 {hero.headingHighlight}
               </span>
             </h1>
 
-            <p className="text-slate-400 text-xs sm:text-sm font-normal max-w-2xl mx-auto leading-relaxed mb-7">
+            <p className="text-slate-400 text-xs sm:text-sm font-normal max-w-xl mx-auto leading-relaxed mb-6">
               {hero.subtitle}
             </p>
 
@@ -133,7 +133,7 @@ export default function Home() {
               <span className="text-amber-400 font-extrabold text-[11px] tracking-widest uppercase block mb-2">
                 ENTITAS PERUSAHAAN & DIVISI CREATIVE
               </span>
-              <h2 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
+              <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight leading-tight">
                 Mengenal PT Sivilize Corp Indonesia &amp; Sivilize Creative
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm mt-2.5 leading-relaxed">
@@ -217,7 +217,7 @@ export default function Home() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-400 text-xs font-mono">
                   <Compass className="w-3.5 h-3.5 text-amber-400" /> LATAR BELAKANG &amp; SEJARAH
                 </div>
-                <h2 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
+                <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight leading-tight">
                   Menjawab Kebutuhan Visual 4K Berstandar Tinggi di Indonesia
                 </h2>
                 <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -276,7 +276,7 @@ export default function Home() {
               <span className="text-amber-400 font-extrabold text-[11px] tracking-widest uppercase block mb-2">
                 EXECUTIVE LEADERSHIP &amp; MANAGEMENT
               </span>
-              <h2 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">
+              <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight uppercase">
                 Jajaran Manajemen PT Sivilize Corp Indonesia
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm mt-2">
@@ -358,7 +358,7 @@ export default function Home() {
               <span className="text-amber-400 font-extrabold text-[11px] tracking-widest uppercase block mb-2">
                 PORTAL NAVIGASI HALAMAN RESMI
               </span>
-              <h2 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight">
+              <h2 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight">
                 Jelajahi Informasi Lengkap Sivilize Creative
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm mt-2">

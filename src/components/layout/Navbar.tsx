@@ -58,17 +58,17 @@ export function Navbar() {
         }`}
       >
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 p-0.5 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+        <Link href="/" className="flex items-center gap-2.5 group shrink-0 min-w-0">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 p-0.5 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
             <div className="w-full h-full bg-[#0b0f17] rounded-[10px] flex items-center justify-center">
               <Video className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-amber-400" />
             </div>
           </div>
-          <div className="flex flex-col">
-            <span className="text-xs sm:text-sm font-black tracking-wider uppercase text-white group-hover:text-amber-400 transition-colors">
+          <div className="flex flex-col min-w-0">
+            <span className="text-xs sm:text-sm font-black tracking-wider uppercase text-white group-hover:text-amber-400 transition-colors truncate max-w-[130px] min-[400px]:max-w-none">
               {logoText}
             </span>
-            <span className="text-[9px] font-bold text-amber-400/90 tracking-widest uppercase -mt-0.5">
+            <span className="text-[9px] font-bold text-amber-400/90 tracking-widest uppercase -mt-0.5 truncate max-w-[130px] min-[400px]:max-w-none">
               {badgeText}
             </span>
           </div>
@@ -105,7 +105,7 @@ export function Navbar() {
         </nav>
 
         {/* CTA & Admin Link */}
-        <div className="hidden sm:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-2 shrink-0">
           <Link
             href="/admin"
             className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-slate-400 hover:text-white hover:bg-slate-800/60 transition"
@@ -117,18 +117,18 @@ export function Navbar() {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs transition shadow-lg shadow-amber-500/20 flex items-center gap-1.5 group"
+            className="px-3.5 py-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs transition shadow-lg shadow-amber-500/20 flex items-center gap-1.5 group shrink-0"
           >
-            <MessageCircle className="w-3.5 h-3.5 fill-slate-950" />
-            <span>{ctaText}</span>
-            <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <MessageCircle className="w-3.5 h-3.5 fill-slate-950 shrink-0" />
+            <span className="truncate">{ctaText}</span>
+            <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
           </a>
         </div>
 
-        {/* Mobile Hamburger Button */}
+        {/* Mobile & Tablet Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 rounded-lg bg-slate-800/80 text-white hover:bg-slate-700 transition"
+          className="lg:hidden p-2.5 rounded-xl bg-slate-800/90 text-white hover:bg-slate-700 hover:text-amber-400 transition shrink-0 relative z-50 border border-slate-700/60 shadow-md flex items-center justify-center cursor-pointer ml-2"
           aria-label="Toggle Navigation"
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -137,18 +137,36 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-3 top-20 bg-[#0b0f17]/98 border border-amber-500/30 rounded-2xl p-5 shadow-2xl backdrop-blur-2xl z-50 space-y-3">
+        <div className="lg:hidden fixed inset-x-3 top-20 bg-[#0b0f17]/98 border border-amber-500/30 rounded-2xl p-5 shadow-2xl backdrop-blur-2xl z-50 space-y-3 max-h-[calc(100vh-6rem)] overflow-y-auto">
           <nav className="flex flex-col space-y-1">
-            {navItems.map((item: any, idx: number) => (
-              <Link
-                key={idx}
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-200 hover:bg-amber-500/10 hover:text-amber-400 transition"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item: any, idx: number) =>
+              item.isExternal ? (
+                <a
+                  key={idx}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-200 hover:bg-amber-500/10 hover:text-amber-400 transition flex items-center justify-between"
+                >
+                  <span>{item.label}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-amber-400" />
+                </a>
+              ) : (
+                <Link
+                  key={idx}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`px-4 py-2.5 rounded-xl text-xs font-semibold transition ${
+                    pathname === item.href
+                      ? "bg-amber-500/15 text-amber-400 font-bold border border-amber-500/30"
+                      : "text-slate-200 hover:bg-amber-500/10 hover:text-amber-400"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
             <Link
               href="/admin"
               onClick={() => setMobileMenuOpen(false)}

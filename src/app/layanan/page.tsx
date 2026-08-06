@@ -137,9 +137,9 @@ export default function LayananPage() {
                         href={getServiceWaLink(item.name, cat.category)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-center py-2 px-3 rounded-lg bg-amber-500/10 hover:bg-amber-500 border border-amber-500/30 text-amber-400 hover:text-white font-mono text-xs font-bold transition-all"
+                        className="inline-block text-center py-2 px-3 rounded-lg bg-amber-500/10 hover:bg-amber-500 border border-amber-500/30 text-amber-400 hover:text-white font-mono text-xs font-bold transition-all truncate w-full"
                       >
-                        Konsultasi {item.name} &rarr;
+                        Konsultasi WA &rarr;
                       </a>
                     </div>
                   ))}

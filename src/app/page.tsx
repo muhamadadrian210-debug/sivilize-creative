@@ -71,8 +71,8 @@ export default function Home() {
 
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             {/* Top Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#111622] border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide mb-6 shadow-xl backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
+            <div className="inline-flex items-center justify-center gap-2 px-3.5 py-1.5 rounded-2xl sm:rounded-full bg-[#111622] border border-amber-500/30 text-amber-400 text-[11px] sm:text-xs font-semibold tracking-wide mb-6 shadow-xl backdrop-blur-md max-w-full text-center">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping shrink-0" />
               <span>SIVILIZE CREATIVE — PRODUCTION HOUSE PT SIVILIZE CORP INDONESIA</span>
             </div>
 

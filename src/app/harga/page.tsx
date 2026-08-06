@@ -142,7 +142,7 @@ export default function HargaPage() {
 
           {/* HERO SPECIAL BUNDLE: LANDING PAGE + 1 VIDEO + 1 FLYER/PAMFLET */}
           <div className="mb-20">
-            <div className="max-w-5xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border-2 border-amber-500/70 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+            <div className="max-w-5xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border-2 border-amber-500/70 rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
               
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-slate-800">
@@ -150,7 +150,7 @@ export default function HargaPage() {
                   <span className="inline-block px-3.5 py-1 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-xs font-black uppercase rounded-lg mb-3">
                     🔥 BEST SELLER: ALL-IN-ONE DIGITAL LAUNCH BUNDLE
                   </span>
-                  <h2 className="text-2xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">
+                  <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white uppercase tracking-tight">
                     Website + 1 Video Promosi + 1 Desain Flyer/Pamflet
                   </h2>
                   <p className="text-slate-300 text-xs sm:text-sm mt-2">
@@ -158,9 +158,9 @@ export default function HargaPage() {
                   </p>
                 </div>
                 
-                <div className="bg-[#070b12] p-6 rounded-2xl border border-amber-500/40 text-center md:text-right min-w-[260px]">
+                <div className="bg-[#070b12] p-5 sm:p-6 rounded-2xl border border-amber-500/40 text-center md:text-right w-full md:w-auto min-w-0 sm:min-w-[240px] shrink-0">
                   <span className="text-slate-400 text-xs uppercase tracking-wider block font-mono">Harga Promo Terjangkau</span>
-                  <div className="text-3xl font-black text-amber-400 font-mono my-1">
+                  <div className="text-2xl sm:text-3xl font-black text-amber-400 font-mono my-1">
                     Rp 1.499.000
                   </div>
                   <span className="text-emerald-400 text-xs font-mono font-bold block">Syarat DP 50% = Rp 749.000</span>

@@ -17,6 +17,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* RESPONSIVE LAYOUT & TEXT CONTAINMENT SAFETY */
+*, ::before, ::after {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a, li, button, td, th {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+img, video, iframe, svg, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
 /* EDITORIAL AMBER MESH BACKGROUND */
 body::before {
   content: "";

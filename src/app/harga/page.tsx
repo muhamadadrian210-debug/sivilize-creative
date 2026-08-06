@@ -1,11 +1,22 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export default function HargaPage() {
-  const cmoWaNumber = "6282347058055";
+  const [siteData, setSiteData] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/admin/data")
+      .then((res) => res.json())
+      .then((data) => setSiteData(data))
+      .catch(() => {});
+  }, []);
+
+  const cmoPhone = siteData?.admin?.cmoPhone || "+6281246821279";
+  const cmoWaNumber = cmoPhone.replace(/[^0-9]/g, "");
 
   const getWaLink = (packageName: string, price: string) => {
     const text = `Halo Mas Shatrya Dhimar (CMO Sivilize Corp Indonesia),\n\nSaya mau diskusi & order mengenai ${packageName} (${price}).\n\nBoleh dibantu jadwal brief & alur kerjanya? Terima kasih.`;

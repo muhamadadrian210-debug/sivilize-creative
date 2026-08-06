@@ -1,0 +1,256 @@
+{
+  "admin": {
+    "username": "cmo.shatrya",
+    "password": "SivilizeCreative2026!",
+    "cmoName": "Shatrya Dhimar",
+    "cmoRole": "Chief Marketing Officer",
+    "cmoPhone": "+6281246821279",
+    "ceoName": "Muhamad Adrian",
+    "ceoRole": "Direktur Utama / CEO",
+    "companyName": "PT SIVILIZE CORP INDONESIA",
+    "companyNib": "0207260103661",
+    "companyNpwp": "1000 0000 1032 4212",
+    "companyAddress": "Kota Kupang, Nusa Tenggara Timur",
+    "officialEmail": "muhamadadrian210@gmail.com",
+    "assetsEmail": "assets.creative@sivilizecorp.com",
+    "websiteUrl": "https://creative.sivilizecorp.com"
+  },
+  "navbar": {
+    "logoText": "SIVILIZE CREATIVE",
+    "badgeText": "PT SIVILIZE CORP",
+    "themeColor": "amber",
+    "ctaText": "Konsultasi WA CMO",
+    "ctaWaMsg": "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya mau berkonsultasi mengenai layanan video promosi / branding untuk perusahaan kami.\n\nMohon bantuannya ya mas. Terima kasih!",
+    "navItems": [
+      { "label": "Layanan", "href": "/layanan" },
+      { "label": "Paket & Harga", "href": "/harga" },
+      { "label": "Portofolio", "href": "/portofolio" },
+      { "label": "Software ↗", "href": "https://software.sivilizecorp.com", "isExternal": true },
+      { "label": "Kepatuhan", "href": "/kepatuhan" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Kontak", "href": "/kontak" }
+    ]
+  },
+  "hero": {
+    "headingMain": "Ubah Visual Bisnis Anda Menjadi",
+    "headingHighlight": "Karya Sinematik 4K Berkelas Enterprise",
+    "subtitle": "Divisi Production House & Agensi Media Resmi PT Sivilize Corp Indonesia. Melayani Video Promosi 4K, Company Profile, Commercial Photography, Drone Aerial View, & Brand Identity di Kota Kupang & NTT.",
+    "ctaPrimaryText": "Hitung Paket Custom",
+    "ctaPrimaryHref": "/harga#kalkulator",
+    "ctaSecondaryText": "Lihat Portofolio 4K",
+    "ctaSecondaryHref": "/portofolio",
+    "stats": [
+      { "value": "100%", "label": "Resolusi 4K Ultra HD" },
+      { "value": "3-5 Hari", "label": "Estimasi Selesai Editing" },
+      { "value": "100%", "label": "SPK Legality Protected" },
+      { "value": "0 Rupiah", "label": "Raw Footage GDrive Gratis" }
+    ]
+  },
+  "calculator": {
+    "title": "🧮 Kalkulator Estimasi Paket Custom",
+    "subtitle": "Simulasikan kebutuhan video promosi, drone aerial, & desain visual bisnis Anda secara instan & transparan.",
+    "videoUnitPrice": 150000,
+    "videoUnitLabel": "Single Video Sinematik 4K (Reels / TikTok / Shorts)",
+    "addOns": [
+      { "id": "drone", "label": "🛸 Drone Aerial Cinematic Shot 4K (Per Sesi)", "price": 350000, "checked": false },
+      { "id": "flyer", "label": "🖼️ Desain Flyer / Pamflet Promo HD Print-Ready", "price": 100000, "checked": false },
+      { "id": "voiceover", "label": "🎙️ Voiceover Pengisi Suara Profesional (Pria / Wanita)", "price": 150000, "checked": false },
+      { "id": "scriptwriting", "label": "✍️ Scriptwriting Naskah Persuasif (Copywriting Sales)", "price": 0, "checked": true, "isFree": true }
+    ]
+  },
+  "pricing": [
+    {
+      "id": "single",
+      "name": "Single Video Promosi",
+      "price": "Rp 150.000",
+      "period": "per video",
+      "badge": "SINGLE PROMO",
+      "popular": false,
+      "description": "Ideal untuk UMKM & bisnis lokal yang butuh 1 video jualan sinematik berdurasi 15-60 detik.",
+      "features": [
+        "1 Video Vertikal 4K (Reels / TikTok / Shorts)",
+        "Scriptwriting Naskah Persuasif Included",
+        "Subtitle Dinamis & Color Grading Cinema",
+        "Audio Tren & Lisensi Komersial",
+        "Maksimal 2x Revisi Minor",
+        "Estimasi Pengerjaan 2-3 Hari"
+      ],
+      "whatsappMsg": "Halo CMO Shatrya Dhimar, saya mau pesan Single Video Promosi Sinematik 4K (Rp 150.000). Mohon info jadwal shooting & SPK-nya ya mas!"
+    },
+    {
+      "id": "shooting_min",
+      "name": "Bundling On-Location Kupang",
+      "price": "Rp 1.000.000",
+      "period": "3-5 video",
+      "badge": "MINIMUM SHOOTING",
+      "popular": false,
+      "description": "Paket wajib minimum order untuk sesi shooting langsung di lokasi klien (Kota Kupang & sekitarnya).",
+      "features": [
+        "Sesi Shooting Direct di Lokasi Klien (Kupang)",
+        "3 - 5 Video Promosi Sinematik 4K Multi-Angle",
+        "Dukungan Peralatan Lighting & Mic Wireless Pro",
+        "Scriptwriting & Subtitle Dinamis Lengkap",
+        "Color Grading Sinematik Premium",
+        "Gratis Raw Footage Mentahan via GDrive"
+      ],
+      "whatsappMsg": "Halo CMO Shatrya Dhimar, saya mau pesan Paket Bundling On-Location Shooting Kupang (Rp 1.000.000). Mohon atur jadwal shooting tim mas!"
+    },
+    {
+      "id": "all_in_one",
+      "name": "Paket Bundling All-in-One",
+      "price": "Rp 1.499.000",
+      "period": "paket terpadu",
+      "badge": "MOST POPULAR",
+      "popular": true,
+      "description": "Sinergi spesial ekosistem PT: Landing Page Web 3 Hari Rilis + Video Promosi 4K + Flyer Desain.",
+      "features": [
+        "1 Website Landing Page 3 Hari Rilis (SiWeb Production)",
+        "1 Video Promosi Sinematik 4K Ultra HD",
+        "1 Desain Flyer / Pamflet HD Print-Ready",
+        "Gratis Domain & Hosting High-Speed 1 Tahun",
+        "Terhubung Langsung ke WhatsApp Klien",
+        "Paling Laris Untuk Promosi Bisnis Baru"
+      ],
+      "whatsappMsg": "Halo CMO Shatrya Dhimar, saya mau pesan Paket Bundling All-in-One Rp 1.499.000 (Web + Video + Flyer). Mohon bantuannya ya mas!"
+    },
+    {
+      "id": "company_profile",
+      "name": "Video Company Profile",
+      "price": "Custom Quote",
+      "period": "proyek enterprise",
+      "badge": "ENTERPRISE CLASS",
+      "popular": false,
+      "description": "Video profil resmi untuk instansi, korporasi, perumahan APERSI, rumah sakit, & lembaga.",
+      "features": [
+        "Durasi Video 2 - 5 Menit Sinematik 4K",
+        "Drone Aerial View 4K Shot Included",
+        "Voiceover Pengisi Suara Eksekutif Pro",
+        "Wawancara Direksi & Profil Fasilitas",
+        "SPK Perjanjian Kerja & Faktur Pajak PT",
+        "Cocok Untuk Presentasi Audiensi Instansi"
+      ],
+      "whatsappMsg": "Halo CMO Shatrya Dhimar, kami bermaksud mengajukan pembuatan Video Company Profile Enterprise untuk instansi/perusahaan kami. Boleh minta proposal dan jadwal audiensi mas?"
+    }
+  ],
+  "portfolios": [
+    {
+      "id": "p1",
+      "title": "Video Cinematic Perumahan APERSI NTT",
+      "category": "Company Profile",
+      "client": "DPD APERSI Provinsi NTT",
+      "description": "Pengambilan gambar udara aerial drone & videografi fasilitas perumahan subsidi & komersial di Kota Kupang.",
+      "thumbnail": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "featured": true
+    },
+    {
+      "id": "p2",
+      "title": "Commercial Reel Cafe & Resto Sinematik",
+      "category": "Reels & TikTok",
+      "client": "Seaside Cafe Kupang",
+      "description": "Promosi menu makanan & suasana sunset pantai sinematik dengan audio tren & subtitle dinamis.",
+      "thumbnail": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "featured": true
+    },
+    {
+      "id": "p3",
+      "title": "Fotografi Produk Studio & Packaging",
+      "category": "Commercial Photography",
+      "client": "Oleh-Oleh Khas NTT",
+      "description": "Foto studio komersial pencahayaan profesional untuk katalog e-commerce & pamflet banner.",
+      "thumbnail": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&q=80",
+      "videoUrl": "",
+      "featured": true
+    },
+    {
+      "id": "p4",
+      "title": "Brand Identity & Logo Guideline",
+      "category": "Branding & Design",
+      "client": "Sivilize Software",
+      "description": "Pengembangan logo typography modern, color palette guidelines, & stationeries visual.",
+      "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+      "videoUrl": "",
+      "featured": false
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "title": "Video Promosi Sinematik 4K",
+      "icon": "Video",
+      "description": "Produksi video promosi vertikal & horizontal resolusi 4K dengan naskah persuasif & color grading bioskop.",
+      "bulletPoints": ["Resolusi 4K Ultra HD", "Scriptwriting Naskah Sales", "Subtitle Dinamis & Audio Tren", "Revisi Minor 2x"]
+    },
+    {
+      "id": "s2",
+      "title": "Drone Aerial View 4K Shot",
+      "icon": "Camera",
+      "description": "Pengambilan gambar sinematik dari udara menggunakan Drone 4K untuk kawasan perumahan, hotel, & lahan.",
+      "bulletPoints": ["Pilot Certified & Experienced", "Resolution 4K 60fps", "Kawasan Properti & Event", "View Panoramik Indah"]
+    },
+    {
+      "id": "s3",
+      "title": "Commercial Product & Corporate Photo",
+      "icon": "Image",
+      "description": "Fotografi studio & outdoor komersial untuk produk UMKM, katalog fashion, & foto profil direksi.",
+      "bulletPoints": ["Lighting Studio Pro", "High Resolution Retouch", "Print-Ready Output", "Foto Profil Direksi"]
+    },
+    {
+      "id": "s4",
+      "title": "Brand Identity & Graphic Design",
+      "icon": "Palette",
+      "description": "Desain logo modern, brand guidelines, pamflet promo, flyer, banner, & spanduk resolusi tinggi.",
+      "bulletPoints": ["Vector Logo Master File", "Flyer Print-Ready", "Spanduk & Baliho HD", "Desain Feeds Media Sosial"]
+    }
+  ],
+  "faqs": [
+    {
+      "id": "f1",
+      "question": "Apakah harga Rp 150.000 per video sudah termasuk naskah scriptwriting?",
+      "answer": "Ya, 100% sudah termasuk pembuatan naskah scriptwriting jualan persuasif, subtitle dinamis, color grading, dan audio tren komersial."
+    },
+    {
+      "id": "f2",
+      "question": "Berapa lama proses pembuatan video promosi?",
+      "answer": "Estimasi proses editing adalah 2–3 hari kerja setelah sesi shooting selesai atau bahan video kami terima."
+    },
+    {
+      "id": "f3",
+      "question": "Bagaimana aturan shooting di lokasi klien (Kota Kupang)?",
+      "answer": "Untuk shooting langsung di lokasi klien (Kota Kupang), kami menerapkan minimum order paket Bundling On-Location Shooting Rp 1.000.000 (dapat 3–5 video) demi efisiensi operasional tim & sewa alat."
+    },
+    {
+      "id": "f4",
+      "question": "Apakah file mentahan (Raw Footage) diberikan gratis?",
+      "answer": "Ya! Seluruh file mentahan (Raw Footage) diberikan GRATIS via Google Drive hanya dan setelah pembayaran proyek dinyatakan LUNAS 100%."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "clientName": "Ketua DPD APERSI NTT",
+      "clientRole": "Asosiasi Pengembang Perumahan",
+      "company": "DPD APERSI Provinsi NTT",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&q=80",
+      "content": "Hasil video drone dan sinematik kawasan perumahan buatan tim Sivilize Creative sangat luar biasa. Kualitasnya meningkatkan kepercayaan instansi & calon pembeli perumahan kami.",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "clientName": "Owner Seaside Cafe",
+      "clientRole": "Pemilik Cafe & Resto",
+      "company": "Seaside Cafe Kupang",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80",
+      "content": "Pesan paket All-in-One Rp 1.499.000 dapet web 3 hari rilis + video reels 4K + flyer promo. Penjualan cafe kami naik pesat dalam 1 minggu!",
+      "rating": 5
+    }
+  ],
+  "terms": {
+    "dpPolicy": "Setiap pengerjaan proyek wajib membayar DP 50% pada H-3 sebelum jadwal shooting serta menandatangani Surat Perjanjian Kerja (SPK) resmi PT Sivilize Corp Indonesia.",
+    "cancellationPolicy": "Jika pembatalan dilakukan sepihak oleh klien pada H-3 atau setelah DP dibayarkan, maka DP 50% HANGUS 100% (tidak dapat dikembalikan).",
+    "rawFootagePolicy": "File mentahan (Raw Footage) diberikan secara GRATIS via Google Drive setelah seluruh tagihan dilunasi 100% (CLEAR 100%).",
+    "revisionPolicy": "Setiap paket video mendapatkan jatah maksimal 2x revisi minor (perbaikan teks, timing, atau audio)."
+  }
+}

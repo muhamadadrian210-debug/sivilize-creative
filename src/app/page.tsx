@@ -1,373 +1,262 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import {
+  Video,
+  Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  Play,
+  Film,
+  Camera,
+  Layers,
+  MessageCircle,
+  Calculator,
+  ShieldCheck,
+  Star,
+  ExternalLink,
+  ChevronRight
+} from "lucide-react";
 
 export default function Home() {
-  const rfpWaMessage = encodeURIComponent(
-    "Halo Mas Shatrya Dhimar (CMO Sivilize Creative),\n\nSaya bermaksud berkonsultasi mengenai rencana produksi video, fotografi, atau branding visual untuk bisnis/instansi kami.\n\nBoleh dibantu koordinasi awalnya? Terima kasih."
+  const [siteData, setSiteData] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/admin/data")
+      .then((res) => res.json())
+      .then((data) => setSiteData(data))
+      .catch(() => {});
+  }, []);
+
+  const hero = siteData?.hero || {
+    headingMain: "Ubah Visual Bisnis Anda Menjadi",
+    headingHighlight: "Karya Sinematik 4K Berkelas Enterprise",
+    subtitle: "Divisi Production House & Agensi Media Resmi PT Sivilize Corp Indonesia. Melayani Video Promosi 4K, Company Profile, Commercial Photography, Drone Aerial View, & Brand Identity di Kota Kupang & NTT.",
+    stats: [
+      { value: "100%", label: "Resolusi 4K Ultra HD" },
+      { value: "3-5 Hari", label: "Estimasi Selesai Editing" },
+      { value: "100%", label: "SPK Legality Protected" },
+      { value: "0 Rupiah", label: "Raw Footage GDrive Gratis" }
+    ]
+  };
+
+  const portfolios = siteData?.portfolios?.filter((p: any) => p.featured) || [];
+  const services = siteData?.services || [];
+  const cmoPhone = siteData?.admin?.cmoPhone || "+6281246821279";
+  const cmoName = siteData?.admin?.cmoName || "Shatrya Dhimar";
+  const waCleanPhone = cmoPhone.replace(/[^0-9]/g, "");
+
+  const cmoWaMsg = encodeURIComponent(
+    `Halo Mas ${cmoName} (CMO Sivilize Creative),\n\nSaya bermaksud berkonsultasi mengenai rencana produksi video promosi, drone aerial, atau branding visual untuk bisnis kami.\n\nBoleh dibantu koordinasi awalnya mas? Terima kasih!`
   );
 
   return (
-    <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300 selection:bg-amber-500 selection:text-white overflow-x-hidden">
+    <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#07090e] text-slate-300 selection:bg-amber-500 selection:text-slate-950 overflow-x-hidden">
       <Navbar />
 
       <main className="flex-1">
-
-        {/* 1. HERO */}
-        <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 border-b border-slate-800/60 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-20 pointer-events-none" />
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[800px] h-[300px] bg-amber-500/8 blur-[140px] rounded-full pointer-events-none" />
+        {/* 1. HERO SECTION */}
+        <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 border-b border-slate-800/80 overflow-hidden">
+          {/* Ambient Lighting Background */}
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[900px] h-[400px] bg-amber-500/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="absolute top-1/2 right-10 w-[350px] h-[350px] bg-amber-600/5 blur-[120px] rounded-full pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:28px_28px] opacity-15 pointer-events-none" />
 
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-amber-500/30 text-amber-400 text-[10px] font-mono tracking-wide mb-4 shadow-xl backdrop-blur-md max-w-full text-center">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse shrink-0" />
-              <span className="truncate">Sivilize Creative — PT Sivilize Corp Indonesia</span>
+            {/* Top Pill Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#111622] border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide mb-6 shadow-xl backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
+              <span>SIVILIZE CREATIVE — PRODUCTION HOUSE PT SIVILIZE CORP</span>
             </div>
 
-            <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight mb-4">
-              Membangun Identitas Visual &amp; Konten Kreatif Berkelas.{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 block sm:inline mt-1 sm:mt-0">
-                Solusi Video Promosi, Fotografi, &amp; Branding Bisnis.
+            {/* Dynamic Hero Headings */}
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] mb-6 max-w-4xl mx-auto">
+              {hero.headingMain}{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 block mt-2">
+                {hero.headingHighlight}
               </span>
             </h1>
 
-            <p className="text-slate-400 text-xs sm:text-sm font-normal max-w-2xl mx-auto leading-relaxed mb-7">
-              Kami membantu UMKM, perusahaan, dan organisasi menyampaikan nilai produk melalui video komersial, fotografi studio, desain brand, dan manajemen konten digital.
+            <p className="text-slate-400 text-sm sm:text-base font-normal max-w-3xl mx-auto leading-relaxed mb-8">
+              {hero.subtitle}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            {/* Action CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
               <a
-                href={`https://wa.me/6282347058055?text=${rfpWaMessage}`}
+                href={`https://wa.me/${waCleanPhone}?text=${cmoWaMsg}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold text-xs px-6 py-3.5 rounded-xl shadow-lg shadow-amber-500/25 transition-all hover:-translate-y-0.5"
+                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm shadow-xl shadow-amber-500/25 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5 group"
               >
-                <span>📸 Konsultasi Langsung dengan CMO</span>
+                <MessageCircle className="w-4 h-4 fill-slate-950" />
+                <span>Konsultasi WA CMO ({cmoName})</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
+
               <Link
                 href="/harga"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs px-6 py-3.5 rounded-xl border border-slate-700/80 transition-all"
+                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-[#111622] hover:bg-[#182030] text-slate-200 font-bold text-sm border border-slate-700/80 transition-all flex items-center justify-center gap-2"
               >
-                <span>📋 Lihat Paket &amp; Estimasi Biaya</span>
+                <Calculator className="w-4 h-4 text-amber-400" />
+                <span>Paket & Kalkulator Biaya</span>
               </Link>
             </div>
 
-            {/* STUDIO STATUS BAR */}
-            <div className="mt-10 p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-2xl backdrop-blur-xl max-w-4xl mx-auto text-left">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-800 pb-3 mb-4 gap-2">
-                <div className="flex items-center gap-2.5">
-                  <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 animate-pulse" />
+            {/* Dynamic Stats Grid */}
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              {hero.stats.map((stat: any, idx: number) => (
+                <div
+                  key={idx}
+                  className="p-4 sm:p-5 rounded-2xl bg-[#111622]/80 border border-slate-800/80 backdrop-blur-xl hover:border-amber-500/40 transition-colors group text-center"
+                >
+                  <div className="text-xl sm:text-2xl font-black text-amber-400 tracking-tight group-hover:scale-105 transition-transform">
+                    {stat.value}
                   </div>
-                  <span className="text-[10px] font-mono text-slate-400">sivilize-creative-studio.active</span>
-                </div>
-                <div className="flex flex-wrap items-center gap-3 text-[10px] font-mono text-slate-400">
-                  <span className="text-amber-400 font-bold">[ BRANDING AGENCY ]</span>
-                  <span className="text-emerald-400 font-bold">[ PT SIVILIZE CORP ]</span>
-                  <span className="hidden sm:inline">[ NIB 0207260103661 ]</span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs font-mono">
-                <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800/80">
-                  <span className="text-slate-500 text-[9px] block mb-1">01 / PRODUKSI VIDEO</span>
-                  <strong className="text-white block font-sans font-bold text-xs mb-1">Video Promosi</strong>
-                  <span className="text-amber-400 text-[10px]">Komersial & Company Profile</span>
-                </div>
-                <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800/80">
-                  <span className="text-slate-500 text-[9px] block mb-1">02 / DOKUMENTASI</span>
-                  <strong className="text-white block font-sans font-bold text-xs mb-1">Event Coverage</strong>
-                  <span className="text-emerald-400 text-[10px]">Sinematik & Full Day</span>
-                </div>
-                <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800/80">
-                  <span className="text-slate-500 text-[9px] block mb-1">03 / FOTOGRAFI</span>
-                  <strong className="text-white block font-sans font-bold text-xs mb-1">Foto Produk & Menu</strong>
-                  <span className="text-indigo-400 text-[10px]">High-Res Studio Lighting</span>
-                </div>
-                <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800/80">
-                  <span className="text-slate-500 text-[9px] block mb-1">04 / DIREKSI</span>
-                  <strong className="text-white block font-sans font-bold text-xs mb-1">Shatrya Dhimar (CMO)</strong>
-                  <span className="text-slate-400 text-[10px]">0823 4705 8055</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        {/* 2. CORPORATE BACKGROUND */}
-        <section className="py-16 border-b border-slate-800/60 bg-slate-900/40">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// CORPORATE_BACKGROUND</span>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-white uppercase tracking-tight">
-                Bagian dari Ekosistem PT Sivilize Corp Indonesia
-              </h2>
-              <p className="text-slate-400 text-xs mt-2 leading-relaxed">
-                Sivilize Creative beroperasi sebagai pilar spesialis produksi konten visual &amp; branding di bawah badan hukum perseroan yang terdaftar resmi.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start mb-0">
-
-              {/* PROFIL PERUSAHAAN */}
-              <div className="lg:col-span-7 p-6 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl">
-                <h3 className="text-base font-bold text-white mb-3 uppercase">Profil Divisi &amp; Legalitas</h3>
-                <p className="text-slate-300 text-xs leading-relaxed mb-3">
-                  <strong>PT SIVILIZE CORP INDONESIA</strong> menaungi divisi <strong>Sivilize Creative</strong> untuk merancang identitas visual, produksi video promosi, fotografi commercial, dan kampanye digital bagi pelaku usaha maupun organisasi.
-                </p>
-                <p className="text-slate-400 text-xs leading-relaxed mb-5">
-                  Setiap kerja sama didukung instrumen hukum perseroan yang transparan, dokumen penyerahan hak lisensi komersial, serta perjanjian kerahasiaan materi (NDA) bila diperlukan.
-                </p>
-
-                <div className="grid grid-cols-3 gap-2 text-xs font-mono">
-                  <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800">
-                    <span className="text-slate-500 block text-[9px] mb-1">NIB KEMENKUMHAM</span>
-                    <strong className="text-amber-400 font-bold text-[11px]">0207260103661</strong>
-                  </div>
-                  <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800">
-                    <span className="text-slate-500 block text-[9px] mb-1">KBLI ADVERTISING</span>
-                    <strong className="text-white font-bold text-[11px]">73100 Periklanan</strong>
-                  </div>
-                  <div className="p-3 rounded-xl bg-[#070b12] border border-slate-800">
-                    <span className="text-slate-500 block text-[9px] mb-1">PROGRAMMING</span>
-                    <strong className="text-emerald-400 font-bold text-[11px]">62199 Software</strong>
-                  </div>
-                </div>
-              </div>
-
-              {/* CMO CARD */}
-              <div className="lg:col-span-5 p-6 rounded-2xl bg-slate-900 border border-slate-800 relative shadow-xl">
-                <span className="text-[10px] font-mono text-amber-400 uppercase tracking-wider block mb-2">// MARKETING_LEAD</span>
-                <h3 className="text-base font-bold text-white mb-4 uppercase">Direksi Pemasaran</h3>
-
-                <div className="p-4 rounded-xl bg-[#070b12] border border-amber-500/40 mb-4">
-                  <strong className="text-white font-bold text-sm block">Shatrya Dhimar</strong>
-                  <span className="text-amber-400 font-bold text-[10px] block mb-2">Chief Marketing Officer (CMO) — Sivilize Creative</span>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-3">
-                    Memimpin strategi pemasaran visual, penyusunan proposal, serta pengawasan mutu produksi kampanye kreatif.
-                  </p>
-                  <a
-                    href={`https://wa.me/6282347058055?text=${rfpWaMessage}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 py-2 px-4 rounded-lg bg-amber-500 hover:bg-amber-400 text-white font-bold text-xs transition-all"
-                  >
-                    💬 WA CMO: +62 823-4705-8055 &rarr;
-                  </a>
-                </div>
-
-                <div className="text-[10px] text-slate-400 leading-relaxed border-t border-slate-800 pt-3 font-mono">
-                  CEO: Muhamad Adrian · COO: Briand Jivencha Therik · CFO: Hendrik Putra Hanas
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-        {/* 3. 5 PILAR LAYANAN */}
-        <section className="py-16 border-b border-slate-800/60">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// CREATIVE_SERVICES</span>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-white uppercase">5 Layanan Utama Sivilize Creative</h2>
-              <p className="text-slate-400 text-xs mt-2">Solusi produksi visual &amp; branding profesional sesuai kebutuhan pertumbuhan bisnis Anda.</p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-
-              <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] font-mono text-amber-400 block mb-1">[01] PRODUKSI VIDEO</span>
-                  <h3 className="text-sm font-bold text-white mb-2 uppercase">Business Content</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Video Promosi UMKM, Cafe, Hotel, Properti, Company Profile, TikTok/Reels, &amp; Drone.
-                  </p>
-                </div>
-                <Link href="/layanan" className="text-amber-400 font-mono text-xs font-bold hover:underline">
-                  Detail &rarr;
-                </Link>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] font-mono text-amber-400 block mb-1">[02] DOKUMENTASI</span>
-                  <h3 className="text-sm font-bold text-white mb-2 uppercase">Event Coverage</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Wedding, Wisuda, Seminar, Launching Produk, Konser, Gathering, &amp; Corporate Event.
-                  </p>
-                </div>
-                <Link href="/layanan" className="text-amber-400 font-mono text-xs font-bold hover:underline">
-                  Detail &rarr;
-                </Link>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] font-mono text-amber-400 block mb-1">[03] FOTOGRAFI</span>
-                  <h3 className="text-sm font-bold text-white mb-2 uppercase">Commercial Photo</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Foto Produk Studio, Foto Menu Makanan, Foto Interior/Eksterior, &amp; Company Profile.
-                  </p>
-                </div>
-                <Link href="/layanan" className="text-amber-400 font-mono text-xs font-bold hover:underline">
-                  Detail &rarr;
-                </Link>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] font-mono text-amber-400 block mb-1">[04] IDENTITAS VISUAL</span>
-                  <h3 className="text-sm font-bold text-white mb-2 uppercase">Branding &amp; Logo</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Desain Logo Vektor, Brand Identity Guidelines, Poster, Banner, &amp; Packaging.
-                  </p>
-                </div>
-                <Link href="/layanan" className="text-amber-400 font-mono text-xs font-bold hover:underline">
-                  Detail &rarr;
-                </Link>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] font-mono text-amber-400 block mb-1">[05] MEDIA SOSIAL</span>
-                  <h3 className="text-sm font-bold text-white mb-2 uppercase">Social Media</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Content Planning, Calendar, Copywriting Caption, Strategi Konten, &amp; Video Editing.
-                  </p>
-                </div>
-                <Link href="/layanan" className="text-amber-400 font-mono text-xs font-bold hover:underline">
-                  Detail &rarr;
-                </Link>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* 4. EKOSISTEM — BUTUH WEBSITE? */}
-        <section className="py-16 border-b border-slate-800/60 bg-[#070b12]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="p-6 sm:p-10 rounded-2xl bg-slate-900 border-2 border-amber-500/40 shadow-2xl">
-
-              <div className="text-center max-w-2xl mx-auto mb-8">
-                <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// SIVILIZE_CORP_ECOSYSTEM</span>
-                <h2 className="text-xl sm:text-2xl font-extrabold text-white uppercase">
-                  Butuh Website atau Software?
-                </h2>
-                <p className="text-slate-300 text-xs mt-2 leading-relaxed">
-                  <strong>PT SIVILIZE CORP INDONESIA</strong> juga menaungi unit bisnis teknologi:
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div className="p-5 rounded-xl bg-[#070b12] border border-slate-800 hover:border-amber-500/40 transition-all">
-                  <span className="text-amber-400 font-mono text-[10px] font-bold block mb-1">[ ENTERPRISE SOFTWARE ]</span>
-                  <h3 className="text-base font-bold text-white uppercase mb-2">Sivilize Software</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Pengembangan sistem software enterprise custom, ERP, CRM, SIMRS rumah sakit, &amp; integrasi AI/ML.
-                  </p>
-                  <a
-                    href="http://localhost:3000"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-amber-400 font-mono text-xs font-bold hover:underline"
-                  >
-                    Kunjungi Sivilize Software &rarr;
-                  </a>
-                </div>
-
-                <div className="p-5 rounded-xl bg-[#070b12] border border-slate-800 hover:border-amber-500/40 transition-all">
-                  <span className="text-emerald-400 font-mono text-[10px] font-bold block mb-1">[ WEB &amp; LANDING PAGE ]</span>
-                  <h3 className="text-base font-bold text-white uppercase mb-2">SiWeb Production</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                    Pembuatan landing page, website profil UMKM, cafe, &amp; toko online terintegrasi WhatsApp.
-                  </p>
-                  <a
-                    href="https://sivilizecorp.my.id"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-emerald-400 font-mono text-xs font-bold hover:underline"
-                  >
-                    Kunjungi SiWeb Production &rarr;
-                  </a>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* 5. KEUNGGULAN */}
-        <section className="py-16 border-b border-slate-800/60">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// COMMITMENT_&amp;_QUALITY</span>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-white uppercase">Mengapa Bekerja Sama Dengan Kami</h2>
-              <p className="text-slate-400 text-xs mt-2">Komitmen pengerjaan profesional dengan standar kualitas tinggi.</p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                { num: "01", title: "Harga Transparan", sub: "Rincian Jelas", desc: "Penawaran sesuai ruang lingkup pengerjaan tanpa biaya tersembunyi." },
-                { num: "02", title: "Tim Dedikatif", sub: "Berpengalaman", desc: "Sinematografer, fotografer studio, dan desainer grafis profesional." },
-                { num: "03", title: "Tepat Waktu", sub: "Sesuai Jadwal", desc: "Proses editing dan penyerahan materi sesuai komitmen yang disepakati." },
-                { num: "04", title: "Garansi Revisi", sub: "Terstruktur", desc: "Jatah revisi minor yang jelas agar hasil sesuai ekspektasi Anda." },
-                { num: "05", title: "Standar Tinggi", sub: "Kualitas Terbaik", desc: "Kamera sinema 4K, lighting studio profesional, &amp; retouching terkonsep." },
-                { num: "06", title: "Terintegrasi", sub: "Sinergi Ekosistem", desc: "Konten visual siap diintegrasikan langsung ke platform digital Sivilize." },
-              ].map((item) => (
-                <div key={item.num} className="p-5 rounded-xl bg-slate-900 border border-slate-800">
-                  <strong className="text-amber-400 text-[10px] block mb-1 font-mono">{item.num} / {item.title}</strong>
-                  <span className="text-white font-bold block text-xs mb-1">{item.sub}</span>
-                  <p className="text-slate-400 text-xs leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
+                  <div className="text-xs font-semibold text-slate-400 mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* 6. CTA BANNER */}
-        <section className="py-16 bg-slate-900/40">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <div className="p-6 sm:p-10 rounded-2xl bg-[#070b12] border-2 border-amber-500/60 shadow-2xl relative overflow-hidden">
-              <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">// CONSULTATION_&amp;_PROPOSAL</span>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-white uppercase mb-3">
-                Konsultasikan Rencana Media &amp; Branding Anda
+        {/* 2. SERVICES SECTION */}
+        <section className="py-20 border-b border-slate-800/80 bg-[#07090e]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <span className="text-amber-400 font-extrabold text-xs tracking-widest uppercase block mb-2">
+                LAYANAN UNGGULAN CREATIVE
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                Solusi Visual Sinematik Terpadu
               </h2>
-              <p className="text-slate-400 text-xs max-w-md mx-auto leading-relaxed mb-6">
-                Diskusikan rencana produksi video, dokumentasi event, fotografi produk, atau identitas visual langsung bersama CMO kami.
+              <p className="text-slate-400 text-xs sm:text-sm mt-2">
+                Diproduksi langsung oleh tim videografer, pilot drone, & fotografer profesional bersertifikat.
               </p>
+            </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a
-                  href={`https://wa.me/6282347058055?text=${rfpWaMessage}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold text-xs px-6 py-3.5 rounded-xl shadow-lg shadow-amber-500/30 transition-all"
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {services.map((svc: any) => (
+                <div
+                  key={svc.id}
+                  className="p-6 rounded-2xl bg-[#111622] border border-slate-800/80 hover:border-amber-500/40 transition-all group flex flex-col justify-between"
                 >
-                  <span>💬 WA CMO: Shatrya Dhimar (+62 823-4705-8055)</span>
-                </a>
-                <Link
-                  href="/kontak"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs px-6 py-3.5 rounded-xl border border-slate-700 transition-all"
-                >
-                  <span>📋 Form Penawaran</span>
-                </Link>
-              </div>
+                  <div>
+                    <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-5 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                      <Film className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-base font-bold text-white mb-2">{svc.title}</h3>
+                    <p className="text-slate-400 text-xs leading-relaxed mb-4">{svc.description}</p>
+                  </div>
+
+                  <ul className="space-y-2 pt-4 border-t border-slate-800/80">
+                    {svc.bulletPoints?.map((bp: string, i: number) => (
+                      <li key={i} className="text-[11px] text-slate-300 flex items-center gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                        <span>{bp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
+        {/* 3. FEATURED PORTFOLIO SECTION */}
+        <section className="py-20 border-b border-slate-800/80 bg-[#0b0f17]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+              <div>
+                <span className="text-amber-400 font-extrabold text-xs tracking-widest uppercase block mb-2">
+                  PORTOFOLIO TERBANYAK
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                  Karya Sinematik Klien Kami
+                </h2>
+              </div>
+              <Link
+                href="/portofolio"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-amber-300 transition"
+              >
+                <span>Lihat Semua Portofolio</span>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {portfolios.map((item: any) => (
+                <div
+                  key={item.id}
+                  className="rounded-2xl bg-[#111622] border border-slate-800/80 overflow-hidden hover:border-amber-500/40 transition-all group"
+                >
+                  <div className="relative h-48 w-full overflow-hidden bg-slate-900">
+                    <img
+                      src={item.thumbnail}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-80" />
+                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-amber-500/30 text-amber-400 text-[10px] font-extrabold uppercase">
+                      {item.category}
+                    </span>
+                  </div>
+
+                  <div className="p-5">
+                    <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                      Klien: {item.client}
+                    </div>
+                    <h3 className="text-base font-bold text-white mb-2 line-clamp-1">{item.title}</h3>
+                    <p className="text-slate-400 text-xs leading-relaxed line-clamp-2">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 4. CROSS DOMAIN SINERGI ENTERPRISE */}
+        <section className="py-20 border-b border-slate-800/80 bg-[#07090e] relative">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-[#111622] via-[#0b0f17] to-[#151c2c] border border-amber-500/30 relative overflow-hidden shadow-2xl">
+              <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none" />
+
+              <div className="max-w-2xl relative z-10">
+                <span className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-bold uppercase tracking-wider inline-block mb-4">
+                  SINERGI EKOSISTEM PT SIVILIZE CORP
+                </span>
+                <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight mb-4">
+                  Website High-Speed + Video Promosi 4K Sinematik
+                </h2>
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                  Butuh sistem software enterprise atau landing page yang langsung jadi? Hubungkan visual bisnis buatan Sivilize Creative dengan ekosistem software Sivilize Software.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href="https://software.sivilizecorp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs flex items-center gap-2 shadow-lg shadow-amber-500/20 transition"
+                  >
+                    <span>Kunjungi Sivilize Software</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+
+                  <Link
+                    href="/harga#all_in_one"
+                    className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs border border-slate-700/80 transition"
+                  >
+                    Paket Bundling All-in-One (Rp 1.499.000)
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

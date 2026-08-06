@@ -104,23 +104,16 @@ export function Navbar() {
           })}
         </nav>
 
-        {/* CTA & Admin Link */}
-        <div className="hidden md:flex items-center gap-2 shrink-0">
-          <Link
-            href="/admin"
-            className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-slate-400 hover:text-white hover:bg-slate-800/60 transition"
-          >
-            Admin Panel
-          </Link>
-
+        {/* CTA Button (No public Admin link) */}
+        <div className="hidden md:flex items-center shrink-0">
           <a
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3.5 py-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs transition shadow-lg shadow-amber-500/20 flex items-center gap-1.5 group shrink-0"
+            className="px-4 py-2 rounded-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-300 hover:to-amber-500 text-slate-950 font-black text-xs transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_25px_rgba(245,158,11,0.5)] flex items-center gap-1.5 group shrink-0 active:scale-95"
           >
             <MessageCircle className="w-3.5 h-3.5 fill-slate-950 shrink-0" />
-            <span className="truncate">{ctaText}</span>
+            <span className="truncate tracking-tight">{ctaText}</span>
             <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
           </a>
         </div>
@@ -128,17 +121,21 @@ export function Navbar() {
         {/* Mobile & Tablet Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2.5 rounded-xl bg-slate-800/90 text-white hover:bg-slate-700 hover:text-amber-400 transition shrink-0 relative z-50 border border-slate-700/60 shadow-md flex items-center justify-center cursor-pointer ml-2"
+          className="lg:hidden p-2.5 rounded-xl bg-[#111622]/90 text-amber-400 hover:bg-amber-500/20 transition shrink-0 relative z-50 border border-amber-500/30 shadow-lg flex items-center justify-center cursor-pointer ml-2 active:scale-95"
           aria-label="Toggle Navigation"
         >
-          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          {mobileMenuOpen ? <X className="w-5 h-5 text-amber-400" /> : <Menu className="w-5 h-5 text-amber-400" />}
         </button>
       </div>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-3 top-20 bg-[#0b0f17]/98 border border-amber-500/30 rounded-2xl p-5 shadow-2xl backdrop-blur-2xl z-50 space-y-3 max-h-[calc(100vh-6rem)] overflow-y-auto">
-          <nav className="flex flex-col space-y-1">
+        <div className="lg:hidden fixed inset-x-3 top-20 bg-[#07090e]/98 border border-amber-500/40 rounded-3xl p-6 shadow-[0_20px_50px_rgba(0,0,0,0.9)] backdrop-blur-3xl z-50 space-y-4 max-h-[calc(100vh-6rem)] overflow-y-auto">
+          <div className="text-[10px] font-mono text-amber-400/80 uppercase tracking-widest px-2 font-bold flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            SIVILIZE CREATIVE NAVIGATION
+          </div>
+          <nav className="flex flex-col space-y-1 pt-1 border-t border-white/5">
             {navItems.map((item: any, idx: number) =>
               item.isExternal ? (
                 <a
@@ -147,44 +144,40 @@ export function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-200 hover:bg-amber-500/10 hover:text-amber-400 transition flex items-center justify-between"
+                  className="px-4 py-3 rounded-2xl text-xs font-semibold text-slate-200 hover:bg-amber-500/10 hover:text-amber-400 transition flex items-center justify-between"
                 >
                   <span>{item.label}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-amber-400" />
+                  <ArrowUpRight className="w-4 h-4 text-amber-400" />
                 </a>
               ) : (
                 <Link
                   key={idx}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-2.5 rounded-xl text-xs font-semibold transition ${
+                  className={`px-4 py-3 rounded-2xl text-xs font-semibold transition flex items-center justify-between ${
                     pathname === item.href
-                      ? "bg-amber-500/15 text-amber-400 font-bold border border-amber-500/30"
-                      : "text-slate-200 hover:bg-amber-500/10 hover:text-amber-400"
+                      ? "bg-amber-500/15 text-amber-400 font-extrabold border border-amber-500/30"
+                      : "text-slate-300 hover:bg-amber-500/10 hover:text-white"
                   }`}
                 >
-                  {item.label}
+                  <span>{item.label}</span>
+                  {pathname === item.href && <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>}
                 </Link>
               )
             )}
-            <Link
-              href="/admin"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-white transition"
-            >
-              🔒 Admin Portal CMO
-            </Link>
           </nav>
 
-          <a
-            href={waUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25"
-          >
-            <MessageCircle className="w-4 h-4 fill-slate-950" />
-            {ctaText}
-          </a>
+          <div className="pt-2 border-t border-white/5">
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25 active:scale-95 transition"
+            >
+              <MessageCircle className="w-4 h-4 fill-slate-950" />
+              {ctaText}
+            </a>
+          </div>
         </div>
       )}
     </header>

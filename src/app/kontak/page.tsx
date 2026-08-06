@@ -45,27 +45,27 @@ export default function KontakPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 lg:pt-28 lg:pb-20">
+        <div className="max-w-5xl lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-xl mx-auto mb-8">
+          <div className="text-center max-w-xl lg:max-w-2xl mx-auto mb-8 lg:mb-10">
             <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-1.5">// REQUEST_PROPOSAL</span>
             <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight uppercase">Hubungi Tim Creative</h1>
-            <p className="text-slate-400 text-[11px] sm:text-xs mt-1.5">
+            <p className="text-slate-400 text-[11px] sm:text-xs lg:text-sm mt-1.5">
               Setiap opsi tombol di halaman ini terhubung langsung ke WhatsApp CMO Shatrya Dhimar (+62 823-4705-8055) dengan format pesan otomatis yang disesuaikan secara spesifik.
             </p>
           </div>
 
           {/* QUICK ACTION BUTTONS */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5 mb-8 lg:mb-10">
             {quickActions.map((act, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between hover:border-amber-500/50 transition-all">
+              <div key={idx} className="p-6 lg:p-7 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between hover:border-amber-500/50 transition-all">
                 <div>
                   <span className="text-amber-400 font-mono text-[10px] font-bold uppercase tracking-wider block mb-2">
                     [ QUICK_ACTION 0{idx + 1} ]
                   </span>
-                  <h3 className="text-base font-bold text-white uppercase mb-2">{act.title}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-6">{act.desc}</p>
+                  <h3 className="text-base lg:text-lg font-bold text-white uppercase mb-2">{act.title}</h3>
+                  <p className="text-slate-400 text-xs lg:text-sm leading-relaxed mb-6">{act.desc}</p>
                 </div>
 
                 <a

@@ -47,14 +47,14 @@ export function Footer() {
           justify-content: center;
         }
         .footer-tagline {
-          font-size: 0.82rem;
+          font-size: 0.85rem;
           line-height: 1.65;
           color: #64748b;
           margin: 0;
           max-width: 300px;
         }
         .footer-col-title {
-          font-size: 0.72rem;
+          font-size: 0.75rem;
           font-weight: 800;
           color: #f1f5f9;
           text-transform: uppercase;
@@ -113,6 +113,27 @@ export function Footer() {
             flex-direction: column;
             gap: 8px;
             align-items: flex-start;
+          }
+        }
+        @media (min-width: 1024px) {
+          .creative-footer {
+            padding: 56px 32px 40px;
+          }
+          .footer-grid {
+            gap: 36px;
+            margin-bottom: 44px;
+          }
+          .footer-logo-title {
+            font-size: 1.35rem;
+          }
+          .footer-tagline {
+            font-size: 0.9rem;
+          }
+          .footer-col-title {
+            font-size: 0.8rem;
+          }
+          .footer-link {
+            font-size: 0.82rem;
           }
         }
       `}</style>

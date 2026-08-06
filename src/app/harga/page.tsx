@@ -124,25 +124,25 @@ export default function HargaPage() {
     <div className="min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 lg:pt-28 lg:pb-20">
+        <div className="max-w-5xl lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* HEADER SECTION */}
-          <div className="text-center max-w-xl mx-auto mb-8">
+          <div className="text-center max-w-xl lg:max-w-2xl mx-auto mb-8 lg:mb-10">
             <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-2">
               // TRANSPARENT_VALUE_PRICING
             </span>
-            <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight uppercase mb-2">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight uppercase mb-2">
               Paket &amp; Investasi Konten
             </h1>
-            <p className="text-slate-400 text-xs sm:text-xs leading-relaxed max-w-md mx-auto">
+            <p className="text-slate-400 text-xs sm:text-xs lg:text-sm leading-relaxed max-w-md lg:max-w-lg mx-auto">
               Kami tidak sekadar menjual durasi video atau platform. Kami menghadirkan <strong className="text-white font-bold">produksi konten bernilai tinggi</strong>—satu karya video berkualitas dapat Anda publikasikan secara bebas di Instagram Reels, TikTok, Facebook Video, hingga YouTube Shorts.
             </p>
           </div>
 
           {/* HERO SPECIAL BUNDLE: LANDING PAGE + 1 VIDEO + 1 FLYER/PAMFLET */}
           <div className="mb-12">
-            <div className="max-w-4xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border border-amber-500/50 rounded-xl p-4.5 sm:p-6 shadow-xl relative overflow-hidden">
+            <div className="max-w-4xl lg:max-w-5xl mx-auto bg-gradient-to-b from-slate-900 via-[#0f172a] to-slate-900 border border-amber-500/50 rounded-xl p-4.5 sm:p-6 lg:p-8 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
               
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-slate-800">
@@ -150,10 +150,10 @@ export default function HargaPage() {
                   <span className="inline-block px-3 py-0.5 bg-amber-500/20 border border-amber-500/50 text-amber-400 font-mono text-[10px] font-bold uppercase rounded-md mb-2">
                     🔥 BEST SELLER: ALL-IN-ONE DIGITAL LAUNCH BUNDLE
                   </span>
-                  <h2 className="text-base sm:text-lg lg:text-lg font-bold text-white uppercase tracking-tight">
+                  <h2 className="text-base sm:text-lg lg:text-xl font-bold text-white uppercase tracking-tight">
                     Website + 1 Video Promosi + 1 Desain Flyer/Pamflet
                   </h2>
-                  <p className="text-slate-300 text-[11px] sm:text-xs mt-1">
+                  <p className="text-slate-300 text-[11px] sm:text-xs lg:text-sm mt-1">
                     Solusi terlengkap &amp; paling terjangkau bagi usaha yang ingin langsung tayang resmi &amp; punya materi promosi berkelas!
                   </p>
                 </div>
@@ -172,7 +172,7 @@ export default function HargaPage() {
                   Apa Saja Yang Langsung Anda Dapatkan:
                 </h3>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mb-8">
                   {[
                     "1 Website Landing Page / Profil Perusahaan (SiWeb)",
                     "Domain .com / .co.id + Hosting Super Cepat (3 Hari Rilis)",

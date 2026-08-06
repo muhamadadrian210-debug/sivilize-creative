@@ -34,20 +34,20 @@ export default function FaqPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 lg:pt-28 lg:pb-20">
+        <div className="max-w-4xl lg:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-xl mx-auto mb-8">
+          <div className="text-center max-w-xl lg:max-w-2xl mx-auto mb-8 lg:mb-10">
             <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase block mb-1.5">// KNOWLEDGE_BASE_FAQ</span>
             <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight uppercase">20+ Pertanyaan Sering Diajukan</h1>
-            <p className="text-slate-400 text-[11px] sm:text-xs mt-1.5">
+            <p className="text-slate-400 text-[11px] sm:text-xs lg:text-sm mt-1.5">
               Jawaban resmi mengenai layanan, alur pengerjaan, lisensi karya, dan legalitas Sivilize Creative.
             </p>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3 lg:space-y-4">
             {faq20.map((item, idx) => (
-              <div key={idx} className="p-3.5 sm:p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <div key={idx} className="p-3.5 sm:p-4 lg:p-5 rounded-xl bg-slate-900 border border-slate-800">
                 <button
                   onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
                   className="w-full text-left font-bold text-white text-xs sm:text-sm uppercase flex justify-between items-center gap-3 focus:outline-none"

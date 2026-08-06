@@ -15,37 +15,37 @@ export default function TentangPage() {
     <div className="page-wrapper min-h-screen flex flex-col font-sans bg-[#0b0f17] text-slate-300">
       <Navbar />
 
-      <main className="flex-1 pt-24 pb-16 lg:pt-24 lg:pb-16">
+      <main className="flex-1 pt-24 pb-16 lg:pt-28 lg:pb-20">
         {/* HERO BANNER */}
-        <section className="relative overflow-hidden py-10 md:py-12 border-b border-slate-800/80 bg-gradient-to-b from-[#111622] via-[#0b0f17] to-[#0b0f17]">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-xl mx-auto">
+        <section className="relative overflow-hidden py-10 md:py-12 lg:py-16 border-b border-slate-800/80 bg-gradient-to-b from-[#111622] via-[#0b0f17] to-[#0b0f17]">
+          <div className="max-w-5xl lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-xl lg:max-w-2xl mx-auto">
               <span className="px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-[10px] tracking-widest uppercase inline-flex items-center gap-1.5 mb-3">
                 <Sparkles className="w-3 h-3" /> DIVISI MEDIA & PRODUCTION HOUSE RESMI PT SIVILIZE CORP
               </span>
-              <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white tracking-tight uppercase leading-snug">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight uppercase leading-snug">
                 Tentang <span className="text-amber-400">Sivilize Creative</span>
               </h1>
-              <p className="text-slate-400 text-[11px] sm:text-xs mt-2 leading-relaxed">
+              <p className="text-slate-400 text-[11px] sm:text-xs lg:text-sm mt-2 leading-relaxed">
                 Unit bisnis strategis yang bergerak di bidang produksi video sinematik 4K, komersial branding, commercial photography, & drone aerial view di bawah naungan resmi entitas hukum <strong className="text-white">PT SIVILIZE CORP INDONESIA</strong>.
               </p>
             </div>
 
             {/* QUICK STATS & LEGALITY BADGES */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
-              <div className="p-3 rounded-xl bg-[#111622] border border-slate-800 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 mt-8">
+              <div className="p-3 lg:p-4 rounded-xl bg-[#111622] border border-slate-800 text-center">
                 <span className="text-slate-500 text-[9px] font-mono block uppercase">ENTITAS HUKUM</span>
                 <span className="text-white font-bold text-xs mt-0.5 block">PT SIVILIZE CORP</span>
               </div>
-              <div className="p-3 rounded-xl bg-[#111622] border border-slate-800 text-center">
+              <div className="p-3 lg:p-4 rounded-xl bg-[#111622] border border-slate-800 text-center">
                 <span className="text-slate-500 text-[9px] font-mono block uppercase">NIB REPUBLIK INDONESIA</span>
                 <span className="text-amber-400 font-bold text-xs mt-0.5 block font-mono">0207260103661</span>
               </div>
-              <div className="p-3 rounded-xl bg-[#111622] border border-slate-800 text-center">
+              <div className="p-3 lg:p-4 rounded-xl bg-[#111622] border border-slate-800 text-center">
                 <span className="text-slate-500 text-[9px] font-mono block uppercase">STANDAR PRODUKSI</span>
                 <span className="text-white font-bold text-xs mt-0.5 block">4K Ultra HD Broadcast</span>
               </div>
-              <div className="p-3 rounded-xl bg-[#111622] border border-slate-800 text-center">
+              <div className="p-3 lg:p-4 rounded-xl bg-[#111622] border border-slate-800 text-center">
                 <span className="text-slate-500 text-[9px] font-mono block uppercase">PERLINDUNGAN HUKUM</span>
                 <span className="text-emerald-400 font-bold text-xs mt-0.5 block">SPK Resmi & Invoice</span>
               </div>
